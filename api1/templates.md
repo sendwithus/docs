@@ -1,7 +1,7 @@
 Templates API
 =============
 
-*NOTE* -- All parameters are manditory unless otherwise noted.
+*NOTE* -- All parameters are mandatory unless otherwise noted.
 
 Creating a New Template (Done - Already Existed)
 -----------------------

@@ -1,3 +1,14 @@
+## API/v1
+
+### [Customers](https://github.com/sendwithus/docs/blob/master/v1/customers.md)
+
+### [Segments](https://github.com/sendwithus/docs/blob/master/v1/segments.md)
+
+### [Templates](https://github.com/sendwithus/docs/blob/master/v1/templates.md)
+
+
+
+
 Points for v2
 -------------
 

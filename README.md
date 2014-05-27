@@ -1,14 +1,14 @@
 ## API/v1
 
-### [Send](../blob/master/v1/send.md)
+### [Send](../master/v1/send.md)
 
-### [Customers](../blob/master/v1/customers.md)
+### [Customers](../master/v1/customers.md)
 
-### [Segments](../blob/master/v1/segments.md)
+### [Segments](../master/v1/segments.md)
 
-### [Templates](../blob/master/v1/templates.md)
+### [Templates](../master/v1/templates.md)
 
-### [Internationalization (il8n)](../blob/master/v1/il8n.md)
+### [Internationalization (il8n)](../master/v1/il8n.md)
 
 
 

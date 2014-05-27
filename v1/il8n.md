@@ -35,7 +35,7 @@ https://api.sendwithus.com/api/v1/il8n/pot/international
 
 ## Post translated strings (`.po`)
 
-Use this endpoint to `POST` a `.zip` file containing `.po` files, each `.op` file named to match the locale it is intended for. See examples below for specifics.
+Use this endpoint to `POST` a `.zip` file containing `.po` files, each `.po` file named to match the locale it is intended for. See examples below for specifics.
 
 POST `/il8n/po/(:tag)`
 

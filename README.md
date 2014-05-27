@@ -1,5 +1,7 @@
 ## API/v1
 
+### [Send](https://github.com/sendwithus/docs/blob/master/v1/send.md)
+
 ### [Customers](https://github.com/sendwithus/docs/blob/master/v1/customers.md)
 
 ### [Segments](https://github.com/sendwithus/docs/blob/master/v1/segments.md)

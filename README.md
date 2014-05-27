@@ -1,14 +1,12 @@
 ## API/v1
 
-### [Send](../blob/master/v1/send.md)
+### [Send](https://github.com/sendwithus/docs/blob/master/v1/send.md)
 
-### [Customers](../blob/master/v1/customers.md)
+### [Customers](https://github.com/sendwithus/docs/blob/master/v1/customers.md)
 
-### [Segments](../blob/master/v1/segments.md)
+### [Segments](https://github.com/sendwithus/docs/blob/master/v1/segments.md)
 
-### [Templates](../blob/master/v1/templates.md)
-
-### [Internationalization (il8n)](../blob/master/v1/il8n.md)
+### [Templates](https://github.com/sendwithus/docs/blob/master/v1/templates.md)
 
 
 

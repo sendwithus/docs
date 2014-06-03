@@ -21,12 +21,14 @@ Params:
    - reply_to 	-- The sender's reply-to address
    - name 		-- The sender's name
 - email_data 	-- Object containing email template data
-- tags 			-- Array of tags (as strings)
-- inline 		-- Inline attachment object (see example)
-- files			-- List of file attachments (combined maximum 7MB, see example)
-- esp_account 	-- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
+- tags (opt) 			-- Array of tags (as strings)
+- inline (opt) 		-- Inline attachment object (see example)
+- files	(opt)		-- List of file attachments (combined maximum 7MB, see example)
+- esp_account (opt)	-- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
+- version_name (opt) -- Name of the template version to send (overrides A/B tests and test api keys)
 
-Sample Request Body:
+### Sample Request Body
+
 ```json
 {
   // Required parameters
@@ -78,6 +80,22 @@ Sample Request Body:
 
   "esp_account": "esp_1a2b3c4d5e"
 }
-
 ```
 
+### Sample il8n Request Body
+
+```json
+{
+  // Required parameters
+  "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+  
+  "recipient": {
+    "name": "John",
+    "address": "user@email.com"
+  },
+  
+  "email_data": { "amount": "$12.00" },
+  
+  "version_name": "en-US"
+}
+```

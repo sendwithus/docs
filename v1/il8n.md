@@ -67,3 +67,9 @@ curl \
 -d BASE_64_ENCODED_TRANSLATIONS.ZIP
 https://api.sendwithus.com/api/v1/il8n/po/international
 ```
+
+## Sending translated templates
+
+At send time, Sendwithus uses the `version_name` parameter in the `send` API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.
+
+For an example sending with a translated template, please see the [send api](../master/v1/send.md) documentation.

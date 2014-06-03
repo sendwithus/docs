@@ -1,8 +1,11 @@
-# Send API
+# Render API
+
+The `render` api allows you to render a template with data, using the exact same rendering workflow that Sendwithus uses when delivering your email.
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
-## Send an Email
+## Render a Template with Data
+
 
 POST `/send`
 
@@ -19,10 +22,6 @@ Params:
    - reply_to 	-- The sender's reply-to address
    - name 		-- The sender's name
 - email_data 	-- Object containing email template data
-- tags (opt) 			-- Array of tags (as strings)
-- inline (opt) 		-- Inline attachment object (see example)
-- files	(opt)		-- List of file attachments (combined maximum 7MB, see example)
-- esp_account (opt)	-- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
 - version_name (opt) -- Name of the template version to send (overrides A/B tests and test api keys)
 
 ### Sample Request Body
@@ -54,46 +53,23 @@ Params:
     "reply_to": "info@company.com"
   },
 
-  "tags": [
-    "tag1",
-    "tag2",
-    "tag3"
-  ],
-
-  "inline": {
-    "id": "cat.png",
-    "data": "{BASE_64_ENCODED_FILE_DATA}"
-  },
-
-  "files": [
-    {
-      "id": "doc.txt",
-      "data": "{BASE_64_ENCODED_FILE_DATA}"
-    },
-    {
-      "id": "stuff.zip",
-      "data": "{BASE_64_ENCODED_FILE_DATA}"
-    }
-  ],
-
-  "esp_account": "esp_1a2b3c4d5e"
+  "version_name": "Optional, name of template version"
 }
 ```
 
-### Sample il8n Request Body
+### Sample Response
 
 ```json
 {
-  // Required parameters
-  "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
-  
-  "recipient": {
-    "name": "John",
-    "address": "user@email.com"
-  },
-  
-  "email_data": { "amount": "$12.00" },
-  
-  "version_name": "en-US"
+	"success": true,
+    "status": "OK",
+    "template": {
+    	"id": "Template ID",
+        "name": "Template name",
+        "version_name": "Template version name"
+	},
+    "subject": "RENDERED SUBJECT WITH DATA",
+    "html": "RENDERED HTML BODY WITH DATA",
+    "text": "RENDERED TEXT BODY WITH DATA"
 }
 ```

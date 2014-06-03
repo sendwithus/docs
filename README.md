@@ -2,6 +2,8 @@
 
 ### [Send](../master/v1/send.md)
 
+### [Render](../master/v1/render.md)
+
 ### [Customers](../master/v1/customers.md)
 
 ### [Segments](../master/v1/segments.md)

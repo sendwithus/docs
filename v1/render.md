@@ -15,8 +15,12 @@ Params:
 - recipient      
    - address -- The recipient's email address
    - name (opt) -- The recipient's name
-- cc 		-- An array of CC recipients, of the format {"address":"cc@email.com"}
-- bcc 		-- An array of BCC recipients, of the format {"address":"bcc@email.com"}
+- cc (opt)		-- An array of CC recipients, each of the format
+	- address -- CC Address
+	- name -- CC Name
+- bcc (opt)		-- An array of CC recipients, each of the format
+	- address -- CC Address
+	- name -- CC Name
 - sender (opt)
    - address 	-- The sender's email address
    - reply_to 	-- The sender's reply-to address

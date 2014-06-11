@@ -6,6 +6,8 @@
 
 ### [Customers](../master/v1/customers.md)
 
+### [Logs](../master/v1/logs.md)
+
 ### [Segments](../master/v1/segments.md)
 
 ### [Templates](../master/v1/templates.md)

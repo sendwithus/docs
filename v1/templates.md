@@ -38,7 +38,7 @@ Params:
 - subject    -- The subject line of the template
 - text (opt) -- The Text body of the template
 
-## Creating a New Template Version 
+## Creating a New Template Version
 
 POST `/templates/(:template_id)/versions`
 

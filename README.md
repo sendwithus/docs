@@ -12,6 +12,8 @@
 
 ### [Segments](../master/v1/segments.md)
 
+### [Drip Campaigns](../master/v1/dripcampaign.md)
+
 ### [Templates](../master/v1/templates.md)
 
 ### [Internationalization (il8n)](../master/v1/il8n.md)

@@ -3,7 +3,7 @@ Segments API
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
-Send to a Segment (Done)
+Send to a Segment
 -----------------------
 
 POST `/segments/(:segment_id)/send`

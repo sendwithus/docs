@@ -49,7 +49,7 @@ Sample Response:
 
 ## Get a specific version (with HTML/text)
 
-GET `/templates/(:template_id)/(:version_id)`
+GET `/templates/(:template_id)/versions/(:version_id)`
 
 Sample Response:
 ```json

@@ -30,7 +30,7 @@ Fetch `.pot` for template with tag `international`
 curl \
 -X GET \
 -u swu_api_key: \
-https://api.sendwithus.com/api/v1/il8n/pot/international
+https://api.sendwithus.com/api/v1/i18n/pot/international
 ```
 
 ## Post translated strings (`.po`)
@@ -65,7 +65,7 @@ curl \
 -X POST \
 -u swu_api_key: \
 -d BASE_64_ENCODED_TRANSLATIONS.ZIP
-https://api.sendwithus.com/api/v1/il8n/po/international
+https://api.sendwithus.com/api/v1/i18n/po/international
 ```
 
 ## Sending translated templates

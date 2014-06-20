@@ -7,7 +7,7 @@
 
 Sendwithus handles internationalization by using *pybabel* style string wrapping.
 
-For example, a string in a template would be wrapped in `_("")`. So the internationalized version of `Hello World` would be `_("Hello World")`.
+For example, a string in a template would be wrapped in `_("")`. So the internationalized version of `Hello World` would be `{{ _("Hello World") }}`. Variables can be added to translatable strings using the python format syntax, for example `Hello {{ name }}` would become `{{ _("Hello %s", name) }}`. Multiple variables can be used in the same string like so `{{ _("Hello %s and %s", name1, name2) }}`.
 
 Translation packages (`.pot` files) can be downloaded via API, and then corresponding string files (`.po`) can be uploaded via API, which will trigger translated template variants to be generated. 
 

@@ -45,7 +45,7 @@ Params:
 
 Request Body:
 
-- **BASE 64** encoded `.zip` file
+- `.zip` file
 
 
 ### Examples
@@ -64,7 +64,7 @@ Post `translations.zip` for templates with tag `international`
 curl \
 -X POST \
 -u swu_api_key: \
--d BASE_64_ENCODED_TRANSLATIONS.ZIP
+--data-binary @translations.zip \
 https://api.sendwithus.com/api/v1/i18n/po/international
 ```
 

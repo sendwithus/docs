@@ -9,27 +9,26 @@ POST `/send`
 Params:
 
 - email_id       -- Unique ID obtained from /emails
-- recipient      
+- recipient
    - address -- The recipient's email address
-   - name (opt) -- The recipient's name
-- cc 		-- An array of CC recipients, of the format {"address":"cc@email.com"}
-- bcc 		-- An array of BCC recipients, of the format {"address":"bcc@email.com"}
-- sender (opt)
-   - address 	-- The sender's email address
-   - reply_to 	-- The sender's reply-to address
-   - name 		-- The sender's name
-- email_data 	-- Object containing email template data
-- tags (opt) 			-- Array of tags (as strings)
-- inline (opt) 		-- Inline attachment object (see example)
-- files	(opt)		-- List of file attachments (combined maximum 7MB, see example)
-- esp_account (opt)	-- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
-- version_name (opt) -- Name of the template version to send (overrides A/B tests and test api keys)
+   - name (optional) -- The recipient's name
+- cc        -- An array of CC recipients, of the format {"address":"cc@email.com"}
+- bcc       -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
+- sender (optional)
+   - address    -- The sender's email address
+   - reply_to   -- The sender's reply-to address
+   - name       -- The sender's name
+- email_data    -- Object containing email template data
+- tags (optional)           -- Array of tags (as strings)
+- inline (optional)         -- Inline attachment object (see example)
+- files (optional)      -- List of file attachments (combined maximum 7MB, see example)
+- esp_account (optional)    -- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
+- version_name (optional) -- Name of the template version to send (overrides A/B tests and test api keys)
 
-### Sample Request Body
+Sample Request:
 
 ```json
 {
-  // Required parameters
   "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
   "recipient": {
     "name": "John",
@@ -37,7 +36,6 @@ Params:
   },
   "email_data": { "amount": "$12.00" },
 
-  // Optional parameters
   "cc": [
     {"address": "cc_one@email.com"},
     {"address": "cc_two@email.com"}
@@ -80,20 +78,19 @@ Params:
 }
 ```
 
-### Sample il8n Request Body
+Sample il8n Request:
 
 ```json
 {
-  // Required parameters
   "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
-  
+
   "recipient": {
     "name": "John",
     "address": "user@email.com"
   },
-  
+
   "email_data": { "amount": "$12.00" },
-  
+
   "version_name": "en-US"
 }
 ```

@@ -12,27 +12,26 @@ POST `/send`
 Params:
 
 - email_id       -- Unique ID obtained from /emails
-- recipient      
+- recipient
    - address -- The recipient's email address
-   - name (opt) -- The recipient's name
-- cc (opt)		-- An array of CC recipients, each of the format
-	- address -- CC Address
-	- name -- CC Name
-- bcc (opt)		-- An array of CC recipients, each of the format
-	- address -- CC Address
-	- name -- CC Name
-- sender (opt)
-   - address 	-- The sender's email address
-   - reply_to 	-- The sender's reply-to address
-   - name 		-- The sender's name
-- email_data 	-- Object containing email template data
-- version_name (opt) -- Name of the template version to send (overrides A/B tests and test api keys)
+   - name (optional) -- The recipient's name
+- cc (optional)     -- An array of CC recipients, each of the format
+    - address -- CC Address
+    - name -- CC Name
+- bcc (optional)        -- An array of CC recipients, each of the format
+    - address -- CC Address
+    - name -- CC Name
+- sender (optional)
+   - address    -- The sender's email address
+   - reply_to   -- The sender's reply-to address
+   - name       -- The sender's name
+- email_data    -- Object containing email template data
+- version_name (optional) -- Name of the template version to send (overrides A/B tests and test api keys)
 
-### Sample Request Body
+Sample Request:
 
 ```json
 {
-  // Required parameters
   "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
   "recipient": {
     "name": "John",
@@ -40,7 +39,6 @@ Params:
   },
   "email_data": { "amount": "$12.00" },
 
-  // Optional parameters
   "cc": [
     {"address": "cc_one@email.com"},
     {"address": "cc_two@email.com"}
@@ -61,17 +59,17 @@ Params:
 }
 ```
 
-### Sample Response
+Sample Response:
 
 ```json
 {
-	"success": true,
+    "success": true,
     "status": "OK",
     "template": {
-    	"id": "Template ID",
+        "id": "Template ID",
         "name": "Template name",
         "version_name": "Template version name"
-	},
+    },
     "subject": "RENDERED SUBJECT WITH DATA",
     "html": "RENDERED HTML BODY WITH DATA",
     "text": "RENDERED TEXT BODY WITH DATA"

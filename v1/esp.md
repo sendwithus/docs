@@ -10,12 +10,14 @@ finalized and is subject to change.**
 GET `/esp_accounts`
 
 Params:
+
 - esp_type (optional) -- Filter response to only return ESP accounts of a certain type
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
 
-Sample Response
-``` json
+Sample Response:
+
+```json
 [
     {
         "object": "esp_account",
@@ -23,12 +25,12 @@ Sample Response
         "created": 1234567890,
         "esp_type": "sendgrid",
         "name": "My SendGrid Account"
-    },
-    ...
+    }
 ]
 ```
 
 Possible esp_account.esp_type values:
+
 - **sendgrid**
 - **mailgun**
 - **mandrill**
@@ -40,11 +42,13 @@ Possible esp_account.esp_type values:
 POST `/esp_accounts`
 
 Params:
+
 - send_test_email (optional) -- Send a test email on successful configuration
                                 to the owner(s) of the sendwithus account
 
 Sample Request:
-``` json
+
+```json
 {
     "name": "My SendGrid Subuser",
     "esp_type": "sendgrid",
@@ -55,8 +59,9 @@ Sample Request:
 }
 ```
 
-Sample Response
-``` json
+Sample Response:
+
+```json
 {
     "success": true,
     "status": "OK",
@@ -75,15 +80,17 @@ Sample Response
 
 PUT `/esp_accounts/set_default`
 
-Sample Request
-``` json
+Sample Request:
+
+```json
 {
     "esp_id": "esp_asdf12rastrast"
 }
 ```
 
-Sample Response
-``` json
+Sample Response:
+
+```json
 {
     "success": true,
     "status": "OK",

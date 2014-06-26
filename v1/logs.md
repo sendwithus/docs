@@ -10,6 +10,7 @@ GET `/logs`
 Retrieve a list of available logs. Logs are sorted in reverse chronological order.
 
 Params:
+
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
 - status (optional) -- Only return logs matching one of these status types,
@@ -20,6 +21,7 @@ Params:
 - created_lte (optional) -- Return logs created on or before the given UTC timestamp.
 
 Sample Repsonse:
+
 ```json
         [
             {
@@ -29,17 +31,17 @@ Sample Repsonse:
                 "recipient_name": "Brad",
                 "recipient_address": "brad@email.com",
                 "status": "opened",
-                "message": "SendGrid: Message has been opened"
+                "message": "SendGrid: Message has been opened",
                 "email_id": "as8dfjha8dap",
                 "email_name": "Order Confirmation",
                 "email_version": "Version A",
                 "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
-            },
-            ...
+            }
         ]
 ```
 
 Possible log.status values:
+
 - **requested**: sendwithus API request received
 - **triggered**: email triggered by internal event, ie**: drip campaign**
 - **queued**: email is queued for delivery
@@ -66,10 +68,12 @@ GET `/logs/(:log_id)`
 
 A single Log object with all its details
 
-Parames:
+Params:
+
 - log_id -- String `log_id` of the Log to retrieve.
 
 Sample Repsonse:
+
 ```json
         {
             "object": "log",
@@ -78,7 +82,7 @@ Sample Repsonse:
             "recipient_name": "Brad",
             "recipient_address": "brad@email.com",
             "status": "opened",
-            "message": "SendGrid: Message has been opened"
+            "message": "SendGrid: Message has been opened",
             "email_id": "as8dfjha8dap",
             "email_name": "Order Confirmation",
             "email_version": "Version A",
@@ -93,9 +97,11 @@ GET `/logs/(:log_id)/events`
 Return a list of all events associated with a given Log.
 
 Params:
+
 - log_id (required) -- String `log_id` of the Log to retrieve events for.
 
 Sample Repsonse:
+
 ```json
         [
             {
@@ -123,13 +129,13 @@ Sample Repsonse:
                 "message": "email sent through SendGrid"
             },
             {
-                "object": "event"
+                "object": "event",
                 "created": 1234567894,
                 "type": "opened",
                 "message": "SendGrid: Email has been opened"
             },
             {
-                "object": "event"
+                "object": "event",
                 "created": 1234567895,
                 "type": "clicked",
                 "message": "SendGrid: Link in email has been clicked"
@@ -146,6 +152,7 @@ Resend a specific email by `log_id`.
 
 
 Sample Request:
+
 ```json
         {
             "log_id": "log_asdf123456qwerty"
@@ -153,9 +160,10 @@ Sample Request:
 ```
 
 Sample Repsonse:
+
 ```json
         {
-            "success": True,
+            "success": true,
             "status": "OK",
             "log_id": "log_asdf123456qwerty",
             "email": {

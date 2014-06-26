@@ -1,5 +1,10 @@
 # Authentication
 
-We use HTTP Basic authentication, so all requests require you to authenticate using your desired API key as the username with a blank password.
+The Sendwithus API uses [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication). All requests require you to authenticate using a Sendwithus API Key as the username with an empty string as the password.
 
-All calls must be made via https, any calls made via http will fail.
+For example:
+```json
+curl -u live_1234qwerzxcv7890: https://api.sendwithus.com/v1
+```
+
+All API calls must use HTTPS. Any calls made using HTTP will an appropriate error code.

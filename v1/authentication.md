@@ -4,7 +4,7 @@ The Sendwithus API uses [HTTP Basic Authentication](http://en.wikipedia.org/wiki
 
 For example:
 ```json
-curl -u live_1234qwerzxcv7890: https://api.sendwithus.com/v1
+curl -u live_1234qwerzxcv7890: https://api.sendwithus.com/api/v1
 ```
 
 All API calls must use HTTPS. Any calls made using HTTP will an appropriate error code.

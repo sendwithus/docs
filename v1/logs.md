@@ -13,8 +13,6 @@ Params:
 
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
-- status (optional) -- Only return logs matching one of these status types,
-                       as a comma delimited list. *ie: status=opened,sent*
 - created_gt (optional) -- Return logs created strictly after the given UTC timestamp.
 - created_gte (optional) -- Return logs created on or after the given UTC timestamp.
 - created_lt (optional) -- Return logs created strictly before the given UTC timestamp.
@@ -50,14 +48,14 @@ Possible log.status values:
 - **re_clicked**: a link in the email has been clicked more than once
 - **opened**: the email has been opened
 - **re_opened**: the email has been opened more than once
-- **failed_to_queue**: an internal error has temporarily prevented delivery
-- **failed_to_send**: an email service provider error has temporarily prevented delivery
+- **failed\_to\_queue**: an internal error has temporarily prevented delivery
+- **failed\_to\_send**: an email service provider error has temporarily prevented delivery
 - **processed**: email service provider has acknowledged delivery request
 - **dropped**: email service provider has prevented email delivery
 - **delivered**: email was successfully delivered to recipient
 - **deferred**: email service provider has delayed email delivery
 - **bounced**: email service provider could not deliver to recipient
-- **reported_as_spam**: recipient has reported the email as spam
+- **reported\_as\_spam**: recipient has reported the email as spam
 - **unsubscribed**: recipient has requested to be unsubscribed from this email
 
 

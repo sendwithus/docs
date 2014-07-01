@@ -13,11 +13,11 @@ Sample Repsonse:
             {
                 "object": "customer",
                 "created": 1234567890,
-                "email": "customer@email.com
+                "email": "customer@email.com"
             }, {
                 "object": "customer",
                 "created": 1234567891,
-                "email": "customer@email.com
+                "email": "customer@email.com"
             }
         ]
 ```

@@ -14,12 +14,12 @@ Sample Response:
         "object": "segment",
         "created": 1404068087,
         "id": "seg_ksnfG9yTcRjbLpqCA9U",
-        "name": An Example Segment"
+        "name": "An Example Segment"
     }, {
         "object": "segment",
         "created": 1404068533,
         "id": "seg_jbLpqCA9UtykksnfG9y",
-        "name": A Second Example Segment"
+        "name": "A Second Example Segment"
     }, ...
 ]
 ```

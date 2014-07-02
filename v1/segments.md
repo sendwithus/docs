@@ -2,6 +2,12 @@
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
+## List all Segments
+
+GET `/segments`
+
+Sample Response
+
 ## Retrieve a Segment (Private Beta)
 
 GET `/segments/(:segment_id)`

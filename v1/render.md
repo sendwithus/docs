@@ -7,7 +7,7 @@ The `render` api allows you to render a template with data, using the exact same
 ## Render a Template with Data
 
 
-POST `/send`
+POST `/render`
 
 Params:
 

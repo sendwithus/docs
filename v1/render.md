@@ -12,21 +12,7 @@ POST `/send`
 Params:
 
 - email_id       -- Unique ID obtained from /emails
-- recipient
-   - address -- The recipient's email address
-   - name (optional) -- The recipient's name
-- cc (optional)     -- An array of CC recipients, each of the format
-    - address -- CC Address
-    - name -- CC Name
-- bcc (optional)        -- An array of CC recipients, each of the format
-    - address -- CC Address
-    - name -- CC Name
-- sender (optional)
-   - address    -- The sender's email address
-   - reply_to   -- The sender's reply-to address
-   - name       -- The sender's name
 - email_data    -- Object containing email template data
-- version_name (optional) -- Name of the template version to send (overrides A/B tests and test api keys)
 
 Sample Request:
 
@@ -37,25 +23,7 @@ Sample Request:
     "name": "John",
     "address": "user@email.com"
   },
-  "email_data": { "amount": "$12.00" },
-
-  "cc": [
-    {"address": "cc_one@email.com"},
-    {"address": "cc_two@email.com"}
-  ],
-
-  "bcc": [
-    {"address": "bcc_one@email.com"},
-    {"address": "bcc_two@email.com"}
-  ],
-
-  "sender": {
-    "name": "Company",
-    "address": "company@company.com",
-    "reply_to": "info@company.com"
-  },
-
-  "version_name": "Optional, name of template version"
+  "email_data": { "amount": "$12.00" }
 }
 ```
 

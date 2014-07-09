@@ -1,6 +1,6 @@
 # API Client Libraries
 
-Sendwithus provides API Clients for all major languages and web frameworks. If we're missing a client for your particular use case, please [let us know](mailto:us@sendwithus.com]).
+Sendwithus provides API Clients for all major languages and web frameworks. If we're missing a client for your particular use case, please [let us know](mailto:us@sendwithus.com).
 
 All of our API Client Libraries are open source and available in our [Github Account](https://github.com/sendwithus).
 

@@ -22,7 +22,7 @@ Params:
 - tags (optional)           -- Array of tags (as strings)
 - inline (optional)         -- Inline attachment object (see example)
 - files (optional)      -- List of file attachments (combined maximum 7MB, see example)
-- esp_account (optional)    -- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
+- esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 - version_name (optional) -- Name of the template version to send (overrides A/B tests and test api keys)
 
 Sample Request:

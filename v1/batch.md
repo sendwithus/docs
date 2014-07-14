@@ -13,9 +13,9 @@ POST `/batch`
 
 Params:
 
-- path -- The API path to call
-- method -- The HTTP method to use
-- id -- 
+- path -- API path to call
+- method -- HTTP method to use
+- body -- HTTP request body 
 
 
 Sample Request:

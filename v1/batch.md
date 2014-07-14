@@ -61,6 +61,7 @@ Sample Response:
         },
         "receipt_id": "374s1700-279f-4642-b775-58e8231d443b-y6cem5",
         "status": "OK"
+    }
 }, {
     "path": "/api/v1/send",
     "status_code": 400,

@@ -6,7 +6,7 @@ to be made in a single HTTP request.
 *NOTE* -- Batch sizes over 100 requests are not recommended.
 
 
-## Batching Email Sends
+## Sample Batch (Multiple Sends)
 
 POST `/batch`
 

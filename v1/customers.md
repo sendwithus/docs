@@ -30,7 +30,7 @@ Sample Response:
 
 ```json
 {
-	"success": True,
+	"success": true,
     "status": "OK",
     "customer": {
 		"object": "customer",
@@ -54,7 +54,7 @@ Sample Response:
 
 ```json
 {
-	"success": True,
+	"success": true,
     "status": "OK"
 }
 ```

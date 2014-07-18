@@ -36,7 +36,7 @@ Sample Response:
 		"object": "customer",
         "email": "customer@example.com",
         "data": {...},
-        created: 5858858124 /* unix timestamp */
+        "created": 5858858124 /* unix timestamp */
     }
 }
 ```

@@ -11,15 +11,15 @@ POST `/render`
 
 Params:
 
-- email_id       -- Unique ID obtained from /emails
-- email_data    -- Object containing email template data
+- template_id     -- Unique ID obtained from /emails
+- template_data   -- Object containing email template data
 
 Sample Request:
 
 ```json
 {
-  "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
-  "email_data": { "amount": "$12.00" }
+  "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+  "template_data": { "amount": "$12.00" }
 }
 ```
 

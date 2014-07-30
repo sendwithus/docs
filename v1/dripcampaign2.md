@@ -1,5 +1,7 @@
 # Drip Campaign API 2.0
 
+**Drip Campaigns 2.0 are not live.**  This is simply a sneak preview of what will be available when 2.0 is released, as well as a way for customers to give us feedback on our proposed implementation.
+
 ## CAMPAIGN API:
 
 ## Get a list of campaigns

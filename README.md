@@ -14,6 +14,8 @@
 
 ### [Drip Campaigns](../master/v1/dripcampaign.md)
 
+### [Drip Campaigns v2.0](../master/v1/dripcampaign2.md)
+
 ### [Templates](../master/v1/templates.md)
 
 ### [Internationalization (il8n)](../master/v1/il8n.md)

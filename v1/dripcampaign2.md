@@ -153,7 +153,7 @@ Sample Request
 ```
 
 ## Delete a step
-DELETE `/drip_campaign/(campaign_id)/drip_steps/(step_id)
+DELETE `/drip_campaign/(campaign_id)/drip_steps/(step_id)`
 
 ## Deactivate a step for customer
 POST `/drip_campaign/(campaign_id)/drip_steps/(step_id)/deactivate`

@@ -35,15 +35,35 @@ Sample Request
 }
 ```
 
+Sample Response
+
+```json
+{
+    "success": true,
+    "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
+    "email_address": "customer@example.com"
+}
+```
+
 ## Start customer on a campaign
 This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.  This is the alternative way to start a campaign (as opposed to using trigger emails).
 
-POST `/drip_campaigns/(campaign_id)/activate`
+POST `/drip_campaigns/(campaign_id)/start`
 
 Sample Request
 
 ```json
 {
+    "email_address": "customer@example.com"
+}
+```
+
+Sample Response
+
+```json
+{
+    "success": true,
+    "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
     "email_address": "customer@example.com"
 }
 ```
@@ -80,6 +100,8 @@ Sample Response
 ## Get a list of steps in a campaign
 GET `/drip_campaigns/(campaign_id)/drip_steps`
 
+Sample Response
+
 ```json
 [
     {
@@ -98,12 +120,22 @@ GET `/drip_campaigns/(campaign_id)/drip_steps`
 ```
 
 ## Deactivate a step for customer
-POST `/drip_campaign/(campaign_id)/drip_steps/(step_id)/deactivate`
+POST `/drip_campaign/(campaign_id)/drip_steps/(step_id)/deactivate/`
 
 Sample Request
 
 ```json
 {
+    "email_address": "customer@example.com"
+}
+```
+
+Sample Response
+
+```json
+{
+    "success": true,
+    "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
     "email_address": "customer@example.com"
 }
 ```

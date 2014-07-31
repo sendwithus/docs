@@ -36,6 +36,8 @@ Sample Request
 ```
 
 ## Start customer on a campaign
+This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.  This is the alternative way to start a campaign (as opposed to using trigger emails).
+
 POST `/drip_campaigns/(campaign_id)/activate`
 
 Sample Request
@@ -58,18 +60,22 @@ Sample Response
     "pending_customers": "2004",
     "last_30_days": {
         "sent": "4366",
+        "bounced": "241",
         "unsubscribe_rate": "14.8%",
-        "engagement_rate": "35.2%",
+        "open_rate": "31.0%",
+        "click_rate": "11.7%",
     },
     "overall": {
         "sent": "56002",
+        "bounced": "241",
         "unsubscribe_rate": "7.3%",
-        "engagement_rate": "29.4%",
+        "open_rate": "21.4%",
+        "click_rate": "8.5%",
     }
 }
 ```
 
-## STEP API:
+## CAMPAIGN STEP API:
 
 ## Get a list of steps in a campaign
 GET `/drip_campaigns/(campaign_id)/drip_steps`
@@ -115,13 +121,17 @@ Sample Response
     "pending_customers": "427",
     "last_30_days": {
         "sent": "836",
+        "bounced": "241",
         "unsubscribe_rate": "12.8%",
-        "engagement_rate": "31.0%",
+        "open_rate": "31.0%",
+        "click_rate": "11.7%",
     },
     "overall": {
         "sent": "7445",
+        "bounced": "241",
         "unsubscribe_rate": "5.2%",
-        "engagement_rate": "28.9%",
+        "open_rate": "21.4%",
+        "click_rate": "8.5%",
     }
 }
 ```

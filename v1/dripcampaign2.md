@@ -14,12 +14,30 @@ Sample Response
     {
         "campaign_id": "cmp_m3mfMgMiemni82nm2imGMw",
         "campaign_name": "welcome_campaign",
-        "number_of_steps": "14"
+        "number_of_steps": "2",
+        "trigger_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+        "steps": [
+            {
+                "step_id": "cmp_MEitnqi2mGmwiednWN2mwi",
+                "step_name": "some_step"
+            },
+            {
+                "step_id": "cmp_Mawiefmfiwme2AN2mwi",
+                "step_name": "another_step"
+            }
+        ]
     },
     {
         "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
         "campaign_name": "spring_sales_promo",
-        "number_of_steps": "3"
+        "number_of_steps": "1",
+        "trigger_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+        "steps": [
+            {
+                "step_id": "cmp_MEitnqi2mFFFiednWN2mwi",
+                "step_name": "crazy_step"
+            }
+        ]
     }
 ]
 ```

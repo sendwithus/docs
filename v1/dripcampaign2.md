@@ -10,8 +10,8 @@ This will add the specified customer to the first step of the specified drip cam
 POST `/drip_campaigns/(campaign_id)/activate`
 
 Params:
-    recipient_address --
-    start_step (optional) --
+- recipient_address -- Email address of the customer you want to add to the specified campaign.
+- start_step (optional) -- You may choose to specify the step ID that you would like the customer to begin on.
 
 Sample Request
 
@@ -72,7 +72,7 @@ Sample Response
 POST `/drip_campaigns/(campaign_id)/deactivate`
 
 Params:
-    recipient_address --
+    recipient_address -- Email address of the customer you would like to remove from the specified campaign.
 
 Sample Request
 

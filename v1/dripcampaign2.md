@@ -14,15 +14,15 @@ Sample Response
     {
         "campaign_id": "cmp_m3mfMgMiemni82nm2imGMw",
         "campaign_name": "welcome_campaign",
-        "number_of_steps": "2",
         "trigger_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+        "number_of_steps": "2",
         "steps": [
             {
-                "step_id": "cmp_MEitnqi2mGmwiednWN2mwi",
+                "step_id": "stp_MEitnqi2mGmwiednWN2mwi",
                 "step_name": "some_step"
             },
             {
-                "step_id": "cmp_Mawiefmfiwme2AN2mwi",
+                "step_id": "stp_Mawiefmfiwme2AN2mwi",
                 "step_name": "another_step"
             }
         ]
@@ -30,11 +30,11 @@ Sample Response
     {
         "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
         "campaign_name": "spring_sales_promo",
-        "number_of_steps": "1",
         "trigger_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+        "number_of_steps": "1",
         "steps": [
             {
-                "step_id": "cmp_MEitnqi2mFFFiednWN2mwi",
+                "step_id": "stp_MEitnqi2mFFFiednWN2mwi",
                 "step_name": "crazy_step"
             }
         ]
@@ -144,7 +144,8 @@ Sample Request
 
 ```json
 {
-    "email_address": "customer@example.com"
+    "email_address": "customer@example.com",
+    "shift_steps": "true"
 }
 ```
 
@@ -167,7 +168,8 @@ Sample Response
 {
     "campaign_name": "welcome_campaign",
     "step_name": "followup_2",
-    "user_layout": "followup_layout_new",
+    "layout_id": "tem_m4fmweimWM29MpoiemE8Nn",
+    "layout_name": "welcome_new",
     "pending_customers": "427",
     "last_30_days": {
         "sent": "836",

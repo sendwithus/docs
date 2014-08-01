@@ -46,11 +46,15 @@ Sample Response
         "steps": [
             {
                 "step_id": "stp_MEitnqi2mGmwiednWN2mwi",
-                "step_name": "some_step"
+                "step_name": "some_step",
+                "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+                "delay_seconds": "600"
             },
             {
                 "step_id": "stp_Mawiefmfiwme2AN2mwi",
-                "step_name": "another_step"
+                "step_name": "another_step",
+                "user_layout": "tem_m4fmweimWM29MpoiemE8Nn",
+                "delay_seconds": "3600"
             }
         ]
     },
@@ -87,7 +91,7 @@ Sample Response
 ```json
 {
     "deactivated": "false",
-    "message": "Customer not active on specified campaign."
+    "message": "Customer not active on specified campaign.",
     "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
     "recipient_address": "customer@example.com"
 }

@@ -66,6 +66,8 @@ Sample Response
             {
                 "step_id": "stp_MEitnqi2mFFFiednWN2mwi",
                 "step_name": "crazy_step"
+                "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+                "delay_seconds": "600"
             }
         ]
     }

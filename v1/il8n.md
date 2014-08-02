@@ -5,7 +5,7 @@
 
 ### How it works
 
-Sendwithus handles internationalization by using *pybabel* style string wrapping.
+Sendwithus handles internationalization by using *Jinja2* style trans blocks.
 
 The easiest way to set up templates for translation is to use the trans block syntax. A string can be marked for translation by simply wrapping it in a trans block. For example, the internationalized version of `Hello World` is `{% trans %}Hello World{% endtrans %}`. Variables in trans block can be added like normal template variables. For example `Hello {{ name }}` will become `{% trans %}Hello {{ name }}{% endtrans %}`. Multiple variables can be used in the same trans block.
 

@@ -102,7 +102,7 @@ Sample Response
 ## DRIP STEP API:
 
 ## Get a list of steps in a campaign
-GET `/drip_campaigns/(campaign_id)/drip_steps`
+GET `/drip_campaigns/(campaign_id)/steps`
 
 Sample Response
 

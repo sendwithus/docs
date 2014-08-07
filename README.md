@@ -6,6 +6,8 @@
 
 ### [Customers](../master/v1/customers.md)
 
+### [Events](../master/v1/events.md)
+
 ### [Logs](../master/v1/logs.md)
 
 ### [ESP Accounts](../master/v1/esp.md)

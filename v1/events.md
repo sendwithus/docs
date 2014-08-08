@@ -22,7 +22,6 @@ POST `customers/greg@sendwithus.com/events`
 
 ```json
 {
-    "email": "customer@yourdomain.com",
     "event_name": "purchase",
     "revenue": 1999
 }

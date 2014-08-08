@@ -8,16 +8,17 @@ If you have questions or would like early access, please [email us](mailto:us@se
 
 This will add a new event to a specific customer in your sendwithus account.
 
-POST `/events`
+POST `customers/[EMAIL_ADDRESS]/events`
 
 Params:
 
-- email       -- Email of the customer to add the event to
 - event_name    -- Name of the event to record
 - revenue (optional)   -- Revenue associated with this event, in cents.
 
 
 Sample Request:
+
+POST `customers/greg@sendwithus.com/events`
 
 ```json
 {
@@ -29,6 +30,7 @@ Sample Request:
 
 Sample Response:
 
+STATUS CODE `200`
 ```json
 {
     "success": true,

@@ -8,7 +8,7 @@ If you have questions or would like early access, please [email us](mailto:us@se
 
 This will add a new event to a specific customer in your sendwithus account.
 
-POST `customers/[EMAIL_ADDRESS]/events`
+POST `/customers/[EMAIL_ADDRESS]/events`
 
 Params:
 

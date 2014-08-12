@@ -12,13 +12,13 @@ POST `customers/[EMAIL_ADDRESS]/events`
 
 Params:
 
-- name    -- Name of the event to record
+- event_name    -- Name of the event to record
 - revenue (optional)   -- Revenue associated with this event, in cents.
 
 
 Sample Request:
 
-POST `customers/greg@sendwithus.com/events`
+POST `/customers/greg@sendwithus.com/events`
 
 ```json
 {

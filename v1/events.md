@@ -22,7 +22,7 @@ POST `/customers/greg@sendwithus.com/events`
 
 ```json
 {
-    "name": "purchase",
+    "event_name": "purchase",
     "revenue": 1999
 }
 ```

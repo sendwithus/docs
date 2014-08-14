@@ -65,7 +65,7 @@ Sample Response
         "steps": [
             {
                 "step_id": "stp_MEitnqi2mFFFiednWN2mwi",
-                "step_name": "crazy_step"
+                "step_name": "crazy_step",
                 "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
                 "delay_seconds": "600"
             }
@@ -109,13 +109,11 @@ Sample Response
 ```json
 [
     {
-        "step_id": "stp_m3mfMgMiemni82nm2imGMw",
         "step_name": "step_1",
         "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
         "delay_seconds": "600"
     },
     {
-        "step_id": "cmp_MEitnqi2mGmwiednWN2mwi",
         "step_name": "step_2",
         "user_layout": "tem_m4fmweimWM29MpoiemE8Nn",
         "delay_seconds": "3600"

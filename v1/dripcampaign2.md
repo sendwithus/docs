@@ -17,8 +17,7 @@ Sample Request
 
 ```json
 {
-    "recipient_address": "customer@example.com",
-    "start_step": "drp_MEitnqi2mGmwiednWN2mwi"
+    "recipient_address": "customer@example.com"
 }
 ```
 
@@ -26,9 +25,9 @@ Sample Response
 
 ```json
 {
-    "activated": "true",
-    "campaign_id": "drp_MEitnqi2mGmwiednWN2mwi",
-    "email_address": "customer@example.com"
+    "activated": true,
+    "drip_campaign_id": "dc_MEitnqi2mGmwiednWN2mwi",
+    "recipient_address": "customer@example.com"
 }
 ```
 
@@ -40,33 +39,32 @@ Sample Response
 ```json
 [
     {
-        "campaign_id": "drp_m3mfMgMiemni82nm2imGMw",
-        "campaign_name": "welcome_campaign",
-        "trigger_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+        "drip_campaign_id": "dc_m3mfMgMiemni82nm2imGMw",
+        "drip_campaign_name": "welcome_campaign",
+        "trigger_user_layout": "User_layout_name",
+        "enabled": true,
         "steps": [
             {
-                "step_id": "stp_MEitnqi2mGmwiednWN2mwi",
-                "step_name": "some_step",
-                "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+                "step_id": "dcs_MEitnqi2mGmwiednWN2mwi",
+                "user_layout": "Step_1_user_layout_name",
                 "delay_seconds": "600"
             },
             {
-                "step_id": "stp_Mawiefmfiwme2AN2mwi",
-                "step_name": "another_step",
-                "user_layout": "tem_m4fmweimWM29MpoiemE8Nn",
+                "step_id": "dcs_Mawiefmfiwme2AN2mwi",
+                "user_layout": "Step_2_user_layout_name",
                 "delay_seconds": "3600"
             }
         ]
     },
     {
-        "campaign_id": "drp_MEitnqi2mGmwiednWN2mwi",
+        "campaign_id": "dc_MEitnqi2mGmwiednWN2mwi",
         "campaign_name": "spring_sales_promo",
         "trigger_layout": "None",
+        "enabled": false,
         "steps": [
             {
-                "step_id": "stp_MEitnqi2mFFFiednWN2mwi",
-                "step_name": "crazy_step"
-                "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
+                "step_id": "dcs_MEitnqi2mFFFiednWN2mwi",
+                "user_layout": "sales_template",
                 "delay_seconds": "600"
             }
         ]
@@ -75,7 +73,7 @@ Sample Response
 ```
 
 ## Deactivate a campaign for customer
-POST `/drip_campaigns/(campaign_id)/deactivate`
+POST `/drip_campaigns/(drip_campaign_id)/deactivate`
 
 Params:
 - recipient_address -- Email address of the customer you would like to remove from the specified campaign.
@@ -92,33 +90,37 @@ Sample Response
 
 ```json
 {
-    "deactivated": "false",
-    "message": "Customer not active on specified campaign.",
-    "campaign_id": "cmp_MEitnqi2mGmwiednWN2mwi",
+    "deactivated": false,
+    "message": "Invalid Campaign Id",
+    "campaign_id": "dc_MEitnqi2mGmwiednWN2mwi",
     "recipient_address": "customer@example.com"
 }
 ```
 
 ## DRIP STEP API:
 
-## Get a list of steps in a campaign
-GET `/drip_campaigns/(campaign_id)/steps`
+## Get a list of steps for a single campaign
+GET `/drip_campaigns/(drip_campaign_id)/steps`
 
 Sample Response
 
 ```json
-[
-    {
-        "step_id": "stp_m3mfMgMiemni82nm2imGMw",
-        "step_name": "step_1",
-        "user_layout": "tem_ImjaMEmgiw3mQng9MienwE",
-        "delay_seconds": "600"
-    },
-    {
-        "step_id": "cmp_MEitnqi2mGmwiednWN2mwi",
-        "step_name": "step_2",
-        "user_layout": "tem_m4fmweimWM29MpoiemE8Nn",
-        "delay_seconds": "3600"
-    }
-]
+{
+    "drip_campaign_id": "dc_m3mfMgMiemni82nm2imGMw",
+    "drip_campaign_name": "welcome_campaign",
+    "trigger_user_layout": "User_layout_name",
+    "enabled": true,
+    "steps": [
+        {
+            "step_id": "dcs_MEitnqi2mGmwiednWN2mwi",
+            "user_layout": "Step_1_user_layout_name",
+            "delay_seconds": "600"
+        },
+        {
+            "step_id": "dcs_Mawiefmfiwme2AN2mwi",
+            "user_layout": "Step_2_user_layout_name",
+            "delay_seconds": "3600"
+        }
+    ]
+}
 ```

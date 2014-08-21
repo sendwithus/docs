@@ -12,5 +12,6 @@ All of our API Client Libraries are open source and available in our [Github Acc
 - [PHP](https://github.com/sendwithus/sendwithus_php)
 - [Java](https://github.com/sendwithus/sendwithus_java)
 
-### Unofficial Friendly API Clients
-- [Go](https://github.com/elbuo8/sendwithus_go) by [elbuo8](http://www.yamilasusta.com/)
+### Unofficial, Third-party API Clients
+- [Go](https://github.com/elbuo8/sendwithus_go) [(elbuo8)](http://www.yamilasusta.com/)
+- [ColdFusion](https://github.com/philcruz/SendWithUsCfc) [(philcruz)](https://github.com/philcruz)

@@ -2,14 +2,13 @@
 
 **Drip Campaigns 2.0 are not live.**  This is simply a sneak preview of what will be available when 2.0 is released, as well as a way for customers to give us feedback on our proposed implementation.
 
-## Start customer on a campaign
+## Activate campaign for a customer
 This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.
 
 POST `/drip_campaigns/(campaign_id)/activate`
 
 Params:
 - recipient_address -- Email address of the customer you want to add to the specified campaign.
-- start_step (optional) -- You may choose to specify the step ID that you would like the customer to begin on.
 
 Sample Request
 

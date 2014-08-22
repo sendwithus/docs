@@ -2,8 +2,6 @@
 
 **Drip Campaigns 2.0 are not live.**  This is simply a sneak preview of what will be available when 2.0 is released, as well as a way for customers to give us feedback on our proposed implementation.
 
-## DRIP CAMPAIGN API:
-
 ## Start customer on a campaign
 This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.
 
@@ -33,6 +31,35 @@ Sample Response
     },
     'recipient_address': recipient_address,
     'message': 'Recipient successfully added to drip campaign.'
+}
+```
+
+## Deactivate a campaign for customer
+POST `/drip_campaigns/(drip_campaign_id)/deactivate`
+
+Params:
+- recipient_address -- Email address of the customer you would like to remove from the specified campaign.
+
+Sample Request
+
+```json
+{
+    "recipient_address": "customer@example.com"
+}
+```
+
+Sample Response
+
+```json
+{
+    'success': True,
+    'status': 'OK',
+    'drip_campaign': {
+        'id': drip_campaign_id,
+        'name': drip_campaign.name
+    },
+    'recipient_address': recipient_address,
+    'message': 'Recipient successfully removed from drip campaign.'
 }
 ```
 
@@ -82,39 +109,8 @@ Sample Response
 ]
 ```
 
-## Deactivate a campaign for customer
-POST `/drip_campaigns/(drip_campaign_id)/deactivate`
-
-Params:
-- recipient_address -- Email address of the customer you would like to remove from the specified campaign.
-
-Sample Request
-
-```json
-{
-    "recipient_address": "customer@example.com"
-}
-```
-
-Sample Response
-
-```json
-{
-    'success': True,
-    'status': 'OK',
-    'drip_campaign': {
-        'id': drip_campaign_id,
-        'name': drip_campaign.name
-    },
-    'recipient_address': recipient_address,
-    'message': 'Recipient successfully removed from drip campaign.'
-}
-```
-
-## DRIP STEP API:
-
-## Get a list of steps for a single campaign
-GET `/drip_campaigns/(drip_campaign_id)/steps`
+## Get the details on a specific drip campaign
+GET `/drip_campaigns/(drip_campaign_id)`
 
 Sample Response
 

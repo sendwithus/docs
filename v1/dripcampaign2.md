@@ -25,9 +25,14 @@ Sample Response
 
 ```json
 {
-    "activated": true,
-    "drip_campaign_id": "dc_MEitnqi2mGmwiednWN2mwi",
-    "recipient_address": "customer@example.com"
+    'success': True,
+    'status': 'OK',
+    'drip_campaign': {
+        'id': drip_campaign_id,
+        'name': drip_campaign.name
+    },
+    'recipient_address': recipient_address,
+    'message': 'Recipient successfully added to drip campaign.'
 }
 ```
 
@@ -39,33 +44,38 @@ Sample Response
 ```json
 [
     {
-        "drip_campaign_id": "dc_m3mfMgMiemni82nm2imGMw",
-        "drip_campaign_name": "welcome_campaign",
-        "trigger_user_layout": "User_layout_name",
+        "object": "drip_campaign",
+        "id": "dc_m3mfMgMiemni82nm2imGMw",
+        "name": "welcome_campaign",
         "enabled": true,
-        "steps": [
+        "trigger_email_id": null,
+        "drip_steps": [
             {
-                "step_id": "dcs_MEitnqi2mGmwiednWN2mwi",
-                "user_layout": "Step_1_user_layout_name",
+                "object": "drip_step",
+                "id": "dcs_MEitnqi2mGmwiednWN2mwi",
+                "email_id": "tem_asdfjkl1234qwer",
                 "delay_seconds": "600"
             },
             {
-                "step_id": "dcs_Mawiefmfiwme2AN2mwi",
-                "user_layout": "Step_2_user_layout_name",
+                "object": "drip_step",
+                "id": "dcs_MEitn234mGmwiednWN2mwi",
+                "email_id": "tem_asdwtgs1234qwer",
                 "delay_seconds": "3600"
             }
         ]
     },
     {
-        "campaign_id": "dc_MEitnqi2mGmwiednWN2mwi",
-        "campaign_name": "spring_sales_promo",
-        "trigger_layout": "None",
-        "enabled": false,
-        "steps": [
+        "object": "drip_campaign",
+        "id": "dc_m3mfMgafasdi8gadbwEgv",
+        "name": "sales_campaign",
+        "enabled": true,
+        "trigger_email_id": "tem_wneiam3igmiocbmw,
+        "drip_steps": [
             {
-                "step_id": "dcs_MEitnqi2mFFFiednWN2mwi",
-                "user_layout": "sales_template",
-                "delay_seconds": "600"
+                "object": "drip_step",
+                "id": "dcs_MEitnf2egbDwiednWN2mwi",
+                "email_id": "tem_asdwGFWrb234qwer",
+                "delay_seconds": "7200"
             }
         ]
     }
@@ -90,10 +100,14 @@ Sample Response
 
 ```json
 {
-    "deactivated": false,
-    "message": "Invalid Campaign Id",
-    "campaign_id": "dc_MEitnqi2mGmwiednWN2mwi",
-    "recipient_address": "customer@example.com"
+    'success': True,
+    'status': 'OK',
+    'drip_campaign': {
+        'id': drip_campaign_id,
+        'name': drip_campaign.name
+    },
+    'recipient_address': recipient_address,
+    'message': 'Recipient successfully removed from drip campaign.'
 }
 ```
 
@@ -106,19 +120,22 @@ Sample Response
 
 ```json
 {
-    "drip_campaign_id": "dc_m3mfMgMiemni82nm2imGMw",
-    "drip_campaign_name": "welcome_campaign",
-    "trigger_user_layout": "User_layout_name",
+    "object": "drip_campaign",
+    "id": "dc_m3mfMgMiemni82nm2imGMw",
+    "name": "welcome_campaign",
     "enabled": true,
-    "steps": [
+    "trigger_email_id": null,
+    "drip_steps": [
         {
-            "step_id": "dcs_MEitnqi2mGmwiednWN2mwi",
-            "user_layout": "Step_1_user_layout_name",
+            "object": "drip_step",
+            "id": "dcs_MEitnqi2mGmwiednWN2mwi",
+            "email_id": "tem_asdfjkl1234qwer",
             "delay_seconds": "600"
         },
         {
-            "step_id": "dcs_Mawiefmfiwme2AN2mwi",
-            "user_layout": "Step_2_user_layout_name",
+            "object": "drip_step",
+            "id": "dcs_MEitn234mGmwiednWN2mwi",
+            "email_id": "tem_asdwtgs1234qwer",
             "delay_seconds": "3600"
         }
     ]

@@ -23,14 +23,14 @@ Sample Response
 
 ```json
 {
-    'success': True,
-    'status': 'OK',
-    'drip_campaign': {
-        'id': drip_campaign_id,
-        'name': drip_campaign.name
+    "success": True,
+    "status": "OK",
+    "drip_campaign": {
+        "id": drip_campaign_id,
+        "name": drip_campaign.name
     },
-    'recipient_address': recipient_address,
-    'message': 'Recipient successfully added to drip campaign.'
+    "recipient_address": recipient_address,
+    "message": "Recipient successfully added to drip campaign."
 }
 ```
 
@@ -52,14 +52,14 @@ Sample Response
 
 ```json
 {
-    'success': True,
-    'status': 'OK',
-    'drip_campaign': {
-        'id': drip_campaign_id,
-        'name': drip_campaign.name
+    "success": True,
+    "status": "OK",
+    "drip_campaign": {
+        "id": drip_campaign_id,
+        "name": drip_campaign.name
     },
-    'recipient_address': recipient_address,
-    'message': 'Recipient successfully removed from drip campaign.'
+    "recipient_address": recipient_address,
+    "message": "Recipient successfully removed from drip campaign."
 }
 ```
 

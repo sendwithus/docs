@@ -52,7 +52,7 @@ Sample Response
 
 ```json
 {
-    "success": True,
+    "success": true,
     "status": "OK",
     "drip_campaign": {
         "id": "dc_m3mfMgMiemni82nm2imGMw",
@@ -96,7 +96,7 @@ Sample Response
         "id": "dc_m3mfMgafasdi8gadbwEgv",
         "name": "sales_campaign",
         "enabled": true,
-        "trigger_email_id": "tem_wneiam3igmiocbmw,
+        "trigger_email_id": "tem_wneiam3igmiocbmw",
         "drip_steps": [
             {
                 "object": "drip_step",

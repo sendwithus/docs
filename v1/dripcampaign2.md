@@ -136,22 +136,3 @@ Sample Response
     ]
 }
 ```
-
-## List the customers active on a specific drip campaign
-GET `/drip_campaigns/(drip_campaign_id)/customers`
-
-Sample Response
-
-```json
-[
-    {
-        "recipient_address": "customer@example.com",
-        "pending_drip_step": {
-            "object": "drip_step",
-            "id": "dcs_awfmi4MFwm3if$m",
-            "email_id": "tem_mMEvmi2MEfjawe",
-            "scheduled_time": "2014-08-22 19:48:40.097992+00:00"
-        }
-    }
-]
-```

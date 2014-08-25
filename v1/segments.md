@@ -24,7 +24,15 @@ Sample Response:
 ]
 ```
 
-<!---
+## Send to a Segment
+
+POST `/segments/(:segment_id)/send`
+
+Params:
+
+- email_id       -- ID of the template to send
+- email_data (optional)       -- Key/Value data to merge into template
+
 ## Retrieve Customers in a Segment _(Beta Only)_
         
 GET `/segments/(:segment_id)/run`
@@ -45,16 +53,4 @@ Sample Response:
 ]
 ```
 
-_NOTE: Segments returned via API are currently limited to 500 customers._
--->
-
-## Send to a Segment
-
-POST `/segments/(:segment_id)/send`
-
-Params:
-
-- email_id       -- ID of the template to send
-- email_data (optional)       -- Key/Value data to merge into template
-
-
+_NOTE: Please contact [beta@sendwithus.com](mailto:beta@sendwithus.com) to enable this endpoint for your account._

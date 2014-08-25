@@ -23,7 +23,8 @@ Sample Response:
     }, ...
 ]
 ```
-    
+
+<!---
 ## Retrieve Customers in a Segment _(Beta Only)_
         
 GET `/segments/(:segment_id)/run`
@@ -45,6 +46,7 @@ Sample Response:
 ```
 
 _NOTE: Segments returned via API are currently limited to 500 customers._
+-->
 
 ## Send to a Segment
 

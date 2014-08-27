@@ -168,6 +168,7 @@ Sample Response
         }
     ]
 }
+```
 
 ## Get a list of customers pending on a specific drip campaign step
 Get `/drip_campaigns/(drip_campaign_id)/steps/(drip_step_id)/customers`
@@ -189,3 +190,4 @@ Sample Response
         }
     ]
 }
+```

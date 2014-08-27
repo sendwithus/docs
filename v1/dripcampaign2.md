@@ -16,6 +16,18 @@ Sample Request
 }
 ```
 
+Sample Request with data
+
+```json
+{
+    "recipient_address": "customer@example.com",
+    "email_data": {
+        "first_name": "Joe",
+        "last_name": "Bob"
+    }
+}
+```
+
 Sample Response
 
 ```json

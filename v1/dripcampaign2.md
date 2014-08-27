@@ -7,6 +7,7 @@ POST `/drip_campaigns/(campaign_id)/activate`
 
 Params:
 - recipient_address -- Email address of the customer you want to add to the specified campaign.
+- email_data (optional) -- Object containing email template data
 
 Sample Request
 
@@ -142,6 +143,50 @@ Sample Response
             "id": "dcs_MEitn234mGmwiednWN2mwi",
             "email_id": "tem_asdwtgs1234qwer",
             "delay_seconds": "3600"
+        }
+    ]
+}
+```
+
+## Get a list of customers pending on a specific drip campaign
+Get `/drip_campaigns/(drip_campaign_id)/customers`
+
+Sample Response
+
+```json
+{
+    "object": "drip_campaign",
+    "id": "dc_m3mfMgMiemni82nm2imGMw",
+    "pending_recipients": [
+        {
+            "recipient_address": "customer@example.com",
+            "drip_step_id": "dcs_MEitnqi2mGmwiednWN2mwi"
+        },
+        {
+            "recipient_address": "jimbo@jones.com",
+            "drip_step_id": "dcs_MEitn234mGmwiednWN2mwi"
+        }
+    ]
+}
+```
+
+## Get a list of customers pending on a specific drip campaign step
+Get `/drip_campaigns/(drip_campaign_id)/steps/(drip_step_id)/customers`
+
+Sample Response
+
+```json
+{
+    "object": "drip_step",
+    "id": "dcs_MEitnqi2mGmwiednWN2mwi",
+    "pending_recipients": [
+        {
+            "recipient_address": "jimbo@jones.com",
+            "scheduled_send_time": "2014-08-27 20:25:44.301744+00:00"
+        },
+        {
+            "recipient_address": "tinaturner@sendwithus.com",
+            "scheduled_send_time": "2014-08-29 16:32:44.301744+00:00"
         }
     ]
 }

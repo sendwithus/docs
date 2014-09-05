@@ -83,7 +83,7 @@ Sample Request
 
 ```json
 {
-    "email_address": "customer@example.com"
+    "recipient_address": "customer@example.com"
 }
 ```
 
@@ -93,7 +93,7 @@ Sample Response
 {
     "success": true,
     "status": "OK",
-    "email_address": "customer@example.com",
+    "recipient_address": "customer@example.com",
     "unsubscribed_count": 14
 }
 ```

@@ -3,17 +3,29 @@
 ## Activate campaign for a customer
 This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.
 
-POST `/drip_campaigns/(campaign_id)/activate`
+POST `/drip_campaigns/(drip_campaign_id)/activate`
 
 Params:
-- recipient_address -- Email address of the customer you want to add to the specified campaign.
+- recipient
+   - address -- The recipient's email address
+   - name (optional) -- The recipient's name
+- cc (optional)  -- An array of CC recipients, of the format {"address":"cc@email.com"}
+- bcc (optional) -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
+- sender (optional)
+   - address    -- The sender's email address
+   - reply_to   -- The sender's reply-to address
+   - name       -- The sender's name
 - email_data (optional) -- Object containing email template data
+- tags (optional)           -- Array of tags (as strings)
+- esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 
 Sample Request
 
 ```json
 {
-    "recipient_address": "customer@example.com"
+    "recipient": {
+    "address": "customer@example.com"
+    }
 }
 ```
 
@@ -21,11 +33,35 @@ Sample Request with data
 
 ```json
 {
-    "recipient_address": "customer@example.com",
-    "email_data": {
-        "first_name": "Joe",
-        "last_name": "Bob"
-    }
+  "recipient": {
+    "name": "John",
+    "address": "user@email.com"
+  },
+  "email_data": { "amount": "$12.00" },
+
+  "cc": [
+    {"address": "cc_one@email.com"},
+    {"address": "cc_two@email.com"}
+  ],
+
+  "bcc": [
+    {"address": "bcc_one@email.com"},
+    {"address": "bcc_two@email.com"}
+  ],
+
+  "sender": {
+    "name": "Company",
+    "address": "company@company.com",
+    "reply_to": "info@company.com"
+  },
+
+  "tags": [
+    "tag1",
+    "tag2",
+    "tag3"
+  ],
+
+  "esp_account": "esp_1a2b3c4d5e"
 }
 ```
 

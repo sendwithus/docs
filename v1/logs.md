@@ -18,24 +18,24 @@ Params:
 - created_lt (optional) -- Return logs created strictly before the given UTC timestamp.
 - created_lte (optional) -- Return logs created on or before the given UTC timestamp.
 
-Sample Repsonse:
+Sample Response:
 
 ```json
-        [
-            {
-                "object": "log",
-                "id": "log_asdf1234qwerty",
-                "created": 1234567890,
-                "recipient_name": "Brad",
-                "recipient_address": "brad@email.com",
-                "status": "opened",
-                "message": "SendGrid: Message has been opened",
-                "email_id": "as8dfjha8dap",
-                "email_name": "Order Confirmation",
-                "email_version": "Version A",
-                "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
-            }
-        ]
+[
+    {
+        "object": "log",
+        "id": "log_asdf1234qwerty",
+        "created": 1234567890,
+        "recipient_name": "Brad",
+        "recipient_address": "brad@email.com",
+        "status": "opened",
+        "message": "SendGrid: Message has been opened",
+        "email_id": "as8dfjha8dap",
+        "email_name": "Order Confirmation",
+        "email_version": "Version A",
+        "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
+    }
+]
 ```
 
 Possible log.status values:
@@ -70,22 +70,22 @@ Params:
 
 - log_id -- String `log_id` of the Log to retrieve.
 
-Sample Repsonse:
+Sample Response:
 
 ```json
-        {
-            "object": "log",
-            "id": "log_asdf1234qwerty",
-            "created": 1234567890,
-            "recipient_name": "Brad",
-            "recipient_address": "brad@email.com",
-            "status": "opened",
-            "message": "SendGrid: Message has been opened",
-            "email_id": "as8dfjha8dap",
-            "email_name": "Order Confirmation",
-            "email_version": "Version A",
-            "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
-        }
+{
+    "object": "log",
+    "id": "log_asdf1234qwerty",
+    "created": 1234567890,
+    "recipient_name": "Brad",
+    "recipient_address": "brad@email.com",
+    "status": "opened",
+    "message": "SendGrid: Message has been opened",
+    "email_id": "as8dfjha8dap",
+    "email_name": "Order Confirmation",
+    "email_version": "Version A",
+    "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
+}
 ```
 
 ## Retrieve events for a specific log_id.
@@ -101,44 +101,44 @@ Params:
 Sample Repsonse:
 
 ```json
-        [
-            {
-                "object": "event",
-                "created": 1234567890,
-                "type": "requested",
-                "message": "requested"
-            },
-            {
-                "object": "event",
-                "created": 1234567891,
-                "type": "queued",
-                "message": "email queued"
-            },
-            {
-                "object": "event",
-                "created": 1234567892,
-                "type": "failed_to_send",
-                "message": "email failed to send, will retry"
-            },
-            {
-                "object": "event",
-                "created": 1234567893,
-                "type": "sent",
-                "message": "email sent through SendGrid"
-            },
-            {
-                "object": "event",
-                "created": 1234567894,
-                "type": "opened",
-                "message": "SendGrid: Email has been opened"
-            },
-            {
-                "object": "event",
-                "created": 1234567895,
-                "type": "clicked",
-                "message": "SendGrid: Link in email has been clicked"
-            }
-        ]
+[
+    {
+        "object": "event",
+        "created": 1234567890,
+        "type": "requested",
+        "message": "requested"
+    },
+    {
+        "object": "event",
+        "created": 1234567891,
+        "type": "queued",
+        "message": "email queued"
+    },
+    {
+        "object": "event",
+        "created": 1234567892,
+        "type": "failed_to_send",
+        "message": "email failed to send, will retry"
+    },
+    {
+        "object": "event",
+        "created": 1234567893,
+        "type": "sent",
+        "message": "email sent through SendGrid"
+    },
+    {
+        "object": "event",
+        "created": 1234567894,
+        "type": "opened",
+        "message": "SendGrid: Email has been opened"
+    },
+    {
+        "object": "event",
+        "created": 1234567895,
+        "type": "clicked",
+        "message": "SendGrid: Link in email has been clicked"
+    }
+]
 ```
 
 
@@ -152,21 +152,21 @@ Resend a specific email by `log_id`.
 Sample Request:
 
 ```json
-        {
-            "log_id": "log_asdf123456qwerty"
-        }
+{
+    "log_id": "log_asdf123456qwerty"
+}
 ```
 
 Sample Repsonse:
 
 ```json
-        {
-            "success": true,
-            "status": "OK",
-            "log_id": "log_asdf123456qwerty",
-            "email": {
-                "name": "Order Confirmation",
-                "version_name": "Version A"
-            }
-        }
+{
+    "success": true,
+    "status": "OK",
+    "log_id": "log_asdf123456qwerty",
+    "email": {
+        "name": "Order Confirmation",
+        "version_name": "Version A"
+    }
+}
 ```

@@ -34,18 +34,18 @@ GET `/templates/(:template_id)`
 Sample Response:
 
 ```json
-    {
-        "id": "Template ID",
-        "name": "Template Name",
-        "created": "created unix timestamp",
-        "versions": [
-            {
-                "name": "Version Name",
-                "id": "Version ID"
-            }
-        ],
-        "tags": ["tag1", "tag2"]
-    }
+{
+    "id": "Template ID",
+    "name": "Template Name",
+    "created": "created unix timestamp",
+    "versions": [
+        {
+            "name": "Version Name",
+            "id": "Version ID"
+        }
+    ],
+    "tags": ["tag1", "tag2"]
+}
 ```
 
 ## Get a specific version (with HTML/text)
@@ -55,15 +55,15 @@ GET `/templates/(:template_id)/versions/(:version_id)`
 Sample Response:
 
 ```json
-    {
-        "id": "Template ID",
-        "published": true,
-        "created": "created unix timestamp",
-        "name": "Name of version",
-        "html": "(raw template html)",
-        "text": "(raw template text)",
-        "subject": "(version subject)"
-    }
+{
+    "id": "Template ID",
+    "published": true,
+    "created": "created unix timestamp",
+    "name": "Name of version",
+    "html": "(raw template html)",
+    "text": "(raw template text)",
+    "subject": "(version subject)"
+}
 ```
 
 ## Updating a Template Version
@@ -81,6 +81,30 @@ Params:
 
 *NOTE* -- This will replace the current version of the specified template
 
+Sample Request:
+
+```
+{
+    "html": "<html><head></head><body><h1>UPDATE</h1></body></html>",
+    "name": "New Version",
+    "subject": "edited!",
+    "text": "sometext"
+}
+```
+
+Sample Response:
+
+```json
+{
+    "created": 1408394344,
+    "html": "<html><head></head><body><h1>UPDATE</h1></body></html>",
+    "id": "ver_RjEBErY6eXBPpgYt269iJU",
+    "name": "New Version",
+    "published": true,
+    "subject": "edited!",
+    "text": "sometext"
+}
+```
 ## Creating a New Template
 
 POST `/templates`
@@ -94,6 +118,26 @@ Params:
 
 *NOTE* -- At least one of html or text must be specified
 
+Sample Request:
+
+```json
+{
+    "html": "<html><head></head><body><h1>NEW TEMPLATE</h1></body></html>",
+    "name": "New Template",
+    "subject": "This is a new template!",
+    "text": "some text"
+}
+```
+
+Sample Response:
+
+```json
+{
+    "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
+    "name": "A New Template"
+}
+```
+
 ## Creating a New Template Version
 
 POST `/templates/(:template_id)/versions`
@@ -106,3 +150,28 @@ Params:
 - text (optional) -- The Text body of the template
 
 *NOTE* -- At least one of html or text must be specified
+
+Sample Request
+
+```json
+{
+    "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
+    "name": "New Template Version",
+    "subject": "New Version!",
+    "text": "some text"
+}
+```
+
+Sample Response
+
+```json
+{
+    "created": 1410808743,
+    "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
+    "id": "ver_s6a68dJuz6Rn8dypq4j4Qo",
+    "name": "New Template Version",
+    "published": false,
+    "subject": "New Version!",
+    "text": "some text"
+}
+```

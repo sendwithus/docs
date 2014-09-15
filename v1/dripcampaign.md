@@ -6,6 +6,7 @@ This will add the specified customer to the first step of the specified drip cam
 POST `/drip_campaigns/(drip_campaign_id)/activate`
 
 Params:
+
 - recipient
    - address -- The recipient's email address
    - name (optional) -- The recipient's name

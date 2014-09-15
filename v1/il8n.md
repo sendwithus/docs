@@ -33,6 +33,33 @@ curl \
 https://api.sendwithus.com/api/v1/i18n/pot/international
 ```
 
+Sample Response:
+
+```
+    # Translations template for PROJECT.
+    # Copyright (C) 2014 ORGANIZATION
+    # This file is distributed under the same license as the PROJECT project.
+    # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
+    #
+    #, fuzzy
+    msgid ""
+    msgstr ""
+    "Project-Id-Version: PROJECT VERSION\n"
+    "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+    "POT-Creation-Date: 2014-09-15 19:39+0000\n"
+    "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+    "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+    "Language-Team: LANGUAGE <LL@li.org>\n"
+    "MIME-Version: 1.0\n"
+    "Content-Type: text/plain; charset=utf-8\n"
+    "Content-Transfer-Encoding: 8bit\n"
+    "Generated-By: Babel 1.3\n"
+    
+    #, python-format
+    msgid "Welcome to sendwithus, %(first_name)s!"
+    msgstr ""
+```
+
 ## Post translated strings (`.po`)
 
 Use this endpoint to `POST` a `.zip` file containing `.po` files, each `.po` file named to match the locale it is intended for. See examples below for specifics.
@@ -68,6 +95,12 @@ curl \
 https://api.sendwithus.com/api/v1/i18n/po/international
 ```
 
+
+Sample Response:
+
+```json
+    {}
+```
 ## Sending translated templates
 
 At send time, Sendwithus uses the `version_name` parameter in the `send` API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.

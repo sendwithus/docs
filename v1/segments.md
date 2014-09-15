@@ -33,6 +33,26 @@ Params:
 - email_id       -- ID of the template to send
 - email_data (optional)       -- Key/Value data to merge into template
 
+Sample Request
+
+```json
+{
+    "email_id": "tem_ACdWZKZf4CtZNPM27WAdf6",
+    "email_data": {
+        "name": "John Doe"
+    }
+}
+```
+
+Sample Response
+
+```json
+{
+    "status": "OK",
+    "success": true
+}
+```
+
 ## Retrieve Customers in a Segment _(Beta Only)_
         
 GET `/segments/(:segment_id)/run`

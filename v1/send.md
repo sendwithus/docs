@@ -78,6 +78,20 @@ Sample Request:
 }
 ```
 
+Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK",
+    "receipt_id": unqiue_receipt_id,
+    "email": {
+        "name": "NAME OF EMAIL",
+        "version_name": "NAME OF VERSION"
+    }
+}
+```
+
 Sample il8n Request:
 
 ```json

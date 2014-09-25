@@ -11,7 +11,7 @@ POST `/render`
 
 Params:
 
-- template_id     -- Unique ID obtained from /emails
+- template_id     -- Unique ID obtained from /templates
 - template_data   -- Object containing email template data
 
 Sample Request:

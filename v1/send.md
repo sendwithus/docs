@@ -8,7 +8,7 @@ POST `/send`
 
 Params:
 
-- email_id       -- Unique ID obtained from /emails
+- email_id       -- Unique ID obtained from /templates
 - recipient
    - address -- The recipient's email address
    - name (optional) -- The recipient's name

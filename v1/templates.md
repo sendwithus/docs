@@ -6,7 +6,7 @@
 
 GET `/templates`
 
-Returns a JSON list of all templates in your account
+Get a list of all templates
 
 Sample Response:
 
@@ -35,17 +35,46 @@ Sample Response:
 
 ```json
 {
-    "id": "Template ID",
+    "id": "tem_jluyjluyjlyu",
     "name": "Template Name",
-    "created": "created unix timestamp",
+    "created": 1411606421,
     "versions": [
         {
             "name": "Version Name",
-            "id": "Version ID"
+            "id": "ver_arstneiotsra"
         }
     ],
     "tags": ["tag1", "tag2"]
 }
+```
+
+## Get a list of template versions (with HTML/text)
+
+GET `/templates/(:template_id)/versions`
+
+Sample Response:
+
+```json
+[
+    {
+        "id": "tem_arstarstarst",
+        "published": true,
+        "created": 1411606421,
+        "name": "Version 1",
+        "html": "<html>...</html>",
+        "text": "Hello World",
+        "subject": "My Subject"
+    },
+    {
+        "id": "tem_qwfpqwfpqwfp",
+        "published": false,
+        "created": 1411606706,
+        "name": "Version 2",
+        "html": "<html>...</html>",
+        "text": "Hello World Again",
+        "subject": "My Subject Again"
+    }
+]
 ```
 
 ## Get a specific version (with HTML/text)
@@ -56,17 +85,17 @@ Sample Response:
 
 ```json
 {
-    "id": "Template ID",
+    "id": "ver_arstarstarst",
     "published": true,
-    "created": "created unix timestamp",
-    "name": "Name of version",
-    "html": "(raw template html)",
-    "text": "(raw template text)",
-    "subject": "(version subject)"
+    "created": 1411606706,
+    "name": "Version Name",
+    "html": "<html>...</html>",
+    "text": "Hello World",
+    "subject": "My Subject"
 }
 ```
 
-## Updating a Template Version
+## Update a Template Version
 
 PUT `/templates/(:template_id)/versions/(:version_id)`
 
@@ -105,7 +134,7 @@ Sample Response:
     "text": "sometext"
 }
 ```
-## Creating a New Template
+## Create a New Template
 
 POST `/templates`
 
@@ -138,7 +167,7 @@ Sample Response:
 }
 ```
 
-## Creating a New Template Version
+## Create a New Template Version
 
 POST `/templates/(:template_id)/versions`
 

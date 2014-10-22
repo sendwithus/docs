@@ -16,6 +16,8 @@
 
 ### [Templates](../master/v1/templates.md)
 
+### [Snippets](../master/v1/snippets.md)
+
 ### [Internationalization (il8n)](../master/v1/il8n.md)
 
 

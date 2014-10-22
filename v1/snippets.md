@@ -16,6 +16,7 @@ Sample Response:
 [
     {
         "object": "snippet",
+        "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
         "created": 5858858124 /* unix timestamp */
@@ -37,6 +38,7 @@ Sample Response:
 ```json
 {
     "object": "snippet",
+    "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
     "name": "My First Snippet",
     "body": "<h1>Welcome!</h1>",
     "created": 5858858124 /* unix timestamp */
@@ -69,6 +71,7 @@ Sample Response:
     "status": "OK",
     "snippet": {
         "object": "snippet",
+        "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
         "created": 5858858124 /* unix timestamp */
@@ -102,6 +105,7 @@ Sample Response:
     "status": "OK",
     "snippet": {
         "object": "snippet",
+        "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
         "created": 5858858124 /* unix timestamp */

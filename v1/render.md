@@ -11,15 +11,17 @@ POST `/render`
 
 Params:
 
-- template_id     -- Unique ID obtained from /templates
-- template_data   -- Object containing email template data
+- template_id           -- Unique ID obtained from /templates
+- template_data         -- Object containing email template data
+- version_id (optional) -- Unique ID obtained from /templates/(:template_id)/versions
 
 Sample Request:
 
 ```json
 {
   "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
-  "template_data": { "amount": "$12.00" }
+  "template_data": { "amount": "$12.00" },
+  "version_id": "ver_r4nd0ml3tt3rsv15h4l0l"
 }
 ```
 
@@ -30,7 +32,7 @@ Sample Response:
     "success": true,
     "status": "OK",
     "template": {
-        "id": "Template ID",
+        "id": "ver_r4nd0ml3tt3rsv15h4l0l",
         "name": "Template name",
         "version_name": "Template version name"
     },

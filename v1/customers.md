@@ -8,12 +8,12 @@ This call will perform an update if a customer already exists with the specified
 
 POST `/customers`
 
-Params:
+#### Params:
 
 - email       -- Email (key) of the customer
 - data (optional)       -- Key/Value data for customer profile
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -26,7 +26,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -46,11 +46,11 @@ Sample Response:
 
 DELETE `/customers/(:email)`
 
-Params:
+#### Params:
 
 *no params*
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {

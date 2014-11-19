@@ -9,13 +9,13 @@ finalized and is subject to change.**
 
 GET `/esp_accounts`
 
-Params:
+#### Params:
 
 - esp_type (optional) -- Filter response to only return ESP accounts of a certain type
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [
@@ -29,7 +29,7 @@ Sample Response:
 ]
 ```
 
-Possible esp_account.esp_type values:
+#### Possible esp_account.esp_type values:
 
 - **sendgrid**
 - **mailgun**
@@ -41,12 +41,12 @@ Possible esp_account.esp_type values:
 
 POST `/esp_accounts`
 
-Params:
+#### Params:
 
 - send_test_email (optional) -- Send a test email on successful configuration
                                 to the owner(s) of the sendwithus account
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -59,7 +59,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -80,7 +80,7 @@ Sample Response:
 
 PUT `/esp_accounts/set_default`
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -88,7 +88,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {

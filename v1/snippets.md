@@ -6,11 +6,11 @@
 
 GET `/snippets`
 
-Params:
+#### Params:
 
 *no params*
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [
@@ -29,11 +29,11 @@ Sample Response:
 
 GET `/snippets/(:id)`
 
-Params:
+#### Params:
 
 *no params*
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -49,12 +49,12 @@ Sample Response:
 
 POST `/snippets`
 
-Params:
+#### Params:
 
 - name       -- Name of the snippet
 - body       -- Contents for the snippet
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -63,7 +63,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -83,12 +83,12 @@ Sample Response:
 
 PUT `/snippets/(:id)`
 
-Params:
+#### Params:
 
 - name       -- Name of the snippet
 - body       -- Contents for the snippet
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -97,7 +97,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -117,11 +117,11 @@ Sample Response:
 
 DELETE `/snippets/(:id)`
 
-Params:
+#### Params:
 
 *no params*
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {

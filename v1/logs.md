@@ -9,7 +9,7 @@ GET `/logs`
 
 Retrieve a list of available logs. Logs are sorted in reverse chronological order.
 
-Params:
+#### Params:
 
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
@@ -18,7 +18,7 @@ Params:
 - created_lt (optional) -- Return logs created strictly before the given UTC timestamp.
 - created_lte (optional) -- Return logs created on or before the given UTC timestamp.
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [
@@ -38,7 +38,7 @@ Sample Response:
 ]
 ```
 
-Possible log.status values:
+#### Possible log.status values:
 
 - **requested**: sendwithus API request received
 - **triggered**: email triggered by internal event, ie**: drip campaign**
@@ -66,11 +66,11 @@ GET `/logs/(:log_id)`
 
 A single Log object with all its details
 
-Params:
+#### Params:
 
 - log_id -- String `log_id` of the Log to retrieve.
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -94,11 +94,11 @@ GET `/logs/(:log_id)/events`
 
 Return a list of all events associated with a given Log.
 
-Params:
+#### Params:
 
 - log_id (required) -- String `log_id` of the Log to retrieve events for.
 
-Sample Repsonse:
+#### Sample Repsonse:
 
 ```json
 [
@@ -149,7 +149,7 @@ POST `/resend`
 Resend a specific email by `log_id`.
 
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -157,7 +157,7 @@ Sample Request:
 }
 ```
 
-Sample Repsonse:
+#### Sample Repsonse:
 
 ```json
 {

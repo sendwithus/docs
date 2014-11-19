@@ -18,7 +18,7 @@ This call will fetch a `.pot` translation package for all templates that have be
 
 GET `/il8n/pot/(:tag)`
 
-Params:
+#### Params:
 
 - tag       -- String will return a `.pot` only for templates that have the corresponding tag. Tags are set in the [dashboard](https://www.sendwithus.com/#/emails)
 
@@ -33,13 +33,13 @@ curl \
 https://api.sendwithus.com/api/v1/i18n/pot/international
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```
     #, fuzzy
     msgid ""
     msgstr ""
-    
+
     #, python-format
     msgid "Welcome to sendwithus, %(first_name)s!"
     msgstr ""
@@ -57,11 +57,11 @@ Use this endpoint to `POST` a `.zip` file containing `.po` files, each `.po` fil
 
 POST `/il8n/po/(:tag)`
 
-Params:
+#### Params:
 
 - tag       -- String of tag; templates with that tag applied will have a version generated for each `.po` file in the `.zip` file
 
-Request Body:
+#### Request Body:
 
 - `.zip` file
 
@@ -87,7 +87,7 @@ https://api.sendwithus.com/api/v1/i18n/po/international
 ```
 
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {}

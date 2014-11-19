@@ -11,14 +11,14 @@ to be made in a single HTTP request.
 POST `/batch`
 
 
-Params:
+#### Params:
 
 - path -- API path to call
 - method -- HTTP method to use
-- body -- HTTP request body 
+- body -- HTTP request body
 
 
-Sample Request:
+#### Sample Request:
 
 ```json
 [{
@@ -43,7 +43,7 @@ Sample Request:
 ```
 
 
-Sample Response:
+#### Sample Response:
 
 
 *NOTE* -- Responses are returned in the same order as requested.

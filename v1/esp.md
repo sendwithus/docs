@@ -11,7 +11,7 @@ GET `/esp_accounts`
 
 #### Params:
 
-- esp_type (optional) -- Filter response to only return ESP accounts of a certain type
+- esp\_type (optional) -- Filter response to only return ESP accounts of a certain type
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
 
@@ -43,7 +43,7 @@ POST `/esp_accounts`
 
 #### Params:
 
-- send_test_email (optional) -- Send a test email on successful configuration
+- send\_test\_email (optional) -- Send a test email on successful configuration
                                 to the owner(s) of the sendwithus account
 
 #### Sample Request:

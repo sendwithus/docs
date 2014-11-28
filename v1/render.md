@@ -13,8 +13,8 @@ POST `/render`
 
 - template_id           -- Unique ID obtained from /templates
 - template_data         -- Object containing email template data
-- version_id (optional) -- Unique ID obtained from /templates/(:template_id)/versions
-- version_name (optional) -- Version name that you want rendered (provide either a version_name or a version_id, not both)
+- version\_id (optional) -- Unique ID obtained from /templates/(:template_id)/versions
+- version\_name (optional) -- Version name that you want rendered (provide either a version_name or a version_id, not both)
 
 #### Sample Request:
 

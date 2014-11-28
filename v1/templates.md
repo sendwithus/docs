@@ -180,7 +180,7 @@ POST `/templates/(:template_id)/versions`
 
 *NOTE* -- At least one of html or text must be specified
 
-#### Sample Request
+#### Sample Request:
 
 ```json
 {
@@ -191,7 +191,7 @@ POST `/templates/(:template_id)/versions`
 }
 ```
 
-#### Sample Response
+#### Sample Response:
 
 ```json
 {

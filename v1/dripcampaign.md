@@ -85,7 +85,7 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
 POST `/drip_campaigns/(drip_campaign_id)/deactivate`
 
 #### Params:
-- recipient_address -- Email address of the customer you would like to remove from the specified campaign.
+- recipient\_address -- Email address of the customer you would like to remove from the specified campaign.
 
 #### Sample Request
 
@@ -114,7 +114,7 @@ POST `/drip_campaigns/(drip_campaign_id)/deactivate`
 POST `/drip_campaigns/deactivate`
 
 #### Params:
-- recipient_address -- Email address of the customer you would like to remove from all drip campaigns.
+- recipient\_address -- Email address of the customer you would like to remove from all drip campaigns.
 
 #### Sample Request
 

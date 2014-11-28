@@ -20,7 +20,7 @@ POST `/customers`
 	"email": "matt@sendwithus.com",
 	"data": {
 		"first_name": "Matt",
-		"city": "San Francisco",
+		"city": "San Francisco"
 	}
 }
 ```

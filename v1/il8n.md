@@ -96,4 +96,4 @@ https://api.sendwithus.com/api/v1/i18n/po/international
 
 At send time, Sendwithus uses the `version_name` parameter in the `send` API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.
 
-For an example sending with a translated template, please see the [send api](../master/v1/send.md) documentation.
+For an example sending with a translated template, please see the [send api](https://www.sendwithus.com/docs/api#send) documentation.

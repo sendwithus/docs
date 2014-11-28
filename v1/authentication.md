@@ -1,6 +1,6 @@
 # Authentication
 
-The Sendwithus API uses [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication). All requests require you to authenticate using a Sendwithus API Key as the username with an empty string as the password.
+The sendwithus API uses [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication). All requests require you to authenticate using a sendwithus API Key as the username with an empty string as the password.
 
 For example:
 `curl -u live_1234qwerzxcv7890: https://api.sendwithus.com/api/v1`

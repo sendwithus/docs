@@ -88,7 +88,7 @@ A single Log object with all its details
 }
 ```
 
-## Retrieve events for a specific log_id.
+## Retrieve events for a specific log\_id.
 
 GET `/logs/(:log_id)/events`
 
@@ -96,9 +96,9 @@ Return a list of all events associated with a given Log.
 
 #### Params:
 
-- log_id (required) -- String `log_id` of the Log to retrieve events for.
+- log\_id (required) -- String `log_id` of the Log to retrieve events for.
 
-#### Sample Repsonse:
+#### Sample Response:
 
 ```json
 [
@@ -157,7 +157,7 @@ Resend a specific email by `log_id`.
 }
 ```
 
-#### Sample Repsonse:
+#### Sample Response:
 
 ```json
 {

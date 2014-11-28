@@ -21,7 +21,6 @@ POST `/customers`
 	"data": {
 		"first_name": "Matt",
 		"city": "San Francisco",
-		"nested_list": [1,2,3]
 	}
 }
 ```

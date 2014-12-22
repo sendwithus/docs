@@ -1,4 +1,4 @@
-# Drip Campaign API 2.0
+# Drip Campaigns API
 
 ## Activate campaign for a customer
 This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.

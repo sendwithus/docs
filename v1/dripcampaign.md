@@ -5,7 +5,7 @@ This will add the specified customer to the first step of the specified drip cam
 
 POST `/drip_campaigns/(drip_campaign_id)/activate`
 
-Params:
+#### Params:
 
 - recipient
    - address -- The recipient's email address
@@ -20,7 +20,7 @@ Params:
 - tags (optional)           -- Array of tags (as strings)
 - esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 
-Sample Request
+#### Sample Request
 
 ```json
 {
@@ -30,7 +30,7 @@ Sample Request
 }
 ```
 
-Sample Request with data
+#### Sample Request with data
 
 ```json
 {
@@ -66,7 +66,7 @@ Sample Request with data
 }
 ```
 
-Sample Response
+#### Sample Response
 
 ```json
 {
@@ -84,10 +84,10 @@ Sample Response
 ## Deactivate a campaign for customer
 POST `/drip_campaigns/(drip_campaign_id)/deactivate`
 
-Params:
-- recipient_address -- Email address of the customer you would like to remove from the specified campaign.
+#### Params:
+- recipient\_address -- Email address of the customer you would like to remove from the specified campaign.
 
-Sample Request
+#### Sample Request
 
 ```json
 {
@@ -95,7 +95,7 @@ Sample Request
 }
 ```
 
-Sample Response
+#### Sample Response
 
 ```json
 {
@@ -113,10 +113,10 @@ Sample Response
 ## Deactivate a customer from all campaigns
 POST `/drip_campaigns/deactivate`
 
-Params:
-- recipient_address -- Email address of the customer you would like to remove from all drip campaigns.
+#### Params:
+- recipient\_address -- Email address of the customer you would like to remove from all drip campaigns.
 
-Sample Request
+#### Sample Request
 
 ```json
 {
@@ -124,7 +124,7 @@ Sample Request
 }
 ```
 
-Sample Response
+#### Sample Response
 
 ```json
 {
@@ -138,7 +138,7 @@ Sample Response
 ## Get a list of campaigns
 GET `/drip_campaigns`
 
-Sample Response
+#### Sample Response
 
 ```json
 [
@@ -184,7 +184,7 @@ Sample Response
 ## Get the details on a specific drip campaign
 GET `/drip_campaigns/(drip_campaign_id)`
 
-Sample Response
+#### Sample Response
 
 ```json
 {

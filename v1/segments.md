@@ -6,7 +6,7 @@
 
 GET `/segments`
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [
@@ -28,12 +28,12 @@ Sample Response:
 
 POST `/segments/(:segment_id)/send`
 
-Params:
+#### Params:
 
 - email_id       -- ID of the template to send
 - email_data (optional)       -- Key/Value data to merge into template
 
-Sample Request
+#### Sample Request
 
 ```json
 {
@@ -44,7 +44,7 @@ Sample Request
 }
 ```
 
-Sample Response
+#### Sample Response
 
 ```json
 {
@@ -54,10 +54,10 @@ Sample Response
 ```
 
 ## Retrieve Customers in a Segment _(Beta Only)_
-        
+
 GET `/segments/(:segment_id)/run`
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [

@@ -9,14 +9,14 @@ The `render` api allows you to render a template with data, using the exact same
 
 POST `/render`
 
-Params:
+#### Params:
 
 - template_id           -- Unique ID obtained from /templates
 - template_data         -- Object containing email template data
-- version_id (optional) -- Unique ID obtained from /templates/(:template_id)/versions
-- version_name (optional) -- Version name that you want rendered (provide either a version_name or a version_id, not both)
+- version\_id (optional) -- Unique ID obtained from /templates/(:template_id)/versions
+- version\_name (optional) -- Version name that you want rendered (provide either a version_name or a version_id, not both)
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -26,7 +26,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {

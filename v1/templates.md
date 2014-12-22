@@ -8,7 +8,7 @@ GET `/templates`
 
 Get a list of all templates
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [
@@ -31,7 +31,7 @@ Sample Response:
 
 GET `/templates/(:template_id)`
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -52,7 +52,7 @@ Sample Response:
 
 GET `/templates/(:template_id)/versions`
 
-Sample Response:
+#### Sample Response:
 
 ```json
 [
@@ -81,7 +81,7 @@ Sample Response:
 
 GET `/templates/(:template_id)/versions/(:version_id)`
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -99,7 +99,7 @@ Sample Response:
 
 PUT `/templates/(:template_id)/versions/(:version_id)`
 
-Params:
+#### Params:
 
 - name       -- The name of the template
 - subject    -- The subject line of the template
@@ -110,7 +110,7 @@ Params:
 
 *NOTE* -- This will replace the current version of the specified template
 
-Sample Request:
+#### Sample Request:
 
 ```
 {
@@ -121,7 +121,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -138,7 +138,7 @@ Sample Response:
 
 POST `/templates`
 
-Params:
+#### Params:
 
 - name       -- The name of the template
 - subject    -- The subject line of the template
@@ -147,7 +147,7 @@ Params:
 
 *NOTE* -- At least one of html or text must be specified
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -158,7 +158,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -171,7 +171,7 @@ Sample Response:
 
 POST `/templates/(:template_id)/versions`
 
-Params:
+#### Params:
 
 - name       -- The name of the template
 - subject    -- The subject line of the template
@@ -180,7 +180,7 @@ Params:
 
 *NOTE* -- At least one of html or text must be specified
 
-Sample Request
+#### Sample Request:
 
 ```json
 {
@@ -191,7 +191,7 @@ Sample Request
 }
 ```
 
-Sample Response
+#### Sample Response:
 
 ```json
 {

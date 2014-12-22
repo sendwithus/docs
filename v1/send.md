@@ -6,7 +6,7 @@
 
 POST `/send`
 
-Params:
+#### Params:
 
 - email_id       -- Unique ID obtained from /templates
 - recipient
@@ -25,7 +25,7 @@ Params:
 - esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 - version_name (optional) -- Name of the template version to send (overrides A/B tests and test api keys)
 
-Sample Request:
+#### Sample Request:
 
 ```json
 {
@@ -78,7 +78,7 @@ Sample Request:
 }
 ```
 
-Sample Response:
+#### Sample Response:
 
 ```json
 {
@@ -92,7 +92,7 @@ Sample Response:
 }
 ```
 
-Sample il8n Request:
+#### Sample il8n Request:
 
 ```json
 {

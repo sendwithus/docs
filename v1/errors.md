@@ -2,7 +2,7 @@
 
 Any API request will receive a standard HTTP response code.
 
-Response Ranges:
+#### Response Ranges:
 
 - 2xx -- Successful Request
 - 4xx -- Failed Request (Client error)

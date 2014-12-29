@@ -111,6 +111,7 @@ POST `/drip_campaigns/(drip_campaign_id)/deactivate`
 ```
 
 ## Deactivate a customer from all campaigns
+If a user unsubscribes, changes email addresses, or cancels, call this endpoint to remove the specified email address from all active drip campaigns.
 POST `/drip_campaigns/deactivate`
 
 #### Params:

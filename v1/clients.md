@@ -14,4 +14,5 @@ All of our API Client Libraries are open source and available in our [Github Acc
 
 ### Unofficial, Third-party API Clients
 - [Go](https://github.com/elbuo8/sendwithus_go) [(elbuo8)](http://www.yamilasusta.com/)
+- [C#](https://github.com/Mimeo/SendWithUs.Client) [(mimeo)](https://github.com/Mimeo)
 - [ColdFusion](https://github.com/philcruz/SendWithUsCfc) [(philcruz)](https://github.com/philcruz)

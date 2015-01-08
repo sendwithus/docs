@@ -2,6 +2,30 @@
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
+## Get a Specific Customer
+
+This call will retrieve a customer by a specified email.
+
+GET `/customers/matt@sendwithus.com`
+
+#### Sample Response:
+
+```json
+{
+	"success": true,
+    "status": "OK",
+    "customer": {
+		"object": "customer",
+        "email": "customer@example.com",
+        "data": {
+            "first_name": "Matt",
+            "city": "San Francisco"
+        },
+        "created": 5858858124
+    }
+}
+```
+
 ## Creating/Updating a New Customer
 
 This call will perform an update if a customer already exists with the specified email.
@@ -34,8 +58,11 @@ POST `/customers`
     "customer": {
 		"object": "customer",
         "email": "customer@example.com",
-        "data": {...},
-        "created": 5858858124 /* unix timestamp */
+        "data": {
+            "first_name": "Matt",
+            "city": "San Francisco"
+        },
+        "created": 5858858124
     }
 }
 ```
@@ -51,7 +78,7 @@ DELETE `/customers/(:email)`
 
 #### Sample Response:
 
-```json
+```javascript
 {
 	"success": true,
     "status": "OK"

@@ -20,6 +20,7 @@ POST `/send`
    - name       -- The sender's name
 - email_data    -- Object containing email template data
 - tags (optional)           -- Array of tags (as strings)
+- headers (options)         -- Object contain SMTP headers to be included with the email
 - inline (optional)         -- Inline attachment object (see example)
 - files (optional)      -- List of file attachments (combined maximum 7MB, see example)
 - esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
@@ -57,6 +58,11 @@ POST `/send`
     "tag2",
     "tag3"
   ],
+
+  "headers": {
+    "X-HEADER-ONE": "header-value",
+    "Return-Path": "sender@yourcompany.com"
+  },
 
   "inline": {
     "id": "cat.png",

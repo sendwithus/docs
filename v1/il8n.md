@@ -59,7 +59,7 @@ POST `/il8n/po/(:tag)`
 
 #### Params:
 
-- tag       -- String of tag; templates with that tag applied will have a version generated for each `.po` file in the `.zip` file
+- tag       -- String of tag; templates with that tag applied will have a locale generated for each `.po` file in the `.zip` file
 
 #### Request Body:
 
@@ -94,6 +94,6 @@ https://api.sendwithus.com/api/v1/i18n/po/international
 ```
 ## Sending translated templates
 
-At send time, Sendwithus uses the `version_name` parameter in the `send` API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.
+At send time, Sendwithus uses the `locale` parameter in the Send API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.
 
 For an example sending with a translated template, please see the [send api](https://www.sendwithus.com/docs/api#send) documentation.

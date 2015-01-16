@@ -1,8 +1,8 @@
 # Templates API
 
-*NOTES:*
-- All parameters are mandatory unless otherwise noted.
-- If no locale is specified in the URL, the default local will be used in all cases.
+If no locale is specified in the URL the default locale will be used in all cases.
+
+*NOTE:* - All parameters are mandatory unless otherwise noted.
 
 ## Get a List of Templates
 

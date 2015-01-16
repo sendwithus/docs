@@ -96,7 +96,8 @@ POST `/send`
     "receipt_id": unqiue_receipt_id,
     "email": {
         "name": "NAME OF EMAIL",
-        "version_name": "NAME OF VERSION"
+        "version_name": "NAME OF VERSION",
+        "locale": "en_US"
     }
 }
 ```

@@ -80,6 +80,7 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
         "name": "welcome_campaign"
     },
     "recipient_address": "customer@example.com",
+    "locale": "en_US",
     "message": "Recipient successfully added to drip campaign."
 }
 ```

@@ -37,7 +37,8 @@ POST `/render`
     "template": {
         "id": "ver_r4nd0ml3tt3rsv15h4l0l",
         "name": "Template name",
-        "version_name": "Template version name"
+        "version_name": "Template version name",
+        "locale": "en_US"
     },
     "subject": "RENDERED SUBJECT WITH DATA",
     "html": "RENDERED HTML BODY WITH DATA",

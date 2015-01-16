@@ -8,17 +8,18 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
 #### Params:
 
 - recipient
-   - address -- The recipient's email address
-   - name (optional) -- The recipient's name
-- cc (optional)  -- An array of CC recipients, of the format {"address":"cc@email.com"}
-- bcc (optional) -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
+   - address              -- The recipient's email address
+   - name (optional)      -- The recipient's name
+- cc (optional)           -- An array of CC recipients, of the format {"address":"cc@email.com"}
+- bcc (optional)          -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
 - sender (optional)
-   - address    -- The sender's email address
-   - reply_to   -- The sender's reply-to address
-   - name       -- The sender's name
-- email_data (optional) -- Object containing email template data
-- tags (optional)           -- Array of tags (as strings)
-- esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
+   - address              -- The sender's email address
+   - reply_to             -- The sender's reply-to address
+   - name                 -- The sender's name
+- email_data (optional)   -- Object containing email template data
+- tags (optional)         -- Array of tags (as strings)
+- esp\_account (optional) -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
+- locale (optional)       -- Locale to send emails with
 
 #### Sample Request
 
@@ -61,6 +62,8 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
     "tag2",
     "tag3"
   ],
+
+  "locale": "en_US",
 
   "esp_account": "esp_1a2b3c4d5e"
 }

@@ -1,6 +1,8 @@
 # Templates API
 
-*NOTE* -- All parameters are mandatory unless otherwise noted.
+*NOTES:*
+- All parameters are mandatory unless otherwise noted.
+- If no locale is specified in the URL, the default local will be used in all cases.
 
 ## Get a List of Templates
 
@@ -50,7 +52,7 @@ GET `/templates/(:template_id)`
 
 ## Get a list of template versions (with HTML/text)
 
-GET `/templates/(:template_id)/versions`
+GET `/templates/(:template_id)[/locales/(:locale)]/versions`
 
 #### Sample Response:
 
@@ -79,7 +81,7 @@ GET `/templates/(:template_id)/versions`
 
 ## Get a specific version (with HTML/text)
 
-GET `/templates/(:template_id)/versions/(:version_id)`
+GET `/templates/(:template_id)[/locales/(:locale)]/versions/(:version_id)`
 
 #### Sample Response:
 
@@ -97,7 +99,7 @@ GET `/templates/(:template_id)/versions/(:version_id)`
 
 ## Update a Template Version
 
-PUT `/templates/(:template_id)/versions/(:version_id)`
+PUT `/templates/(:template_id)[/locales/(:locale)]/versions/(:version_id)`
 
 #### Params:
 
@@ -169,7 +171,7 @@ POST `/templates`
 
 ## Create a New Template Version
 
-POST `/templates/(:template_id)/versions`
+POST `/templates/(:template_id)[/locales/(:locale)]/versions`
 
 #### Params:
 

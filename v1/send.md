@@ -8,23 +8,24 @@ POST `/send`
 
 #### Params:
 
-- email_id       -- Unique ID obtained from /templates
+- email_id                  -- Template ID to send
 - recipient
-   - address -- The recipient's email address
-   - name (optional) -- The recipient's name
-- cc        -- An array of CC recipients, of the format {"address":"cc@email.com"}
-- bcc       -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
+   - address                -- The recipient's email address
+   - name (optional)        -- The recipient's name
+- cc                        -- An array of CC recipients, of the format {"address":"cc@email.com"}
+- bcc                       -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
 - sender (optional)
-   - address    -- The sender's email address
-   - reply_to   -- The sender's reply-to address
-   - name       -- The sender's name
-- email_data    -- Object containing email template data
+   - address                -- The sender's email address
+   - reply_to               -- The sender's reply-to address
+   - name                   -- The sender's name
+- email_data                -- Object containing email template data
 - tags (optional)           -- Array of tags (as strings)
 - headers (options)         -- Object contain SMTP headers to be included with the email
 - inline (optional)         -- Inline attachment object (see example)
-- files (optional)      -- List of file attachments (combined maximum 7MB, see example)
-- esp\_account (optional)    -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
-- version_name (optional) -- Name of the template version to send (overrides A/B tests and test api keys)
+- files (optional)          -- List of file attachments (combined maximum 7MB, see example)
+- esp\_account (optional)   -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
+- locale (optional)         -- Template locale to send (ie: en_US)
+- version_name (optional)   -- Name of the template version to send (overrides A/B tests and test api keys)
 
 #### Sample Request:
 
@@ -80,6 +81,8 @@ POST `/send`
     }
   ],
 
+  "locale": "en_US",
+
   "esp_account": "esp_1a2b3c4d5e"
 }
 ```
@@ -111,6 +114,6 @@ POST `/send`
 
   "email_data": { "amount": "$12.00" },
 
-  "version_name": "en-US"
+  "locale": "en-US"
 }
 ```

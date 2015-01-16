@@ -11,10 +11,11 @@ POST `/render`
 
 #### Params:
 
-- template_id           -- Unique ID obtained from /templates
-- template_data         -- Object containing email template data
-- version\_id (optional) -- Unique ID obtained from /templates/(:template_id)/versions
-- version\_name (optional) -- Version name that you want rendered (provide either a version_name or a version_id, not both)
+- template_id               -- Template ID
+- template_data             -- Object containing email template data
+- version\_id (optional)    -- Version ID obtained from /templates/(:template_id)/versions
+- version\_name (optional)  -- Version name that you want rendered (provide either a version_name or a version_id, not both)
+- locale (optional)         -- Template locale to render
 
 #### Sample Request:
 
@@ -22,7 +23,8 @@ POST `/render`
 {
   "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
   "template_data": { "amount": "$12.00" },
-  "version_id": "ver_r4nd0ml3tt3rsv15h4l0l"
+  "version_id": "ver_r4nd0ml3tt3rsv15h4l0l",
+  "locale": "en_US"
 }
 ```
 

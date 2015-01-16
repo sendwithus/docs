@@ -24,7 +24,7 @@ POST `/render`
   "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
   "template_data": { "amount": "$12.00" },
   "version_id": "ver_r4nd0ml3tt3rsv15h4l0l",
-  "locale": "en_US"
+  "locale": "en-US"
 }
 ```
 
@@ -38,7 +38,7 @@ POST `/render`
         "id": "ver_r4nd0ml3tt3rsv15h4l0l",
         "name": "Template name",
         "version_name": "Template version name",
-        "locale": "en_US"
+        "locale": "en-US"
     },
     "subject": "RENDERED SUBJECT WITH DATA",
     "html": "RENDERED HTML BODY WITH DATA",

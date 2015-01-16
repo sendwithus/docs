@@ -24,7 +24,7 @@ POST `/send`
 - inline (optional)         -- Inline attachment object (see example)
 - files (optional)          -- List of file attachments (combined maximum 7MB, see example)
 - esp\_account (optional)   -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
-- locale (optional)         -- Template locale to send (ie: en_US)
+- locale (optional)         -- Template locale to send (ie: en-US)
 - version_name (optional)   -- Name of the template version to send (overrides A/B tests and test api keys)
 
 #### Sample Request:
@@ -81,7 +81,7 @@ POST `/send`
     }
   ],
 
-  "locale": "en_US",
+  "locale": "en-US",
 
   "esp_account": "esp_1a2b3c4d5e"
 }
@@ -97,7 +97,7 @@ POST `/send`
     "email": {
         "name": "NAME OF EMAIL",
         "version_name": "NAME OF VERSION",
-        "locale": "en_US"
+        "locale": "en-US"
     }
 }
 ```

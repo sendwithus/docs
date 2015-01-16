@@ -63,7 +63,7 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
     "tag3"
   ],
 
-  "locale": "en_US",
+  "locale": "en-US",
 
   "esp_account": "esp_1a2b3c4d5e"
 }
@@ -80,7 +80,7 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
         "name": "welcome_campaign"
     },
     "recipient_address": "customer@example.com",
-    "locale": "en_US",
+    "locale": "en-US",
     "message": "Recipient successfully added to drip campaign."
 }
 ```

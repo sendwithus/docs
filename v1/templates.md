@@ -17,11 +17,14 @@ Get a list of all templates
     {
         "id": "Template ID",
         "name": "Template Name",
+        "locale": "en-US"
         "created": "created unix timestamp",
         "versions": [
             {
                 "name": "Version Name",
-                "id": "Version ID"
+                "id": "Version ID",
+                "created": "created unix timestamp",
+                "modified": "modified unix timestamp"
             }
         ],
         "tags": ["tag1", "tag2"]
@@ -31,7 +34,7 @@ Get a list of all templates
 
 ## Get a specific template (all versions)
 
-GET `/templates/(:template_id)`
+GET `/templates/(:template_id)[/locales/(:locale)]`
 
 #### Sample Response:
 
@@ -40,10 +43,13 @@ GET `/templates/(:template_id)`
     "id": "tem_jluyjluyjlyu",
     "name": "Template Name",
     "created": 1411606421,
+    "locale": "en-US"
     "versions": [
         {
             "name": "Version Name",
-            "id": "ver_arstneiotsra"
+            "id": "ver_arstneiotsra",
+            "created": "created unix timestamp",
+            "modified": "modified unix timestamp"
         }
     ],
     "tags": ["tag1", "tag2"]
@@ -60,8 +66,9 @@ GET `/templates/(:template_id)[/locales/(:locale)]/versions`
 [
     {
         "id": "tem_arstarstarst",
-        "published": true,
         "created": 1411606421,
+        "modified": 1411610000,
+        "published": true,
         "name": "Version 1",
         "html": "<html>...</html>",
         "text": "Hello World",
@@ -69,8 +76,9 @@ GET `/templates/(:template_id)[/locales/(:locale)]/versions`
     },
     {
         "id": "tem_qwfpqwfpqwfp",
-        "published": false,
         "created": 1411606706,
+        "modified": 1411610000,
+        "published": false,
         "name": "Version 2",
         "html": "<html>...</html>",
         "text": "Hello World Again",
@@ -88,8 +96,9 @@ GET `/templates/(:template_id)[/locales/(:locale)]/versions/(:version_id)`
 ```json
 {
     "id": "ver_arstarstarst",
-    "published": true,
     "created": 1411606706,
+    "modified": 1411610000,
+    "published": true,
     "name": "Version Name",
     "html": "<html>...</html>",
     "text": "Hello World",
@@ -146,6 +155,7 @@ POST `/templates`
 - subject    -- The subject line of the template
 - html (optional) -- The HTML body of the template
 - text (optional) -- The Text body of the template
+- locale (optional) -- The locale code of the template (defaults to en-US)
 
 *NOTE* -- At least one of html or text must be specified
 
@@ -165,10 +175,44 @@ POST `/templates`
 ```json
 {
     "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
+    "locale": "en-US"
     "name": "A New Template"
 }
 ```
 
+## Add Locale to Existing Template
+
+POST '/templates/(:template_id)'
+
+### Params:
+
+- name       -- The name of the intial version
+- subject    -- The subject line of the template
+- locale     -- The locale code of the new template
+- html (optional) -- The HTML body of the template
+- text (optional) -- The Text body of the template
+
+#### Sample Request:
+
+```json
+{
+    "html": "<html><head></head><body><h1>Nouveau modèle!</h1></body></html>",
+    "name": "Published French Version",
+    "subject": "Ce est un nouveau modèle!",
+    "locale": "fr-FR",
+    "text": "un texte"
+}
+```
+
+#### Sample Response:
+
+```json
+{
+    "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
+    "locale": "fr-FR"
+    "name": "A New Template"
+}
+```
 ## Create a New Template Version
 
 POST `/templates/(:template_id)[/locales/(:locale)]/versions`
@@ -197,12 +241,13 @@ POST `/templates/(:template_id)[/locales/(:locale)]/versions`
 
 ```json
 {
-    "created": 1410808743,
-    "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
     "id": "ver_s6a68dJuz6Rn8dypq4j4Qo",
-    "name": "New Template Version",
+    "created": 1410808743,
+    "modified": 1410808900,
     "published": false,
-    "subject": "New Version!",
-    "text": "some text"
+    "name": "New Template Version",
+    "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
+    "text": "some text",
+    "subject": "New Version!"
 }
 ```

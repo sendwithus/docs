@@ -182,7 +182,7 @@ POST `/templates`
 
 ## Add Localization to Existing Template
 
-POST `/templates/(:template_id)`
+POST `/templates/(:template_id)/locales`
 
 ### Params:
 

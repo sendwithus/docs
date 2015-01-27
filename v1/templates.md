@@ -175,7 +175,7 @@ POST `/templates`
 ```json
 {
     "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
-    "locale": "en-US"
+    "locale": "en-US",
     "name": "A New Template"
 }
 ```
@@ -209,7 +209,7 @@ POST '/templates/(:template_id)'
 ```json
 {
     "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
-    "locale": "fr-FR"
+    "locale": "fr-FR",
     "name": "A New Template"
 }
 ```

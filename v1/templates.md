@@ -17,7 +17,7 @@ Get a list of all templates
     {
         "id": "Template ID",
         "name": "Template Name",
-        "locale": "en-US"
+        "locale": "en-US",
         "created": "created unix timestamp",
         "versions": [
             {
@@ -43,7 +43,7 @@ GET `/templates/(:template_id)[/locales/(:locale)]`
     "id": "tem_jluyjluyjlyu",
     "name": "Template Name",
     "created": 1411606421,
-    "locale": "en-US"
+    "locale": "en-US",
     "versions": [
         {
             "name": "Version Name",

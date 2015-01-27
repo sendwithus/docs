@@ -180,7 +180,7 @@ POST `/templates`
 }
 ```
 
-## Add Locale to Existing Template
+## Add Localization to Existing Template
 
 POST `/templates/(:template_id)`
 

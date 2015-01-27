@@ -182,7 +182,7 @@ POST `/templates`
 
 ## Add Locale to Existing Template
 
-POST '/templates/(:template_id)'
+POST `/templates/(:template_id)`
 
 ### Params:
 

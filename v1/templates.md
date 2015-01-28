@@ -34,7 +34,9 @@ Get a list of all templates
 
 ## Get a specific template (all versions)
 
-GET `/templates/(:template_id)[/locales/(:locale)]`
+Default Locale:  GET `/templates/(:template_id)`
+
+Specific Locale:  GET `/templates/(:template_id)/locales/(:locale)`
 
 #### Sample Response:
 
@@ -58,7 +60,9 @@ GET `/templates/(:template_id)[/locales/(:locale)]`
 
 ## Get a list of template versions (with HTML/text)
 
-GET `/templates/(:template_id)[/locales/(:locale)]/versions`
+Default Locale:  GET `/templates/(:template_id)/versions`
+
+Specific Locale:  GET `/templates/(:template_id)/locales/(:locale)/versions`
 
 #### Sample Response:
 
@@ -89,7 +93,9 @@ GET `/templates/(:template_id)[/locales/(:locale)]/versions`
 
 ## Get a specific version (with HTML/text)
 
-GET `/templates/(:template_id)[/locales/(:locale)]/versions/(:version_id)`
+GET `/templates/(:template_id)/versions/(:version_id)`
+
+GET `/templates/(:template_id)/locales/(:locale)/versions/(:version_id)`
 
 #### Sample Response:
 
@@ -108,7 +114,9 @@ GET `/templates/(:template_id)[/locales/(:locale)]/versions/(:version_id)`
 
 ## Update a Template Version
 
-PUT `/templates/(:template_id)[/locales/(:locale)]/versions/(:version_id)`
+PUT `/templates/(:template_id)/versions/(:version_id)`
+
+PUT `/templates/(:template_id)/locales/(:locale)/versions/(:version_id)`
 
 #### Params:
 
@@ -215,7 +223,9 @@ POST `/templates/(:template_id)/locales`
 ```
 ## Create a New Template Version
 
-POST `/templates/(:template_id)[/locales/(:locale)]/versions`
+Default Locale: POST `/templates/(:template_id)/versions`
+
+Specific Locale: POST `/templates/(:template_id)/locales/(:locale)/versions`
 
 #### Params:
 

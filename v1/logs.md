@@ -32,8 +32,7 @@ Retrieve a list of available logs. Logs are sorted in reverse chronological orde
         "message": "SendGrid: Message has been opened",
         "email_id": "as8dfjha8dap",
         "email_name": "Order Confirmation",
-        "email_version": "Version A",
-        "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
+        "email_version": "Version A"
     }
 ]
 ```
@@ -83,8 +82,7 @@ A single Log object with all its details
     "message": "SendGrid: Message has been opened",
     "email_id": "as8dfjha8dap",
     "email_name": "Order Confirmation",
-    "email_version": "Version A",
-    "events_url": "/api/v1/logs/log_asdf1234qwerty/events"
+    "email_version": "Version A"
 }
 ```
 

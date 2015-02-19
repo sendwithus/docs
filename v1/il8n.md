@@ -97,3 +97,37 @@ https://api.sendwithus.com/api/v1/i18n/po/international
 At send time, Sendwithus uses the `locale` parameter in the Send API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.
 
 For an example sending with a translated template, please see the [send api](https://www.sendwithus.com/docs/api#send) documentation.
+
+## Locale Code Standards
+
+We follow the IETF Language Tag standard which consists of a 2 character language code and a 2 character country code seperated by a hyphen.  Example: 'en-US' is the code for English (United States)
+
+IETF Language Tags: http://en.wikipedia.org/wiki/IETF_language_tag
+
+The prefix, in this case 'en', is a language code following the ISO 639-1 standard. 
+
+ISO 639-1: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+
+The suffix, in this case 'US', is a country code following the ISO 3166-1 Alpha-2 standard. 
+
+ISO 3166-1 Alpha-2: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
+
+The Locale codes that we currently support are as follows (Last updated: February 18, 2015):
+
+```
+    'nl-NL', 'Dutch (Netherlands)'
+    'en-AU', 'English (Australia)'
+    'en-CA', 'English (Canada)'
+    'en-GB', 'English (Great Britain)'
+    'en-US', 'English (United States)'
+    'fr-FR', 'French (France)'
+    'de-DE', 'German (Germany)'
+    'it-IT', 'Italian (Italy)'
+    'ja-JP', 'Japanese (Japan)'
+    'no-NO', 'Norwegian (Norway)'
+    'pt-BR', 'Portuguese (Brazil)'
+    'ru-RU', 'Russian (Russia)'
+    'es-ES', 'Spanish (Spain)'
+    'es-MX', 'Spanish (Mexico)'
+```
+

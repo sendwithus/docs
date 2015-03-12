@@ -61,8 +61,7 @@ POST `/send`
   ],
 
   "headers": {
-    "X-HEADER-ONE": "header-value",
-    "Return-Path": "sender@yourcompany.com"
+    "X-HEADER-ONE": "header-value"
   },
 
   "inline": {

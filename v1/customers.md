@@ -21,7 +21,8 @@ GET `/customers/matt@sendwithus.com`
             "first_name": "Matt",
             "city": "San Francisco"
         },
-        "created": 5858858124
+        "created": 5858858124,
+        "locale": "not set"
     }
 }
 ```

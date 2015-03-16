@@ -36,6 +36,7 @@ POST `/customers`
 
 - email       -- Email (key) of the customer
 - data (optional)       -- Key/Value data for customer profile
+- locale (optional)     -- Specify a locale for this customer
 
 #### Sample Request:
 
@@ -45,7 +46,8 @@ POST `/customers`
 	"data": {
 		"first_name": "Matt",
 		"city": "San Francisco"
-	}
+	},
+	"locale": "de-DE"
 }
 ```
 
@@ -62,7 +64,8 @@ POST `/customers`
             "first_name": "Matt",
             "city": "San Francisco"
         },
-        "created": 5858858124
+        "created": 5858858124,
+        "locale": "en-US"
     }
 }
 ```

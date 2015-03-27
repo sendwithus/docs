@@ -112,6 +112,7 @@ POST `/groups/(:group_name)/add
 }
 ```
 
+
 ```json
 {
     "email": [
@@ -147,6 +148,7 @@ POST `/groups/(:group_name)/remove
     "email": "sample@customer.com"
 }
 ```
+
 
 ```json
 {

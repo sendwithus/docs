@@ -23,9 +23,40 @@ GET `/groups`
 }
 ```
 
-## Create/Update a Customer Group
+## Create a Customer Group
 
-POST/PUT `/groups/(:group_name)`
+POST `/groups`
+
+### Params
+
+- name    -- The name of the new group
+- description (optional)    -- A description of the customer group
+
+#### Sample Request:
+
+```json
+{
+    "name": "new_group",
+    "description": "a description of the group"
+}
+```
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK",
+    "group": {
+        "name": "new_group",
+        "description": "a description of the group"
+    }
+}
+```
+
+## Update a Customer Group
+
+PUT `/groups/(:group_name)`
 
 ### Params
 
@@ -60,7 +91,7 @@ DELETE `/groups/(:group_name)`
 
 ```json
 {
-    "success": True,
+    "success": true,
     "status": "OK"
 }
 ```
@@ -95,7 +126,7 @@ POST `/groups/(:group_name)/add
 
 ```
 {
-    "success": True,
+    "success": true,
     "status": "OK",
     "group_name": "sample_group"
 }
@@ -131,7 +162,7 @@ POST `/groups/(:group_name)/remove
 
 ```
 {
-    "success": True,
+    "success": true,
     "status": "OK",
     "group_name": "sample_group"
 }

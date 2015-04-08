@@ -16,6 +16,7 @@ GET `/groups`
     "status": "OK",
     "groups": [
         {
+            "id": "grp_1234",
             "name": "group_name",
             "description": "a description of the group"
         }
@@ -48,6 +49,7 @@ POST `/groups`
     "success": true,
     "status": "OK",
     "group": {
+        "id": "grp_1234",
         "name": "new_group",
         "description": "a description of the group"
     }
@@ -56,16 +58,18 @@ POST `/groups`
 
 ## Update a Customer Group
 
-PUT `/groups/(:group_name)`
+PUT `/groups/(:group_id)`
 
 ### Params
 
-- description (optional)    -- A description of the customer group
+- name (optional)           -- The new name for this group
+- description (optional)    -- The new description of this group
 
 #### Sample Request:
 
 ```json
 {
+    "name": "new_name",
     "description": "a description of the group"
 }
 ```
@@ -77,6 +81,7 @@ PUT `/groups/(:group_name)`
     "success": true,
     "status": "OK",
     "group": {
+        "id": "grp_1234"
         "name": "group_name",
         "description": "a description of the group"
     }
@@ -85,7 +90,7 @@ PUT `/groups/(:group_name)`
 
 ## Delete a Customer Group
 
-DELETE `/groups/(:group_name)`
+DELETE `/groups/(:group_id)`
 
 #### Sample Response:
 
@@ -93,79 +98,5 @@ DELETE `/groups/(:group_name)`
 {
     "success": true,
     "status": "OK"
-}
-```
-
-## Add a Customer to a Group
-
-POST `/groups/(:group_name)/add
-
-### Params
-
-- email  -- Email address of the customer you are adding.  Also accepts a list of email addresses (max 100 per call).  Note: the customer must already exist within your sendwithus account to be successfully added to the group.
-
-#### Sample Request:
-
-```json
-{
-    "email": "sample@customer.com"
-}
-```
-
-
-```json
-{
-    "email": [
-        "cust1@sample.com",
-        "cust2@sample.com",
-        "cust3@sample.com"
-    ]
-}
-```
-
-#### Sample Response:
-
-```
-{
-    "success": true,
-    "status": "OK",
-    "group_name": "sample_group"
-}
-```
-
-## Remove a Customer from a Group
-
-POST `/groups/(:group_name)/remove
-
-### Params
-
-- email  -- Email address of the customer you are removing.  Also accepts a list of email addresses (max 100 per call).
-
-#### Sample Request:
-
-```json
-{
-    "email": "sample@customer.com"
-}
-```
-
-
-```json
-{
-    "email": [
-        "cust1@sample.com",
-        "cust2@sample.com",
-        "cust3@sample.com"
-    ]
-}
-```
-
-#### Sample Response:
-
-```
-{
-    "success": true,
-    "status": "OK",
-    "group_name": "sample_group"
 }
 ```

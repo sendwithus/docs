@@ -22,7 +22,11 @@ GET `/customers/matt@sendwithus.com`
             "city": "San Francisco"
         },
         "created": 5858858124,
-        "locale": "not set"
+        "locale": "not set",
+        "groups": [
+            "grp_1234",
+            "grp_5678"
+        ]
     }
 }
 ```
@@ -66,7 +70,11 @@ POST `/customers`
             "city": "San Francisco"
         },
         "created": 5858858124,
-        "locale": "en-US"
+        "locale": "en-US",
+        "groups": [
+            "grp_1234",
+            "grp_5678"
+        ]
     }
 }
 ```
@@ -116,3 +124,37 @@ GET `/customers/matt@sendwithus.com/logs`
     }]
 }
 ```
+
+
+## Add Customer to a Group
+
+POST `/customers/(:email)/groups(:group_id)`
+
+#### Params:
+
+*no params*
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK"
+}
+
+
+## Remove Customer from a Group
+
+DELETE `/customers/(:email)/groups(:group_id)`
+
+#### Params:
+
+*no params*
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK"
+}

@@ -85,7 +85,7 @@ POST `/esp_accounts`
     "name": "My Mandrill Account",
     "esp_type": "mandrill",
     "credentials": {
-        "api_key": "mymandrilapikey"
+        "api_key": "mymandrillapikey"
     }
 }
 ```

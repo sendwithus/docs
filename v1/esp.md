@@ -144,6 +144,20 @@ POST `/esp_accounts`
 }
 ```
 
+```json
+{
+    "name": "My SMTP Account",
+    "esp_type": "smtp",
+    "credentials": {
+        "host": "smtp.example.com",
+        "port": 25,
+        "username": "myusername",
+        "password": "mypassword",
+        "use_tls": true
+    }
+}
+```
+
 #### Sample Response:
 
 ```json

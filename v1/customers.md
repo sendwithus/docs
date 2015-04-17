@@ -141,7 +141,7 @@ POST `/customers/(:email)/groups(:group_id)`
     "success": true,
     "status": "OK"
 }
-
+```
 
 ## Remove Customer from a Group
 
@@ -158,3 +158,4 @@ DELETE `/customers/(:email)/groups(:group_id)`
     "success": true,
     "status": "OK"
 }
+```

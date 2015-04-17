@@ -81,7 +81,7 @@ PUT `/groups/(:group_id)`
     "success": true,
     "status": "OK",
     "group": {
-        "id": "grp_1234"
+        "id": "grp_1234",
         "name": "group_name",
         "description": "a description of the group"
     }

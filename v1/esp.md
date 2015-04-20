@@ -29,7 +29,7 @@ GET `/esp_accounts`
 ]
 ```
 
-#### Possible esp_account.esp_type values:
+#### Possible esp\_account.esp\_type values:
 
 - **sendgrid**
 - **mailgun**
@@ -69,6 +69,7 @@ POST `/esp_accounts`
 }
 ```
 
+
 ```json
 {
     "name": "My Mailgun Account",
@@ -80,6 +81,7 @@ POST `/esp_accounts`
 }
 ```
 
+
 ```json
 {
     "name": "My Mandrill Account",
@@ -89,6 +91,7 @@ POST `/esp_accounts`
     }
 }
 ```
+
 
 ```json
 {
@@ -100,9 +103,10 @@ POST `/esp_accounts`
 }
 ```
 
+
 ```json
 {
-    "name": "My Messagebus Account",
+    "name": "My Message Bus Account",
     "esp_type": "messagebus",
     "credentials": {
         "api_key": "mymessagebusapikey",
@@ -111,9 +115,10 @@ POST `/esp_accounts`
 }
 ```
 
+
 ```json
 {
-    "name": "My Ses Account",
+    "name": "My SES Account",
     "esp_type": "ses",
     "credentials": {
         "access_key_id": "mysesaccesskeyid",
@@ -122,6 +127,7 @@ POST `/esp_accounts`
     }
 }
 ```
+
 
 ```json
 {
@@ -134,6 +140,7 @@ POST `/esp_accounts`
 }
 ```
 
+
 ```json
 {
     "name": "My Dyn Account",
@@ -143,6 +150,7 @@ POST `/esp_accounts`
     }
 }
 ```
+
 
 ```json
 {

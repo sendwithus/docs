@@ -16,3 +16,6 @@ All of our API Client Libraries are open source and available in our [Github Acc
 - [Go](https://github.com/elbuo8/sendwithus_go) [(elbuo8)](http://www.yamilasusta.com/)
 - [C#](https://github.com/Mimeo/SendWithUs.Client) [(mimeo)](https://github.com/Mimeo)
 - [ColdFusion](https://github.com/philcruz/SendWithUsCfc) [(philcruz)](https://github.com/philcruz)
+
+### Segment.com Integration
+Segment is a service that allows single lines in your code to translate to multiple API calls to different services. If you're using Segment, we now have support built in. You can read our [Segment setup guide](https://help.sendwithus.com/solution/articles/1000173550-segment-com-triggers) or check out the [Segment Sendwithus docs](https://segment.com/docs/integrations/sendwithus/) to get started! If you're not, you can start with the [introduction to Segment](https://segment.com/docs/).

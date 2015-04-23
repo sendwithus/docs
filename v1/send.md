@@ -19,7 +19,7 @@ POST `/send`
    - reply_to               -- The sender's reply-to address
    - name                   -- The sender's name
 - email_data                -- Object containing email template data
-- tags (optional)           -- Array of tags (as strings)
+- tags (optional)           -- Array of tags (as strings). _Tags are passed to your ESP as Categories, Tags, etc._
 - headers (options)         -- Object contain SMTP headers to be included with the email
 - inline (optional)         -- Inline attachment object (see example)
 - files (optional)          -- List of file attachments (combined maximum 7MB, see example)

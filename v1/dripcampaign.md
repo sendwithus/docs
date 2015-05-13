@@ -135,8 +135,7 @@ POST `/drip_campaigns/deactivate`
 {
     "success": true,
     "status": "OK",
-    "recipient_address": "customer@example.com",
-    "unsubscribed_count": 14
+    "recipient_address": "customer@example.com"
 }
 ```
 

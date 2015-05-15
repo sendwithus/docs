@@ -6,7 +6,7 @@
 
 This call will display the name and description of all groups in your account.
 
-GET `/groups`
+`GET /groups`
 
 #### Sample Response:
 
@@ -26,7 +26,7 @@ GET `/groups`
 
 ## Create a Customer Group
 
-POST `/groups`
+`POST /groups`
 
 ### Params
 
@@ -58,7 +58,7 @@ POST `/groups`
 
 ## Update a Customer Group
 
-PUT `/groups/(:group_id)`
+`PUT /groups/(:group_id)`
 
 ### Params
 
@@ -81,7 +81,7 @@ PUT `/groups/(:group_id)`
     "success": true,
     "status": "OK",
     "group": {
-        "id": "grp_1234"
+        "id": "grp_1234",
         "name": "group_name",
         "description": "a description of the group"
     }
@@ -90,7 +90,7 @@ PUT `/groups/(:group_id)`
 
 ## Delete a Customer Group
 
-DELETE `/groups/(:group_id)`
+`DELETE /groups/(:group_id)`
 
 #### Sample Response:
 

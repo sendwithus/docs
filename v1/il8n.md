@@ -7,31 +7,28 @@
 
 Sendwithus handles internationalization by using *Jinja2* style trans blocks.
 
-The easiest way to set up templates for translation is to use the trans block syntax. A string can be marked for translation by simply wrapping it in a trans block. For example, the internationalized version of `Hello World` is `{% trans %}Hello World{% endtrans %}`. Variables in trans block can be added like normal template variables. For example `Hello {{ name }}` will become `{% trans %}Hello {{ name }}{% endtrans %}`. Multiple variables can be used in the same trans block.
+The easiest way to set up templates for translation is to use the trans block syntax. A string can be marked for translation by simply wrapping it in a trans block. For example, the internationalized version of "Hello World" is "{% trans %}Hello World{% endtrans %}".
 
-Translation packages (`.pot` files) can be downloaded via API, and then corresponding string files (`.po`) can be uploaded via API, which will trigger translated template variants to be generated.
+Variables in trans block can be added like normal template variables. For example "Hello {{ name }}"" will become "{% trans %}Hello {{ name }}{% endtrans %}". Multiple variables can be used in the same trans block.
 
-## Get translation package (`.pot`)
+Translation packages (.pot files) can be downloaded via API, and then corresponding string files (.po) can be uploaded via API, which will trigger translated template variants to be generated.
+
+## Get translation package (.pot file)
 
 
-This call will fetch a `.pot` translation package for all templates that have been assigned the corresponding `tag`
+This call will fetch a .pot translation package for all templates that have been assigned the corresponding tag.
 
-GET `/il8n/pot/(:tag)`
+`GET /il8n/pot/(:tag)`
 
 #### Params:
 
-- tag       -- String will return a `.pot` only for templates that have the corresponding tag. Tags are set in the [dashboard](https://www.sendwithus.com/#/emails)
+- tag       -- String will return a .pot file only for templates that have the corresponding tag. Tags are set in the [dashboard](https://www.sendwithus.com/#/emails)
 
 ### Examples
 
-Fetch `.pot` for template with tag `international`
+Fetch .pot for template with tag "international".
 
-```
-curl \
--X GET \
--u swu_api_key: \
-https://api.sendwithus.com/api/v1/i18n/pot/international
-```
+`GET /i18n/pot/international`
 
 #### Sample Response:
 
@@ -50,25 +47,24 @@ https://api.sendwithus.com/api/v1/i18n/pot/international
 
 The reponse is a valid .pot file.
 
+## Post translated strings and .po files
 
-## Post translated strings (`.po`)
+Use this endpoint to POST a .zip file containing .po files. Each .po file should be named to match the locale it is intended for. See examples below for specifics.
 
-Use this endpoint to `POST` a `.zip` file containing `.po` files, each `.po` file named to match the locale it is intended for. See examples below for specifics.
-
-POST `/il8n/po/(:tag)`
+`POST /il8n/po/(:tag)`
 
 #### Params:
 
-- tag       -- String of tag; templates with that tag applied will have a locale generated for each `.po` file in the `.zip` file
+- tag       -- String of tag; templates with that tag applied will have a locale generated for each .po file in the .zip file
 
 #### Request Body:
 
-- `.zip` file
+- .zip file
 
 
 ### Examples
 
-Example `.zip` structure:
+Example .zip structure:
 
 ```
 translations.zip
@@ -76,25 +72,19 @@ translations.zip
     ja-JP.po
 ```
 
-Post `translations.zip` for templates with tag `international`
+Post translations.zip for templates with tag "international".
 
-```
-curl \
--X POST \
--u swu_api_key: \
---data-binary @translations.zip \
-https://api.sendwithus.com/api/v1/i18n/po/international
-```
-
+`POST /i18n/po/international`
 
 #### Sample Response:
 
 ```json
 {}
 ```
+
 ## Sending translated templates
 
-At send time, Sendwithus uses the `locale` parameter in the Send API, and matches it against the template version for that locale. This is why `.po` files must have a filename that matches the locale.
+At send time, Sendwithus uses the _locale_ parameter in the Send API, and matches it against the template version for that locale. This is why .po files must have a filename that matches the locale.
 
 For an example sending with a translated template, please see the [send api](https://www.sendwithus.com/docs/api#send) documentation.
 
@@ -104,11 +94,11 @@ We follow the IETF Language Tag standard which consists of a 2 character languag
 
 IETF Language Tags: http://en.wikipedia.org/wiki/IETF_language_tag
 
-The prefix, in this case 'en', is a language code following the ISO 639-1 standard. 
+The prefix, in this case 'en', is a language code following the ISO 639-1 standard.
 
 ISO 639-1: http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
 
-The suffix, in this case 'US', is a country code following the ISO 3166-1 Alpha-2 standard. 
+The suffix, in this case 'US', is a country code following the ISO 3166-1 Alpha-2 standard.
 
 ISO 3166-1 Alpha-2: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 

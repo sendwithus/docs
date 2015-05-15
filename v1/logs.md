@@ -5,7 +5,7 @@
 
 ## Get a List all Logs
 
-GET `/logs`
+`GET /logs`
 
 Retrieve a list of available logs. Logs are sorted in reverse chronological order.
 
@@ -61,13 +61,13 @@ Retrieve a list of available logs. Logs are sorted in reverse chronological orde
 
 ## Get a specific log + metadata
 
-GET `/logs/(:log_id)`
+`GET /logs/(:log_id)`
 
 A single Log object with all its details
 
 #### Params:
 
-- log_id -- String `log_id` of the Log to retrieve.
+- log_id -- String id of the Log to retrieve.
 
 #### Sample Response:
 
@@ -88,13 +88,13 @@ A single Log object with all its details
 
 ## Retrieve events for a specific log\_id.
 
-GET `/logs/(:log_id)/events`
+`GET /logs/(:log_id)/events`
 
 Return a list of all events associated with a given Log.
 
 #### Params:
 
-- log\_id (required) -- String `log_id` of the Log to retrieve events for.
+- log\_id (required) -- String id of the Log to retrieve events for.
 
 #### Sample Response:
 
@@ -142,9 +142,9 @@ Return a list of all events associated with a given Log.
 
 ### Resend an existing Log
 
-POST `/resend`
+`POST /resend`
 
-Resend a specific email by `log_id`.
+Resend a specific email by id.
 
 
 #### Sample Request:

@@ -6,7 +6,7 @@
 
 This call will retrieve a customer by a specified email.
 
-GET `/customers/matt@sendwithus.com`
+`GET /customers/us@sendwithus.com`
 
 #### Sample Response:
 
@@ -35,7 +35,7 @@ GET `/customers/matt@sendwithus.com`
 
 This call will perform an update if a customer already exists with the specified email.
 
-POST `/customers`
+`POST /customers`
 
 #### Params:
 
@@ -82,11 +82,7 @@ POST `/customers`
 
 ## Delete a Customer
 
-DELETE `/customers/(:email)`
-
-#### Params:
-
-*no params*
+`DELETE /customers/(:email)`
 
 #### Sample Response:
 
@@ -102,7 +98,7 @@ DELETE `/customers/(:email)`
 
 This call will retrieve email logs for a customer.
 
-GET `/customers/matt@sendwithus.com/logs`
+`GET /customers/matt@sendwithus.com/logs`
 
 #### Sample Response:
 
@@ -128,11 +124,7 @@ GET `/customers/matt@sendwithus.com/logs`
 
 ## Add Customer to a Group
 
-POST `/customers/(:email)/groups(:group_id)`
-
-#### Params:
-
-*no params*
+`POST /customers/(:email)/groups(:group_id)`
 
 #### Sample Response:
 
@@ -141,15 +133,11 @@ POST `/customers/(:email)/groups(:group_id)`
     "success": true,
     "status": "OK"
 }
-
+```
 
 ## Remove Customer from a Group
 
-DELETE `/customers/(:email)/groups(:group_id)`
-
-#### Params:
-
-*no params*
+`DELETE /customers/(:email)/groups(:group_id)`
 
 #### Sample Response:
 
@@ -158,3 +146,4 @@ DELETE `/customers/(:email)/groups(:group_id)`
     "success": true,
     "status": "OK"
 }
+```

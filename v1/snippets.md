@@ -4,11 +4,7 @@
 
 ## Get all snippets
 
-GET `/snippets`
-
-#### Params:
-
-*no params*
+`GET /snippets`
 
 #### Sample Response:
 
@@ -19,15 +15,14 @@ GET `/snippets`
         "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
-        "created": 5858858124 /* unix timestamp */
-    },
-    /* ... */
+        "created": 5858858124
+    }
 ]
 ```
 
 ## Get specific snippet
 
-GET `/snippets/(:id)`
+`GET /snippets/(:id)`
 
 #### Params:
 
@@ -41,13 +36,13 @@ GET `/snippets/(:id)`
     "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
     "name": "My First Snippet",
     "body": "<h1>Welcome!</h1>",
-    "created": 5858858124 /* unix timestamp */
+    "created": 5858858124
 }
 ```
 
 ## Creating a new snippet
 
-POST `/snippets`
+`POST /snippets`
 
 #### Params:
 
@@ -74,14 +69,14 @@ POST `/snippets`
         "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
-        "created": 5858858124 /* unix timestamp */
+        "created": 5858858124
     }
 }
 ```
 
 ## Update an existing snippet
 
-PUT `/snippets/(:id)`
+PUT /snippets/(:id)`
 
 #### Params:
 
@@ -108,18 +103,14 @@ PUT `/snippets/(:id)`
         "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
-        "created": 5858858124 /* unix timestamp */
+        "created": 5858858124
     }
 }
 ```
 
 ## Delete an existing snippet
 
-DELETE `/snippets/(:id)`
-
-#### Params:
-
-*no params*
+`DELETE /snippets/(:id)`
 
 #### Sample Response:
 

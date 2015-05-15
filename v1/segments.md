@@ -4,7 +4,7 @@
 
 ## List all Segments
 
-GET `/segments`
+`GET /segments`
 
 #### Sample Response:
 
@@ -26,7 +26,7 @@ GET `/segments`
 
 ## Send to a Segment
 
-POST `/segments/(:segment_id)/send`
+`POST /segments/(:segment_id)/send`
 
 #### Params:
 
@@ -55,7 +55,7 @@ POST `/segments/(:segment_id)/send`
 
 ## Retrieve Customers in a Segment _(Beta Only)_
 
-GET `/segments/(:segment_id)/run`
+`GET /segments/(:segment_id)/run`
 
 #### Sample Response:
 

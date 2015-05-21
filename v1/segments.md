@@ -43,12 +43,12 @@
         [
             {
                 "url": "http://www.example.com/1",
-                "image": http://www.example.com/image1.jpg",
+                "image": "http://www.example.com/image1.jpg",
                 "text": "Check this sweet thing out!"
             },
             {
                 "url": "http://www.example.com/2",
-                "image": http://www.example.com/image2.png",
+                "image": "http://www.example.com/image2.png",
                 "text": "Check this other sweet thing out!"
             }
         ]

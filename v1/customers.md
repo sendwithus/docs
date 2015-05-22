@@ -52,7 +52,12 @@ This call will perform an update if a customer already exists with the specified
 		"first_name": "Matt",
 		"city": "San Francisco"
 	},
-	"locale": "de-DE"
+	"locale": "de-DE",
+    "groups":
+    [
+        "grp_djd1234950",
+        "grp_jdkj497283"
+    ]
 }
 ```
 

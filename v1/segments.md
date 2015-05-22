@@ -39,7 +39,19 @@
 {
     "email_id": "tem_ACdWZKZf4CtZNPM27WAdf6",
     "email_data": {
-        "name": "John Doe"
+        "Weekly_Newsletter":
+        [
+            {
+                "url": "http://www.example.com/1",
+                "image": "http://www.example.com/image1.jpg",
+                "text": "Check this sweet thing out!"
+            },
+            {
+                "url": "http://www.example.com/2",
+                "image": "http://www.example.com/image2.png",
+                "text": "Check this other sweet thing out!"
+            }
+        ]
     }
 }
 ```

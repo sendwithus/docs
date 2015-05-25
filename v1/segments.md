@@ -4,7 +4,7 @@
 
 ## List all Segments
 
-GET `/segments`
+`GET /segments`
 
 #### Sample Response:
 
@@ -26,7 +26,7 @@ GET `/segments`
 
 ## Send to a Segment
 
-POST `/segments/(:segment_id)/send`
+`POST /segments/(:segment_id)/send`
 
 #### Params:
 
@@ -39,7 +39,19 @@ POST `/segments/(:segment_id)/send`
 {
     "email_id": "tem_ACdWZKZf4CtZNPM27WAdf6",
     "email_data": {
-        "name": "John Doe"
+        "Weekly_Newsletter":
+        [
+            {
+                "url": "http://www.example.com/1",
+                "image": "http://www.example.com/image1.jpg",
+                "text": "Check this sweet thing out!"
+            },
+            {
+                "url": "http://www.example.com/2",
+                "image": "http://www.example.com/image2.png",
+                "text": "Check this other sweet thing out!"
+            }
+        ]
     }
 }
 ```
@@ -55,7 +67,7 @@ POST `/segments/(:segment_id)/send`
 
 ## Retrieve Customers in a Segment _(Beta Only)_
 
-GET `/segments/(:segment_id)/run`
+`GET /segments/(:segment_id)/run`
 
 #### Sample Response:
 

@@ -6,7 +6,7 @@
 
 This will add a new conversion to a specific customer in your sendwithus account.
 
-POST `/customers/[EMAIL_ADDRESS]/conversions`
+`POST /customers/[EMAIL_ADDRESS]/conversions`
 
 #### Params:
 
@@ -16,7 +16,7 @@ POST `/customers/[EMAIL_ADDRESS]/conversions`
 
 #### Sample Request:
 
-POST `/customers/greg@sendwithus.com/conversions`
+`POST /customers/greg@sendwithus.com/conversions`
 
 ```json
 {
@@ -26,7 +26,7 @@ POST `/customers/greg@sendwithus.com/conversions`
 
 #### Sample Request with timestamp:
 
-POST `/customers/greg@sendwithus.com/conversions`
+`POST /customers/greg@sendwithus.com/conversions`
 
 ```json
 {
@@ -37,7 +37,6 @@ POST `/customers/greg@sendwithus.com/conversions`
 
 #### Sample Response:
 
-STATUS CODE `200`
 ```json
 {
     "success": true,

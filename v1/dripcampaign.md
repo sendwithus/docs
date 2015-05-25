@@ -3,7 +3,7 @@
 ## Activate campaign for a customer
 This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.
 
-POST `/drip_campaigns/(drip_campaign_id)/activate`
+`POST /drip_campaigns/(drip_campaign_id)/activate`
 
 #### Params:
 
@@ -86,7 +86,7 @@ POST `/drip_campaigns/(drip_campaign_id)/activate`
 ```
 
 ## Deactivate a campaign for customer
-POST `/drip_campaigns/(drip_campaign_id)/deactivate`
+`POST /drip_campaigns/(drip_campaign_id)/deactivate`
 
 #### Params:
 - recipient\_address -- Email address of the customer you would like to remove from the specified campaign.
@@ -116,7 +116,8 @@ POST `/drip_campaigns/(drip_campaign_id)/deactivate`
 
 ## Deactivate a customer from all campaigns
 If a user unsubscribes, changes email addresses, or cancels, call this endpoint to remove the specified email address from all active drip campaigns.
-POST `/drip_campaigns/deactivate`
+
+`POST /drip_campaigns/deactivate`
 
 #### Params:
 - recipient\_address -- Email address of the customer you would like to remove from all drip campaigns.
@@ -135,13 +136,13 @@ POST `/drip_campaigns/deactivate`
 {
     "success": true,
     "status": "OK",
-    "recipient_address": "customer@example.com",
-    "unsubscribed_count": 14
+    "recipient_address": "customer@example.com"
 }
 ```
 
 ## Get a list of campaigns
-GET `/drip_campaigns`
+
+`GET /drip_campaigns`
 
 #### Sample Response
 
@@ -187,7 +188,8 @@ GET `/drip_campaigns`
 ```
 
 ## Get the details on a specific drip campaign
-GET `/drip_campaigns/(drip_campaign_id)`
+
+`GET /drip_campaigns/(drip_campaign_id)`
 
 #### Sample Response
 

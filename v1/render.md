@@ -1,13 +1,13 @@
 # Render API
 
-The `render` api allows you to render a template with data, using the exact same rendering workflow that Sendwithus uses when delivering your email.
+The render api allows you to render a template with data, using the exact same rendering workflow that Sendwithus uses when delivering your email.
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
 ## Render a Template with Data
 
 
-POST `/render`
+`POST /render`
 
 #### Params:
 

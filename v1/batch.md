@@ -8,8 +8,7 @@ to be made in a single HTTP request.
 
 ## Sample Batch (Multiple Sends)
 
-POST `/batch`
-
+`POST /batch`
 
 #### Params:
 

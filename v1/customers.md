@@ -6,7 +6,7 @@
 
 This call will retrieve a customer by a specified email.
 
-GET `/customers/matt@sendwithus.com`
+`GET /customers/us@sendwithus.com`
 
 #### Sample Response:
 
@@ -21,7 +21,12 @@ GET `/customers/matt@sendwithus.com`
             "first_name": "Matt",
             "city": "San Francisco"
         },
-        "created": 5858858124
+        "created": 5858858124,
+        "locale": "not set",
+        "groups": [
+            "grp_1234",
+            "grp_5678"
+        ]
     }
 }
 ```
@@ -30,12 +35,13 @@ GET `/customers/matt@sendwithus.com`
 
 This call will perform an update if a customer already exists with the specified email.
 
-POST `/customers`
+`POST /customers`
 
 #### Params:
 
 - email       -- Email (key) of the customer
 - data (optional)       -- Key/Value data for customer profile
+- locale (optional)     -- Specify a locale for this customer
 
 #### Sample Request:
 
@@ -45,7 +51,13 @@ POST `/customers`
 	"data": {
 		"first_name": "Matt",
 		"city": "San Francisco"
-	}
+	},
+	"locale": "de-DE",
+    "groups":
+    [
+        "grp_djd1234950",
+        "grp_jdkj497283"
+    ]
 }
 ```
 
@@ -62,7 +74,12 @@ POST `/customers`
             "first_name": "Matt",
             "city": "San Francisco"
         },
-        "created": 5858858124
+        "created": 5858858124,
+        "locale": "en-US",
+        "groups": [
+            "grp_1234",
+            "grp_5678"
+        ]
     }
 }
 ```
@@ -70,11 +87,7 @@ POST `/customers`
 
 ## Delete a Customer
 
-DELETE `/customers/(:email)`
-
-#### Params:
-
-*no params*
+`DELETE /customers/(:email)`
 
 #### Sample Response:
 
@@ -90,7 +103,7 @@ DELETE `/customers/(:email)`
 
 This call will retrieve email logs for a customer.
 
-GET `/customers/matt@sendwithus.com/logs`
+`GET /customers/matt@sendwithus.com/logs`
 
 #### Sample Response:
 
@@ -110,5 +123,32 @@ GET `/customers/matt@sendwithus.com/logs`
         "email_name": "Order Confirmation",
         "email_version": "Version A"
     }]
+}
+```
+
+
+## Add Customer to a Group
+
+`POST /customers/(:email)/groups(:group_id)`
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK"
+}
+```
+
+## Remove Customer from a Group
+
+`DELETE /customers/(:email)/groups(:group_id)`
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK"
 }
 ```

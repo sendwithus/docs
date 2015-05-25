@@ -1,3 +1,9 @@
+---
+title: Customers
+type: api
+order: 6
+---
+
 # Customers API
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.

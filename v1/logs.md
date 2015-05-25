@@ -1,3 +1,9 @@
+---
+title: Logs
+type: api
+order: 2
+---
+
 # Logs API
 
 

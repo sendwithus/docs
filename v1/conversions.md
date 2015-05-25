@@ -1,3 +1,9 @@
+---
+title: Conversions
+type: api
+order: 7
+---
+
 # Conversions API
 
 **WARNING: This API is currently in beta.**

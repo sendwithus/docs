@@ -1,3 +1,9 @@
+---
+title: Templates
+type: api
+order: 0
+---
+
 # Templates API
 
 If no locale is specified in the URL the default locale will be used in all cases.

@@ -1,3 +1,9 @@
+---
+title: Sending Emails
+type: api
+order: 1
+---
+
 # Send API
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.

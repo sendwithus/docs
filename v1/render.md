@@ -1,3 +1,8 @@
+---
+title: Rendering Templates
+type: api
+order: 4
+---
 # Render API
 
 The render api allows you to render a template with data, using the exact same rendering workflow that Sendwithus uses when delivering your email.

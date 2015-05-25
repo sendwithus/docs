@@ -1,3 +1,9 @@
+---
+title: Errors
+type: info
+order: 2
+---
+
 # Errors
 
 Any API request will receive a standard HTTP response code.

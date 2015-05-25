@@ -1,3 +1,9 @@
+---
+title: Snippets
+type: api
+order: 3
+---
+
 # Snippets API
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.

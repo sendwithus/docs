@@ -1,3 +1,9 @@
+---
+title: Groups
+type: api
+order: 10
+---
+
 # Customer Groups API
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.

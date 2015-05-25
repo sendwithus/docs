@@ -1,3 +1,9 @@
+---
+title: Batch API Requests
+type: api
+order: 12
+---
+
 # Batch API
 
 The sendwithus batch endpoint enables multiple API calls

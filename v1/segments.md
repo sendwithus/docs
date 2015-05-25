@@ -1,3 +1,9 @@
+---
+title: Segments
+type: api
+order: 9
+---
+
 # Segments API
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.

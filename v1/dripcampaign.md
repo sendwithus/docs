@@ -1,3 +1,9 @@
+---
+title: Drip Campaigns
+type: api
+order: 8
+---
+
 # Drip Campaigns API
 
 ## Activate campaign for a customer

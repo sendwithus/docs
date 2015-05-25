@@ -1,3 +1,8 @@
+---
+title: Authentication
+type: info
+order: 1
+---
 # Authentication
 
 The sendwithus API uses [HTTP Basic Authentication](http://en.wikipedia.org/wiki/Basic_access_authentication).

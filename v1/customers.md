@@ -18,22 +18,22 @@ This call will retrieve a customer by a specified email.
 
 ```json
 {
-	"success": true,
-    "status": "OK",
-    "customer": {
+		"success": true,
+	  "status": "OK",
+	  "customer": {
 		"object": "customer",
-        "email": "customer@example.com",
-        "data": {
-            "first_name": "Matt",
-            "city": "San Francisco"
-        },
-        "created": 5858858124,
-        "locale": "not set",
-        "groups": [
-            "grp_1234",
-            "grp_5678"
-        ]
-    }
+	      "email": "customer@example.com",
+	      "data": {
+	          "first_name": "Matt",
+	          "city": "San Francisco"
+	      },
+	      "created": 5858858124,
+	      "locale": "not set",
+	      "groups": [
+	          "grp_1234",
+	          "grp_5678"
+	      ]
+	  }
 }
 ```
 
@@ -53,14 +53,13 @@ This call will perform an update if a customer already exists with the specified
 
 ```json
 {
-	"email": "matt@sendwithus.com",
-	"data": {
-		"first_name": "Matt",
-		"city": "San Francisco"
-	},
-	"locale": "de-DE",
-    "groups":
-    [
+		"email": "matt@sendwithus.com",
+		"data": {
+				"first_name": "Matt",
+				"city": "San Francisco"
+		},
+		"locale": "de-DE",
+    "groups": [
         "grp_djd1234950",
         "grp_jdkj497283"
     ]
@@ -71,10 +70,10 @@ This call will perform an update if a customer already exists with the specified
 
 ```json
 {
-	"success": true,
+		"success": true,
     "status": "OK",
     "customer": {
-		"object": "customer",
+				"object": "customer",
         "email": "customer@example.com",
         "data": {
             "first_name": "Matt",
@@ -99,7 +98,7 @@ This call will perform an update if a customer already exists with the specified
 
 ```javascript
 {
-	"success": true,
+		"success": true,
     "status": "OK"
 }
 ```
@@ -115,7 +114,7 @@ This call will retrieve email logs for a customer.
 
 ```json
 {
-	"success": true,
+		"success": true,
     "status": "OK",
     "logs": [{
         "object": "log",

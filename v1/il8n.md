@@ -111,19 +111,30 @@ ISO 3166-1 Alpha-2: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 The Locale codes that we currently support are as follows (Last updated: February 18, 2015):
 
 ```
-    'nl-NL', 'Dutch (Netherlands)'
-    'en-AU', 'English (Australia)'
-    'en-CA', 'English (Canada)'
-    'en-GB', 'English (Great Britain)'
-    'en-US', 'English (United States)'
-    'fr-FR', 'French (France)'
-    'de-DE', 'German (Germany)'
-    'it-IT', 'Italian (Italy)'
-    'ja-JP', 'Japanese (Japan)'
-    'no-NO', 'Norwegian (Norway)'
-    'pt-BR', 'Portuguese (Brazil)'
-    'ru-RU', 'Russian (Russia)'
-    'es-ES', 'Spanish (Spain)'
-    'es-MX', 'Spanish (Mexico)'
+    ar-SA => Arabic (Saudi Arabia)
+    zh-CN => Chinese (China)
+    zh-TW => Chinese (Taiwan)
+    cs-CZ => Czech (Czech Republic)
+    nl-NL => Dutch (Netherlands)
+    en-US => English (United States)
+    en-AU => English (Australia)
+    en-CA => English (Canada)
+    en-GB => English (Great Britain)
+    fr-CA => French (Canada)
+    fr-FR => French (France)
+    de-DE => German (Germany)
+    hu-HU => Italian (Italy)
+    it-IT => Hungarian (Hungary)
+    ja-JP => Japanese (Japan)
+    ko-KR => Korean (Korea)
+    no-NO => Norwegian (Norway)
+    pl-PL => Polish (Poland)
+    pt-BR => Portuguese (Brazil)
+    ru-RU => Russian (Russia)
+    tr-TR => Turkish (Turkey)
+    es-ES => Spanish (Spain)
+    es-MX => Spanish (Mexico)
+    es-US => Spanish (United States)
+    sv-SE => Swedish (Sweden)
+    vi-VN => Vietnamese (Vietnam)
 ```
-

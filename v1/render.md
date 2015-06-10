@@ -27,11 +27,11 @@ The render api allows you to render a template with data, using the exact same r
 
 ```json
 {
-  "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
-  "template_data": { "amount": "$12.00" },
-  "version_id": "ver_r4nd0ml3tt3rsv15h4l0l",
-  "locale": "en-US",
-  "strict": true
+    "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+    "template_data": { "amount": "$12.00" },
+    "version_id": "ver_r4nd0ml3tt3rsv15h4l0l",
+    "locale": "en-US",
+    "strict": true
 }
 ```
 

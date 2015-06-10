@@ -22,6 +22,7 @@ The render api allows you to render a template with data, using the exact same r
 - version\_name (optional)  -- Version name that you want rendered (provide either a version_name or a version_id, not both)
 - locale (optional)         -- Template locale to render
 - strict (optional)         -- Render in strict mode (fails on missing template data)
+- minify (optional)         -- Minifies the template after rendering
 
 #### Sample Request:
 
@@ -31,7 +32,8 @@ The render api allows you to render a template with data, using the exact same r
   "template_data": { "amount": "$12.00" },
   "version_id": "ver_r4nd0ml3tt3rsv15h4l0l",
   "locale": "en-US",
-  "strict": true
+  "strict": true,
+  "minify": true
 }
 ```
 

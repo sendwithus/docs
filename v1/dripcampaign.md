@@ -32,7 +32,7 @@ This will add the specified customer to the first step of the specified drip cam
 ```json
 {
     "recipient": {
-    "address": "customer@example.com"
+        "address": "customer@example.com"
     }
 }
 ```
@@ -41,37 +41,37 @@ This will add the specified customer to the first step of the specified drip cam
 
 ```json
 {
-  "recipient": {
-    "name": "John",
-    "address": "user@email.com"
-  },
-  "email_data": { "amount": "$12.00" },
+    "recipient": {
+        "name": "John",
+        "address": "user@email.com"
+    },
+    "email_data": { "amount": "$12.00" },
 
-  "cc": [
-    {"address": "cc_one@email.com"},
-    {"address": "cc_two@email.com"}
-  ],
+    "cc": [
+        {"address": "cc_one@email.com"},
+        {"address": "cc_two@email.com"}
+    ],
 
-  "bcc": [
-    {"address": "bcc_one@email.com"},
-    {"address": "bcc_two@email.com"}
-  ],
+    "bcc": [
+        {"address": "bcc_one@email.com"},
+        {"address": "bcc_two@email.com"}
+    ],
 
-  "sender": {
-    "name": "Company",
-    "address": "company@company.com",
-    "reply_to": "info@company.com"
-  },
+    "sender": {
+        "name": "Company",
+        "address": "company@company.com",
+        "reply_to": "info@company.com"
+    },
 
-  "tags": [
-    "tag1",
-    "tag2",
-    "tag3"
-  ],
+    "tags": [
+        "tag1",
+        "tag2",
+        "tag3"
+    ],
 
-  "locale": "en-US",
+    "locale": "en-US",
 
-  "esp_account": "esp_1a2b3c4d5e"
+    "esp_account": "esp_1a2b3c4d5e"
 }
 ```
 

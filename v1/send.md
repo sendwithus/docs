@@ -37,58 +37,58 @@ order: 1
 
 ```json
 {
-  "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
-  "recipient": {
-    "name": "John",
-    "address": "user@email.com"
-  },
-  "email_data": { "amount": "$12.00" },
-
-  "cc": [
-    {"address": "cc_one@email.com"},
-    {"address": "cc_two@email.com"}
-  ],
-
-  "bcc": [
-    {"address": "bcc_one@email.com"},
-    {"address": "bcc_two@email.com"}
-  ],
-
-  "sender": {
-    "name": "Company",
-    "address": "company@company.com",
-    "reply_to": "info@company.com"
-  },
-
-  "tags": [
-    "tag1",
-    "tag2",
-    "tag3"
-  ],
-
-  "headers": {
-    "X-HEADER-ONE": "header-value"
-  },
-
-  "inline": {
-    "id": "cat.png",
-    "data": "{BASE_64_ENCODED_FILE_DATA}"
-  },
-
-  "files": [
-    {
-      "id": "doc.txt",
-      "data": "{BASE_64_ENCODED_FILE_DATA}"
+    "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+    "recipient": {
+        "name": "John",
+        "address": "user@email.com"
     },
-    {
-      "id": "stuff.zip",
-      "data": "{BASE_64_ENCODED_FILE_DATA}"
-    }
-  ],
+    "email_data": { "amount": "$12.00" },
 
-  "locale": "en-US",
+    "cc": [
+        {"address": "cc_one@email.com"},
+        {"address": "cc_two@email.com"}
+    ],
 
-  "esp_account": "esp_1a2b3c4d5e"
+    "bcc": [
+        {"address": "bcc_one@email.com"},
+        {"address": "bcc_two@email.com"}
+    ],
+
+    "sender": {
+        "name": "Company",
+        "address": "company@company.com",
+        "reply_to": "info@company.com"
+    },
+
+    "tags": [
+        "tag1",
+        "tag2",
+        "tag3"
+    ],
+
+    "headers": {
+        "X-HEADER-ONE": "header-value"
+    },
+
+    "inline": {
+        "id": "cat.png",
+        "data": "{BASE_64_ENCODED_FILE_DATA}"
+    },
+
+    "files": [
+        {
+            "id": "doc.txt",
+            "data": "{BASE_64_ENCODED_FILE_DATA}"
+        },
+        {
+            "id": "stuff.zip",
+            "data": "{BASE_64_ENCODED_FILE_DATA}"
+        }
+    ],
+
+    "locale": "en-US",
+
+    "esp_account": "esp_1a2b3c4d5e"
 }
 ```
 
@@ -111,15 +111,15 @@ order: 1
 
 ```json
 {
-  "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+    "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
 
-  "recipient": {
-    "name": "John",
-    "address": "user@email.com"
-  },
+    "recipient": {
+        "name": "John",
+        "address": "user@email.com"
+    },
 
-  "email_data": { "amount": "$12.00" },
+    "email_data": { "amount": "$12.00" },
 
-  "locale": "en-US"
+    "locale": "en-US"
 }
 ```

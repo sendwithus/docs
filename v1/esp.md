@@ -39,7 +39,6 @@ for a given sendwithus account.
 - **mailgun**
 - **mandrill**
 - **postmark**
-- **messagebus**
 - **ses**
 - **mailjet**
 - **dyn**
@@ -103,18 +102,6 @@ for a given sendwithus account.
     "esp_type": "postmark",
     "credentials": {
         "api_key": "my-postmark-api-key"
-    }
-}
-```
-
-
-```json
-{
-    "name": "My Message Bus Account",
-    "esp_type": "messagebus",
-    "credentials": {
-        "api_key": "mymessagebusapikey",
-        "session_key": "mymessagebussessionkey"
     }
 }
 ```

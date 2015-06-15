@@ -9,7 +9,7 @@ order: 12
 The sendwithus batch endpoint enables multiple API calls
 to be made in a single HTTP request.
 
-*NOTE* -- Batch sizes over 100 requests are not recommended.
+*NOTE* -- Batch sizes over 10 requests are not recommended.
 
 
 ## Sample Batch (Multiple Sends)

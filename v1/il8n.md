@@ -108,7 +108,7 @@ The suffix, in this case 'US', is a country code following the ISO 3166-1 Alpha-
 
 ISO 3166-1 Alpha-2: http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2
 
-The Locale codes that we currently support are as follows (Last updated: February 18, 2015):
+The Locale codes that we currently support are as follows (Last updated: June 18, 2015):
 
 ```
     ar-SA => Arabic (Saudi Arabia)

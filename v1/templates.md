@@ -157,6 +157,7 @@ If no locale is specified in the URL the default locale will be used in all case
     "text": "sometext"
 }
 ```
+
 ## Create a New Template
 
 `POST /templates`
@@ -225,6 +226,7 @@ If no locale is specified in the URL the default locale will be used in all case
     "name": "A New Template"
 }
 ```
+
 ## Create a New Template Version
 
 `POST /templates/(:template_id)/versions`

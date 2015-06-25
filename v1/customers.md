@@ -134,7 +134,7 @@ This call will retrieve email logs for a customer.
 
 ## Add Customer to a Group
 
-`POST /customers/(:email)/groups(:group_id)`
+`POST /customers/(:email)/groups/(:group_id)`
 
 #### Sample Response:
 
@@ -147,7 +147,7 @@ This call will retrieve email logs for a customer.
 
 ## Remove Customer from a Group
 
-`DELETE /customers/(:email)/groups(:group_id)`
+`DELETE /customers/(:email)/groups/(:group_id)`
 
 #### Sample Response:
 

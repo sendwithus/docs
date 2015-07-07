@@ -42,10 +42,11 @@ This call will retrieve a customer by a specified email.
 All parameters are mandatory unless otherwise noted.
 
 If a Customer already exists with the specified email address, then a data merge is performed. Merge operations will:
+
 * replace existing attributes with new values
 * add any new attributes to the Customer
 
-Merge operations will never remove attributes from a Customer. 
+Merge operations will never remove attributes from a Customer.
 
 `POST /customers`
 

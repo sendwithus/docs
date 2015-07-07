@@ -82,7 +82,7 @@ order: 3
 
 ## Update an existing snippet
 
-PUT /snippets/(:id)`
+`PUT /snippets/(:id)`
 
 #### Params:
 

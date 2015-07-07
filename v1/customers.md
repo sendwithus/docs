@@ -39,7 +39,13 @@ This call will retrieve a customer by a specified email.
 
 ## Creating/Updating a New Customer
 
-This call will perform an update if a customer already exists with the specified email.
+All parameters are mandatory unless otherwise noted.
+
+If a Customer already exists with the specified email address, then a data merge is performed. Merge operations will:
+* replace existing attributes with new values
+* add any new attributes to the Customer
+
+Merge operations will never remove attributes from a Customer. 
 
 `POST /customers`
 
@@ -71,21 +77,7 @@ This call will perform an update if a customer already exists with the specified
 ```json
 {
     "success": true,
-    "status": "OK",
-    "customer": {
-        "object": "customer",
-        "email": "customer@example.com",
-        "data": {
-            "first_name": "Matt",
-            "city": "San Francisco"
-        },
-        "created": 5858858124,
-        "locale": "en-US",
-        "groups": [
-            "grp_1234",
-            "grp_5678"
-        ]
-    }
+    "status": "OK"
 }
 ```
 

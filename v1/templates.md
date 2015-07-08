@@ -268,17 +268,19 @@ If no locale is specified in the URL the default locale will be used in all case
 }
 ```
 
-## Delete a specific template (all versions and locales unless locale is specified)
+## Delete a specific template 
 
 `DELETE /templates/(:template_id)`
 
 `DELETE /templates/(:template_id)/locales/(:locale)`
 
+*NOTE* -- all versions and locales will be deleted unless a locale is specified
+
 #### Sample Response:
 
 ```json
 {
-    "success": True,
-    "status": "OK",
+    "success": true,
+    "status": "OK"
 }
 ```

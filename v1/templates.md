@@ -8,7 +8,7 @@ order: 0
 
 If no locale is specified in the URL the default locale will be used in all cases.
 
-*NOTE:* - All parameters are mandatory unless otherwise noted.
+*NOTE* -- All parameters are mandatory unless otherwise noted.
 
 ## Get a List of Templates
 

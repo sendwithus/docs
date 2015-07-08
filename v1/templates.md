@@ -267,3 +267,18 @@ If no locale is specified in the URL the default locale will be used in all case
     "subject": "New Version!"
 }
 ```
+
+## Delete a specific template (all versions and locales unless locale is specified)
+
+`DELETE /templates/(:template_id)`
+
+`DELETE /templates/(:template_id)/locales/(:locale)`
+
+#### Sample Response:
+
+```json
+{
+    "success": True,
+    "status": "OK",
+}
+```

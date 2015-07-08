@@ -8,7 +8,7 @@ order: 0
 
 If no locale is specified in the URL the default locale will be used in all cases.
 
-*NOTE:* - All parameters are mandatory unless otherwise noted.
+*NOTE* -- All parameters are mandatory unless otherwise noted.
 
 ## Get a List of Templates
 
@@ -265,5 +265,22 @@ If no locale is specified in the URL the default locale will be used in all case
     "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
     "text": "some text",
     "subject": "New Version!"
+}
+```
+
+## Delete a specific template 
+
+`DELETE /templates/(:template_id)`
+
+`DELETE /templates/(:template_id)/locales/(:locale)`
+
+*NOTE* -- all versions and locales will be deleted unless a locale is specified
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK"
 }
 ```

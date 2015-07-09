@@ -19,10 +19,10 @@ Retrieve a list of available logs. Logs are sorted in reverse chronological orde
 
 - count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
 - offset (optional) -- Offset the number of logs to return. *Default: 0*
-- created_gt (optional) -- Return logs created strictly after the given UTC timestamp.
-- created_gte (optional) -- Return logs created on or after the given UTC timestamp.
-- created_lt (optional) -- Return logs created strictly before the given UTC timestamp.
-- created_lte (optional) -- Return logs created on or before the given UTC timestamp.
+- created_gt (optional) -- Return logs created strictly after the given Unix Timestamp (UTC).
+- created_gte (optional) -- Return logs created on or after the given Unix Timestamp (UTC).
+- created_lt (optional) -- Return logs created strictly before the given Unix Timestamp (UTC).
+- created_lte (optional) -- Return logs created on or before the given Unix Timestamp (UTC).
 
 #### Sample Response:
 

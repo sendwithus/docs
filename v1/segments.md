@@ -36,8 +36,9 @@ order: 9
 
 #### Params:
 
-- email_id       -- ID of the template to send
-- email_data (optional)       -- Key/Value data to merge into template
+- email_id                      -- ID of the template to send
+- email_data (optional)         -- Key/Value data to merge into template
+- esp\_account (optional)       -- ID of the ESP Account to send emails through. ex: esp_1a2b3c4d
 
 #### Sample Request
 

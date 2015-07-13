@@ -46,7 +46,7 @@ If a Customer already exists with the specified email address, then a data merge
 * replace existing attributes with new values
 * add any new attributes to the Customer
 
-Merge operations will never remove attributes from a Customer.
+Merge operations will never remove attributes from a Customer. Note that customer data can only be simple data types like strings and integers.
 
 `POST /customers`
 

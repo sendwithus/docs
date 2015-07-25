@@ -55,6 +55,7 @@ Merge operations will never remove attributes from a Customer. Note that custome
 - email       -- Email (key) of the customer
 - data (optional)       -- Key/Value data for customer profile
 - locale (optional)     -- Specify a locale for this customer
+- groups (optional)     -- Will be added to the list of existing groups
 
 #### Sample Request:
 

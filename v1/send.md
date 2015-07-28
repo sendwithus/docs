@@ -111,7 +111,7 @@ order: 1
 
 ```json
 {
-    "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+    "template": "tem_A5RHVP6CnRbS34UysLjYHx",
 
     "recipient": {
         "name": "John",

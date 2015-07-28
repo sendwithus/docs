@@ -14,7 +14,7 @@ order: 1
 
 #### Params:
 
-- email_id                  -- Template ID to send
+- template                  -- Template ID to send
 - recipient
    - address                -- The recipient's email address
    - name (optional)        -- The recipient's name
@@ -24,7 +24,7 @@ order: 1
    - address                -- The sender's email address
    - reply_to               -- The sender's reply-to address
    - name                   -- The sender's name
-- email_data                -- Object containing email template data
+- template_data             -- Object containing email template data
 - tags (optional)           -- Array of tags (as strings). _Tags are passed to your ESP as Categories, Tags, etc._
 - headers (options)         -- Object contain SMTP headers to be included with the email
 - inline (optional)         -- Inline attachment object (see example)
@@ -37,12 +37,12 @@ order: 1
 
 ```json
 {
-    "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+    "template": "tem_A5RHVP6CnRbS34UysLjYHx",
     "recipient": {
         "name": "John",
         "address": "user@email.com"
     },
-    "email_data": { "amount": "$12.00" },
+    "template_data": { "amount": "$12.00" },
 
     "cc": [
         {"address": "cc_one@email.com"},
@@ -111,14 +111,14 @@ order: 1
 
 ```json
 {
-    "email_id": "tem_A5RHVP6CnRbS34UysLjYHx",
+    "template_id": "tem_A5RHVP6CnRbS34UysLjYHx",
 
     "recipient": {
         "name": "John",
         "address": "user@email.com"
     },
 
-    "email_data": { "amount": "$12.00" },
+    "template_data": { "amount": "$12.00" },
 
     "locale": "en-US"
 }

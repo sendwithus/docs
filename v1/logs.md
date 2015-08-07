@@ -9,7 +9,7 @@ order: 2
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
-## Get a List all Logs
+## Get a List of all Logs
 
 `GET /logs`
 

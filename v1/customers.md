@@ -102,7 +102,13 @@ Merge operations will never remove attributes from a Customer. Note that custome
 
 This call will retrieve email logs for a customer.
 
-`GET /customers/matt@sendwithus.com/logs`
+`GET /customers/matt@sendwithus.com/logs?count={count}&created_lt={timestamp}&created_gt={timestamp}`
+
+#### Arguments:
+
+- count (optional)       -- A number between 1 and 100 to specify the number of logs returned (including scheduled drips). If none is specified, a limit of 100 sent logs is automatically imposed.
+- created_lt (optional)       -- A Unix Timestamp used as a index for the search. The logs retrieved will have been sent before the timestamp specified.
+- created_gt (optional)     -- A Unix Timestamp used as a index for the search. The logs retrieved will have been sent after the timestamp specified.
 
 #### Sample Response:
 
@@ -110,18 +116,22 @@ This call will retrieve email logs for a customer.
 {
     "success": true,
     "status": "OK",
-    "logs": [{
-        "object": "log",
-        "id": "log_asdf1234qwerty",
-        "created": 1234567890,
-        "recipient_name": "Matt",
-        "recipient_address": "matt@sendwithus.com",
-        "status": "opened",
-        "message": "SendGrid: Message has been opened",
-        "email_id": "tem_as8dfjha8dap",
-        "email_name": "Order Confirmation",
-        "email_version": "Version A"
-    }]
+    "logs": [
+        {
+            "object": "log",
+            "id": "log_asdf1234qwerty",
+            "created": 1234567890,
+            "recipient_name": "Matt",
+            "recipient_address": "matt@sendwithus.com",
+            "status": "opened",
+            "message": "SendGrid: Message has been opened",
+            "email_id": "tem_as8dfjha8dap",
+            "email_name": "Order Confirmation",
+            "email_version": "Version A"
+        },
+        { ... },
+        { ... }
+    ]
 }
 ```
 

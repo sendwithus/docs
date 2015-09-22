@@ -108,7 +108,7 @@ This call will retrieve email logs for a customer.
 
 - count (optional)       -- A number between 1 and 100 to specify the number of logs returned (including scheduled drips). If none is specified, a limit of 100 sent logs is automatically imposed.
 - created_lt (optional)       -- A Unix Timestamp used as a index for the search. The logs retrieved will have been sent before the timestamp specified.
-- created_gt (optional)     -- A Unix Timestamp used as a index for the search. The logs retrieved will have been sent after timestamp specified or been scheduled for sending.
+- created_gt (optional)     -- A Unix Timestamp used as a index for the search. The logs retrieved will have been sent after the timestamp specified.
 
 #### Sample Response:
 

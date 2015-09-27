@@ -189,7 +189,7 @@ If no locale is specified in the URL the default locale will be used in all case
 {
     "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
     "locale": "en-US",
-    "name": "A New Template"
+    "name": "New Template"
 }
 ```
 

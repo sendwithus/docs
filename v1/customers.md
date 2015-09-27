@@ -12,7 +12,7 @@ order: 6
 
 This call will retrieve a customer by a specified email.
 
-`GET /customers/us@sendwithus.com`
+`GET /customers/customer@example.com`
 
 #### Sample Response:
 

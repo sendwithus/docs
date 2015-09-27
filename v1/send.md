@@ -106,20 +106,3 @@ order: 1
     }
 }
 ```
-
-#### Sample il8n Request:
-
-```json
-{
-    "template": "tem_A5RHVP6CnRbS34UysLjYHx",
-
-    "recipient": {
-        "name": "John",
-        "address": "user@email.com"
-    },
-
-    "template_data": { "amount": "$12.00" },
-
-    "locale": "en-US"
-}
-```

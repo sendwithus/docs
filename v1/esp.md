@@ -56,8 +56,6 @@ for a given sendwithus account.
 - name -- Friendly name of the new esp account
 - esp_type -- Must be one of the options listed above
 - credentials -- Account credentials of the new esp account (must be in the format given below)
-- send\_test\_email (optional) -- Send a test email on successful configuration
-                                to the owner(s) of the sendwithus account
 
 #### Sample Request:
 

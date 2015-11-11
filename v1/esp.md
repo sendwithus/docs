@@ -16,8 +16,6 @@ for a given sendwithus account.
 #### Params:
 
 - esp\_type (optional) -- Filter response to only return ESP accounts of a certain type
-- count (optional) -- The number of logs to return. *Max: 100, Default: 100.*
-- offset (optional) -- Offset the number of logs to return. *Default: 0*
 
 #### Sample Response:
 

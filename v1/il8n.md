@@ -135,6 +135,8 @@ The Locale codes that we currently support are as follows (Last updated: June 18
     ko-KR => Korean (Korea)
     lv-LV => Latvian (Latvia)
     no-NO => Norwegian (Norway)
+    nn-NO => Norwegian Nynorsk (Norway)
+    nn-NB => Norwegian Bokmal (Norway)
     pl-PL => Polish (Poland)
     pt-BR => Portuguese (Brazil)
     pt-PT => Portuguese (Portugal)

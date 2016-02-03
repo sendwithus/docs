@@ -8,6 +8,8 @@ order: 1
 
 *NOTE* -- All parameters are mandatory unless otherwise noted.
 
+*NOTE* -- If a customer does not exist by the specified email, this call will create a customer.
+
 ## Send an Email
 
 `POST /send`

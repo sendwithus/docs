@@ -22,7 +22,7 @@
 
 ### [Snippets](../master/v1/snippets.md)
 
-### [Internationalization (il8n)](../master/v1/il8n.md)
+### [Internationalization (i18n)](../master/v1/i18n.md)
 
 
 

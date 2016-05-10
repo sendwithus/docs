@@ -71,25 +71,3 @@ order: 9
     "success": true
 }
 ```
-
-## Retrieve Customers in a Segment _(Beta Only)_
-
-`GET /segments/(:segment_id)/run`
-
-#### Sample Response:
-
-```json
-[
-    {
-        "object": "customer",
-        "created": 1234567890,
-        "email": "one@email.com"
-    }, {
-        "object": "customer",
-        "created": 1234567891,
-        "email": "two@email.com"
-    }, ...
-]
-```
-
-_NOTE: Please contact [beta@sendwithus.com](mailto:beta@sendwithus.com) to enable this endpoint for your account._

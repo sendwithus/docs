@@ -71,8 +71,6 @@ to be made in a single HTTP request.
     "path": "/api/v1/send",
     "status_code": 400,
     "method": "POST",
-    "body": {
-        "Invalid email_id, email not found"
-    }
+    "body": "Template not found"
 }]
 ```

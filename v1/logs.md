@@ -167,10 +167,11 @@ Resend a specific email by id.
 {
     "success": true,
     "status": "OK",
-    "log_id": "log_asdf123456qwerty",
+    "receipt_id": "log_asdf123456qwerty",
     "email": {
         "name": "Order Confirmation",
-        "version_name": "Version A"
+        "version_name": "Version A",
+        "locale": "en-US"
     }
 }
 ```

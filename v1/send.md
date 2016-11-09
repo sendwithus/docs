@@ -26,12 +26,12 @@ order: 1
    - address                -- The sender's email address
    - reply_to               -- The sender's reply-to address
    - name                   -- The sender's name
-- template_data (optional)  -- Object containing email template data
+- template_data (optional)  -- Object containing email template data (maximum 128KB)
 - tags (optional)           -- Array of tags (as strings). _Tags are passed to your ESP as Categories, Tags, etc._
 - headers (optional)         -- Object contain SMTP headers to be included with the email
 - inline (optional)         -- Inline attachment object (see example)
 - files (optional)          -- List of file attachments (combined maximum 7MB, see example)
-- esp_account (optional)   -- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
+- esp\_account (optional)   -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 - locale (optional)         -- Template locale to send (ie: en-US)
 - version_name (optional)   -- Name of the template version to send (overrides A/B tests)
 

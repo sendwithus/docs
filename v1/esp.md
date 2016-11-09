@@ -30,7 +30,7 @@ The Sendwithus ESP Accounts API allows for fetch and creation of ESP Accounts fo
 ]
 ```
 
-#### Possible esp_account.esp_type values:
+#### Possible esp\_account.esp\_type values:
 
 - **sendgrid**
 - **mailgun**

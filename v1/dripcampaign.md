@@ -7,7 +7,7 @@ order: 8
 # Drip Campaigns API
 
 ## Activate campaign for a customer
-This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.
+This will add the specified customer to the first step of the specified drip campaign. If the first step has a delay on it, then it will send the first email once that delay has elapsed.
 
 `POST /drip_campaigns/(:drip_campaign_id)/activate`
 
@@ -24,7 +24,7 @@ This will add the specified customer to the first step of the specified drip cam
    - name                 -- The sender's name
 - email_data (optional)   -- Object containing email template data
 - tags (optional)         -- Array of tags (as strings)
-- esp_account (optional) -- ID of the ESP Account to send this email through. ex: esp_1a2b3c4d5e
+- esp\_account (optional) -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 - locale (optional)       -- Locale to send emails with
 
 #### Sample Request
@@ -125,7 +125,7 @@ If a user unsubscribes, changes email addresses, or cancels, call this endpoint 
 `POST /drip_campaigns/deactivate`
 
 #### Params:
-- recipient_address -- Email address of the customer you would like to remove from all drip campaigns.
+- recipient\_address -- Email address of the customer you would like to remove from all drip campaigns.
 
 #### Sample Request
 

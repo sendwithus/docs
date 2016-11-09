@@ -21,7 +21,8 @@ order: 3
         "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
-        "created": 5858858124
+        "created": 5858858124,
+        "modified": 5938868250
     }
 ]
 ```
@@ -38,7 +39,8 @@ order: 3
     "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
     "name": "My First Snippet",
     "body": "<h1>Welcome!</h1>",
-    "created": 5858858124
+    "created": 5858858124,
+    "modified": 5938868250
 }
 ```
 
@@ -71,7 +73,8 @@ order: 3
         "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
-        "created": 5858858124
+        "created": 5858858124,
+        "modified": 5938868250
     }
 }
 ```
@@ -105,7 +108,8 @@ order: 3
         "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
-        "created": 5858858124
+        "created": 5858858124,
+        "modified": 5938868250
     }
 }
 ```

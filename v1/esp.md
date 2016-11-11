@@ -6,16 +6,15 @@ order: 5
 
 # ESP Account API
 
-The sendwithus ESP Accounts API allows for fetch and creation of ESP Accounts
-for a given sendwithus account.
+The Sendwithus ESP Accounts API allows for fetch and creation of ESP Accounts for a given Sendwithus account.
 
 ## List all ESP Accounts
 
-`GET /esp_accounts`
+`GET /esp_accounts?esp_type={esp_type}`
 
-#### Params:
+#### Arguments:
 
-- esp\_type (optional) -- Filter response to only return ESP accounts of a certain type
+- esp_type (optional) -- Filter response to only return ESP accounts of a certain type
 
 #### Sample Response:
 
@@ -45,7 +44,7 @@ for a given sendwithus account.
 
 
 
-## Add a new ESP Account.
+## Add a new ESP Account
 
 `POST /esp_accounts`
 
@@ -170,7 +169,7 @@ for a given sendwithus account.
 ```
 
 
-## Set a given ESP Account as the default for sending emails.
+## Set a given ESP Account as the default for sending emails
 
 `PUT /esp_accounts/set_default`
 

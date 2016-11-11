@@ -7,9 +7,9 @@ order: 8
 # Drip Campaigns API
 
 ## Activate campaign for a customer
-This will add the specified customer to the first step of the specified drip campaign.  If the first step has a delay on it, then it will send the first email once that delay has elapsed.
+This will add the specified customer to the first step of the specified drip campaign. If the first step has a delay on it, then it will send the first email once that delay has elapsed.
 
-`POST /drip_campaigns/(drip_campaign_id)/activate`
+`POST /drip_campaigns/(:drip_campaign_id)/activate`
 
 #### Params:
 
@@ -86,13 +86,12 @@ This will add the specified customer to the first step of the specified drip cam
         "name": "welcome_campaign"
     },
     "recipient_address": "customer@example.com",
-    "locale": "en-US",
     "message": "Recipient successfully added to drip campaign."
 }
 ```
 
 ## Deactivate a campaign for customer
-`POST /drip_campaigns/(drip_campaign_id)/deactivate`
+`POST /drip_campaigns/(:drip_campaign_id)/deactivate`
 
 #### Params:
 - recipient\_address -- Email address of the customer you would like to remove from the specified campaign.
@@ -195,7 +194,7 @@ If a user unsubscribes, changes email addresses, or cancels, call this endpoint 
 
 ## Get the details on a specific drip campaign
 
-`GET /drip_campaigns/(drip_campaign_id)`
+`GET /drip_campaigns/(:drip_campaign_id)`
 
 #### Sample Response
 

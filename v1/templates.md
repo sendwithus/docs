@@ -27,6 +27,7 @@ If no locale is specified in the URL the default locale will be used in all case
             {
                 "name": "Version Name",
                 "id": "Version ID",
+                "published": true,
                 "created": "created unix timestamp",
                 "modified": "modified unix timestamp"
             }
@@ -46,14 +47,15 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ```json
 {
-    "id": "tem_jluyjluyjlyu",
+    "id": "tem_hQf1VnmCNrPjBdYQPOpLZ9",
     "name": "Template Name",
     "created": 1411606421,
     "locale": "en-US",
     "versions": [
         {
             "name": "Version Name",
-            "id": "ver_arstneiotsra",
+            "id": "ver_rmU8gMtRTYpwQcpYaPnB5p",
+            "published": true,
             "created": "created unix timestamp",
             "modified": "modified unix timestamp"
         }
@@ -73,7 +75,7 @@ If no locale is specified in the URL the default locale will be used in all case
 ```json
 [
     {
-        "id": "tem_arstarstarst",
+        "id": "tem_hQf1VnmCNrPjBdYQPOpLZ9",
         "created": 1411606421,
         "modified": 1411610000,
         "published": true,
@@ -83,7 +85,7 @@ If no locale is specified in the URL the default locale will be used in all case
         "subject": "My Subject"
     },
     {
-        "id": "tem_qwfpqwfpqwfp",
+        "id": "tem_hQf1VnmCNrPjBdYQPOpLZ8",
         "created": 1411606706,
         "modified": 1411610000,
         "published": false,
@@ -105,7 +107,7 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ```json
 {
-    "id": "ver_arstarstarst",
+    "id": "tem_hQf1VnmCNrPjBdYQPOpLZ9",
     "created": 1411606706,
     "modified": 1411610000,
     "published": true,
@@ -124,10 +126,10 @@ If no locale is specified in the URL the default locale will be used in all case
 
 #### Params:
 
-- name       -- The name of the template
+- name       -- The version name of the template
 - subject    -- The subject line of the template
 - html (optional) -- The HTML body of the template
-- text (optional) -- The Text body of the template
+- text (optional) -- The Plain Text body of the template
 
 *NOTE* -- At least one of html or text must be specified
 
@@ -167,7 +169,7 @@ If no locale is specified in the URL the default locale will be used in all case
 - name       -- The name of the template
 - subject    -- The subject line of the template
 - html (optional) -- The HTML body of the template
-- text (optional) -- The Text body of the template
+- text (optional) -- The Plain Text body of the template
 - locale (optional) -- The locale code of the template (defaults to en-US)
 
 *NOTE* -- At least one of html or text must be specified
@@ -199,11 +201,11 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ### Params:
 
-- name       -- The name of the intial version
+- name       -- The name of the initial version
 - subject    -- The subject line of the template
 - locale     -- The locale code of the new template
 - html (optional) -- The HTML body of the template
-- text (optional) -- The Text body of the template
+- text (optional) -- The Plain Text body of the template
 
 #### Sample Request:
 
@@ -223,7 +225,8 @@ If no locale is specified in the URL the default locale will be used in all case
 {
     "id": "tem_ACdWZKZf4CtZNPM27WAdf6",
     "locale": "fr-FR",
-    "name": "A New Template"
+    "name": "A New Template",
+    "version_id": "ver_RjEBErY6eXBPpgYt269iJU"
 }
 ```
 
@@ -235,10 +238,10 @@ If no locale is specified in the URL the default locale will be used in all case
 
 #### Params:
 
-- name       -- The name of the template
+- name       -- The version name of the template
 - subject    -- The subject line of the template
 - html (optional) -- The HTML body of the template
-- text (optional) -- The Text body of the template
+- text (optional) -- The Plain Text body of the template
 
 *NOTE* -- At least one of html or text must be specified
 
@@ -268,7 +271,7 @@ If no locale is specified in the URL the default locale will be used in all case
 }
 ```
 
-## Delete a specific template 
+## Delete a specific template
 
 `DELETE /templates/(:template_id)`
 

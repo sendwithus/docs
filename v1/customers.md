@@ -21,14 +21,14 @@ This call will retrieve a customer by a specified email.
     "success": true,
     "status": "OK",
     "customer": {
-    "object": "customer",
+        "object": "customer",
         "email": "customer@example.com",
         "data": {
-            "first_name": "Matt",
-            "city": "San Francisco"
+          "first_name": "Matt",
+          "city": "San Francisco"
         },
         "created": 5858858124,
-        "locale": "not set",
+        "locale": "en-US",
         "groups": [
             "grp_1234",
             "grp_5678"
@@ -52,7 +52,7 @@ Merge operations will never remove attributes from a Customer. Note that custome
 
 #### Params:
 
-- email       -- Email (key) of the customer
+- email                 -- Email (key) of the customer
 - data (optional)       -- Key/Value data for customer profile
 - locale (optional)     -- Specify a locale for this customer
 - groups (optional)     -- Will be added to the list of existing groups

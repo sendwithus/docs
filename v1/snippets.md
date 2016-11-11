@@ -18,7 +18,7 @@ order: 3
 [
     {
         "object": "snippet",
-        "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
+        "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
         "created": 5858858124,
@@ -31,16 +31,12 @@ order: 3
 
 `GET /snippets/(:id)`
 
-#### Params:
-
-*no params*
-
 #### Sample Response:
 
 ```json
 {
     "object": "snippet",
-    "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
+    "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
     "name": "My First Snippet",
     "body": "<h1>Welcome!</h1>",
     "created": 5858858124,
@@ -74,7 +70,7 @@ order: 3
     "status": "OK",
     "snippet": {
         "object": "snippet",
-        "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
+        "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
         "created": 5858858124,
@@ -109,7 +105,7 @@ order: 3
     "status": "OK",
     "snippet": {
         "object": "snippet",
-        "id": "snip_Q33jTLFc2ayG9KrF2Vcm4F",
+        "id": "snp_Q33jTLFc2ayG9KrF2Vcm4F",
         "name": "My First Snippet",
         "body": "<h1>Welcome!</h1>",
         "created": 5858858124,

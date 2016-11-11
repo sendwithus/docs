@@ -20,15 +20,15 @@ order: 1
 - recipient
    - address                -- The recipient's email address
    - name (optional)        -- The recipient's name
-- cc                        -- An array of CC recipients, of the format {"address":"cc@email.com"}
-- bcc                       -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
+- cc (optional)             -- An array of CC recipients, of the format {"address":"cc@email.com"}
+- bcc (optional)            -- An array of BCC recipients, of the format {"address":"bcc@email.com"}
 - sender (optional)
    - address                -- The sender's email address
    - reply_to               -- The sender's reply-to address
    - name                   -- The sender's name
-- template_data             -- Object containing email template data
+- template_data (optional)  -- Object containing email template data (maximum 128KB)
 - tags (optional)           -- Array of tags (as strings). _Tags are passed to your ESP as Categories, Tags, etc._
-- headers (options)         -- Object contain SMTP headers to be included with the email
+- headers (optional)         -- Object contain SMTP headers to be included with the email
 - inline (optional)         -- Inline attachment object (see example)
 - files (optional)          -- List of file attachments (combined maximum 7MB, see example)
 - esp\_account (optional)   -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
@@ -40,10 +40,12 @@ order: 1
 ```json
 {
     "template": "tem_A5RHVP6CnRbS34UysLjYHx",
+
     "recipient": {
         "name": "John",
         "address": "user@email.com"
     },
+
     "template_data": { "amount": "$12.00" },
 
     "cc": [
@@ -90,7 +92,9 @@ order: 1
 
     "locale": "en-US",
 
-    "esp_account": "esp_1a2b3c4d5e"
+    "esp_account": "esp_1a2b3c4d5e",
+
+    "version_name": "Version Name"
 }
 ```
 

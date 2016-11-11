@@ -10,9 +10,9 @@ order: 7
 
 ## Add Conversion to Customer
 
-This will add a new conversion to a specific customer in your sendwithus account.
+This will add a new conversion to a specific customer in your Sendwithus account.
 
-`POST /customers/[EMAIL_ADDRESS]/conversions`
+`POST /customers/(:email)/conversions`
 
 #### Params:
 

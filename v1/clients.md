@@ -17,6 +17,7 @@ All of our API Client Libraries are open source and available in our [Github Acc
 - [Node.js](https://github.com/sendwithus/sendwithus_nodejs)
 - [PHP](https://github.com/sendwithus/sendwithus_php)
 - [Java](https://github.com/sendwithus/sendwithus_java)
+- [C#](https://github.com/sendwithus/sendwithus_csharp)
 
 ### Unofficial, Third-party API Clients
 - [C# - Sendwithus.Client](https://github.com/Mimeo/SendWithUs.Client) [(mimeo)](https://github.com/Mimeo)

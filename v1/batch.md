@@ -29,7 +29,7 @@ The Sendwithus batch endpoint enables multiple API calls to be made in a single 
     "path": "/api/v1/send",
     "method": "POST",
     "body": {
-        "email_id": "tem_QszsrasQP6nqGewZhKB2G",
+        "template": "tem_QszsrasQP6nqGewZhKB2G",
         "recipient": {
             "address": "test+1@mydomain.com"
         }
@@ -38,7 +38,7 @@ The Sendwithus batch endpoint enables multiple API calls to be made in a single 
     "path": "/api/v1/send",
     "method": "POST",
     "body": {
-        "email_id": "tem_doesntexist",
+        "template": "tem_doesntexist",
         "recipient": {
             "address": "test+2@mydomain.com"
         }

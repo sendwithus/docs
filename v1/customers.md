@@ -28,11 +28,7 @@ This call will retrieve a customer by a specified email.
           "city": "San Francisco"
         },
         "created": 5858858124,
-        "locale": "en-US",
-        "groups": [
-            "grp_1234",
-            "grp_5678"
-        ]
+        "locale": "en-US"
     }
 }
 ```
@@ -55,7 +51,6 @@ Merge operations will never remove attributes from a Customer. Note that custome
 - email                 -- Email (key) of the customer
 - data (optional)       -- Key/Value data for customer profile
 - locale (optional)     -- Specify a locale for this customer
-- groups (optional)     -- Will be added to the list of existing groups
 
 #### Sample Request:
 
@@ -66,11 +61,7 @@ Merge operations will never remove attributes from a Customer. Note that custome
         "first_name": "Matt",
         "city": "San Francisco"
     },
-    "locale": "de-DE",
-    "groups": [
-        "grp_djd1234950",
-        "grp_jdkj497283"
-    ]
+    "locale": "de-DE"
 }
 ```
 
@@ -132,32 +123,5 @@ This call will retrieve email logs for a customer.
         { ... },
         { ... }
     ]
-}
-```
-
-
-## Add Customer to a Group
-
-`POST /customers/(:email)/groups/(:group_id)`
-
-#### Sample Response:
-
-```json
-{
-    "success": true,
-    "status": "OK"
-}
-```
-
-## Remove Customer from a Group
-
-`DELETE /customers/(:email)/groups/(:group_id)`
-
-#### Sample Response:
-
-```json
-{
-    "success": true,
-    "status": "OK"
 }
 ```

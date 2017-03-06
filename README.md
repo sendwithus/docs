@@ -12,10 +12,6 @@
 
 ### [ESP Accounts](../master/v1/esp.md)
 
-### [Segments](../master/v1/segments.md)
-
-### [Groups](../master/v1/customergroups.md)
-
 ### [Drip Campaigns](../master/v1/dripcampaign.md)
 
 ### [Templates](../master/v1/templates.md)

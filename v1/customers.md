@@ -23,10 +23,6 @@ This call will retrieve a customer by a specified email.
     "customer": {
         "object": "customer",
         "email": "customer@example.com",
-        "data": {
-          "first_name": "Matt",
-          "city": "San Francisco"
-        },
         "created": 5858858124,
         "locale": "en-US"
     }
@@ -37,19 +33,11 @@ This call will retrieve a customer by a specified email.
 
 All parameters are mandatory unless otherwise noted.
 
-If a Customer already exists with the specified email address, then a data merge is performed. Merge operations will:
-
-* replace existing attributes with new values
-* add any new attributes to the Customer
-
-Merge operations will never remove attributes from a Customer. Note that customer data can only be simple data types like strings and integers.
-
 `POST /customers`
 
 #### Params:
 
 - email                 -- Email (key) of the customer
-- data (optional)       -- Key/Value data for customer profile
 - locale (optional)     -- Specify a locale for this customer
 
 #### Sample Request:
@@ -57,10 +45,6 @@ Merge operations will never remove attributes from a Customer. Note that custome
 ```json
 {
     "email": "matt@sendwithus.com",
-    "data": {
-        "first_name": "Matt",
-        "city": "San Francisco"
-    },
     "locale": "de-DE"
 }
 ```

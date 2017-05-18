@@ -8,8 +8,6 @@
 
 ### [Logs](../master/v1/logs.md)
 
-### [ESP Accounts](../master/v1/esp.md)
-
 ### [Drip Campaigns](../master/v1/dripcampaign.md)
 
 ### [Templates](../master/v1/templates.md)

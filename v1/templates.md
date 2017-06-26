@@ -207,6 +207,8 @@ If no locale is specified in the URL the default locale will be used in all case
 - html (optional) -- The HTML body of the template
 - text (optional) -- The Plain Text body of the template
 
+*NOTE* -- At least one of html or text must be specified
+
 #### Sample Request:
 
 ```json

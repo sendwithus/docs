@@ -24,6 +24,7 @@ This will add the specified customer to the first step of the specified drip cam
    - name                 -- The sender's name
 - email_data (optional)   -- Object containing email template data
 - tags (optional)         -- Array of tags (as strings)
+- headers (optional)      -- Object contain SMTP headers to be included with the email
 - esp\_account (optional) -- ID of the ESP Account to send this email through. ex: esp\_1a2b3c4d5e
 - locale (optional)       -- Locale to send emails with
 
@@ -68,6 +69,10 @@ This will add the specified customer to the first step of the specified drip cam
         "tag2",
         "tag3"
     ],
+    
+    "headers": {
+        "X-HEADER-ONE": "header-value"
+    },
 
     "locale": "en-US",
 

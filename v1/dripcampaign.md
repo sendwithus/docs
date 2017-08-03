@@ -47,35 +47,28 @@ This will add the specified customer to the first step of the specified drip cam
         "address": "user@email.com"
     },
     "email_data": { "amount": "$12.00" },
-
     "cc": [
         {"address": "cc_one@email.com"},
         {"address": "cc_two@email.com"}
     ],
-
     "bcc": [
         {"address": "bcc_one@email.com"},
         {"address": "bcc_two@email.com"}
     ],
-
     "sender": {
         "name": "Company",
         "address": "company@company.com",
         "reply_to": "info@company.com"
     },
-
     "tags": [
         "tag1",
         "tag2",
         "tag3"
     ],
-    
     "headers": {
         "X-HEADER-ONE": "header-value"
     },
-
     "locale": "en-US",
-
     "esp_account": "esp_1a2b3c4d5e"
 }
 ```

@@ -14,6 +14,6 @@ To make the integration process as easy as possible, we include test API keys wi
 
 All API URLs referenced in this document are relative to the following base URL:
 
-```
+```sh
 https://api.sendwithus.com/api/v1
 ```

@@ -40,45 +40,36 @@ order: 1
 ```json
 {
     "template": "tem_A5RHVP6CnRbS34UysLjYHx",
-
     "recipient": {
         "name": "John",
         "address": "user@email.com"
     },
-
     "template_data": { "amount": "$12.00" },
-
     "cc": [
         {"address": "cc_one@email.com"},
         {"address": "cc_two@email.com"}
     ],
-
     "bcc": [
         {"address": "bcc_one@email.com"},
         {"address": "bcc_two@email.com"}
     ],
-
     "sender": {
         "name": "Company",
         "address": "company@company.com",
         "reply_to": "info@company.com"
     },
-
     "tags": [
         "tag1",
         "tag2",
         "tag3"
     ],
-
     "headers": {
         "X-HEADER-ONE": "header-value"
     },
-
     "inline": {
         "id": "cat.png",
         "data": "{BASE_64_ENCODED_FILE_DATA}"
     },
-
     "files": [
         {
             "id": "doc.txt",
@@ -89,11 +80,8 @@ order: 1
             "data": "{BASE_64_ENCODED_FILE_DATA}"
         }
     ],
-
     "locale": "en-US",
-
     "esp_account": "esp_1a2b3c4d5e",
-
     "version_name": "Version Name"
 }
 ```

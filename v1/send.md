@@ -100,3 +100,25 @@ order: 1
     }
 }
 ```
+
+## Inline Images
+
+### Sample Request Code
+```json
+{
+    "template": "tem_9UPo9P7qMr8qHwHvPhDjP6F6f",
+    "recipient": {
+        "name": "John",
+        "address": "customer@example.com"
+    },
+    "inline": {
+        "id": "happy.png",
+        "data": "iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAANlBMVEX1zHX///////70znj31I799eP20YP53qb879P879V/XjXTrWO5lFSgfUbYsWWOazx0Ui+DYjfNsfnyAAAAfUlEQVQYlXWQ2w6AIAxDK3KTIej//6yboiiZfWjGSZaVYlKE000MHvAhmg6dRZN1N1xmPJqXC7oXY+oEGouPrGEYZaq1e2QYZEipe2DoMcgzHBnwB2W90PWk0tblEG1ZWN6oHTojlT2ta9rLHamFp5yph1e/qReiV6eXPOoAcMkDL0/NWToAAAAASUVORK5CYII="
+    }
+}
+```
+### Sample Template Code
+
+```html
+<img src="cid:happy.png" alt="a happy face">
+```

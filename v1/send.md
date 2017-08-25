@@ -104,6 +104,7 @@ order: 1
 ## Inline Images
 
 ### Sample Request Code
+
 ```json
 {
     "template": "tem_9UPo9P7qMr8qHwHvPhDjP6F6f",
@@ -117,6 +118,7 @@ order: 1
     }
 }
 ```
+
 ### Sample Template Code
 
 ```html

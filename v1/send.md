@@ -103,7 +103,7 @@ order: 1
 
 ## Inline Images
 
-### Sample Request Code
+#### Sample Request Code
 
 ```json
 {
@@ -119,7 +119,7 @@ order: 1
 }
 ```
 
-### Sample Template Code
+#### Sample Template Code
 
 ```html
 <img src="cid:happy.png" alt="a happy face">

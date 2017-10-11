@@ -92,7 +92,7 @@ order: 1
 {
     "success": true,
     "status": "OK",
-    "receipt_id": "unique_receipt_id",
+    "receipt_id": "log_asdf1234qwerty",
     "email": {
         "name": "NAME OF EMAIL",
         "version_name": "NAME OF VERSION",

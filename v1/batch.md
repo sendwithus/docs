@@ -63,7 +63,7 @@ The Sendwithus batch endpoint enables multiple API calls to be made in a single 
             "name": "Docs Page Curl Command",
             "version_name": "Original"
         },
-        "receipt_id": "374s1700-279f-4642-b775-58e8231d443b-y6cem5",
+        "receipt_id": "log_asdf1234qwerty",
         "status": "OK"
     }
 }, {

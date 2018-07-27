@@ -25,4 +25,3 @@ All of our API Client Libraries are open source and available in our [Github Acc
 - [ColdFusion - SendWithUsCfc](https://github.com/philcruz/SendWithUsCfc) [(philcruz)](https://github.com/philcruz)
 - [Flask - Flask-Sendwithus](https://github.com/jmagnusson/flask-sendwithus) [(jmagnusson)](https://github.com/jmagnusson)
 - [Go - sendwithus_go](https://github.com/elbuo8/sendwithus_go) [(elbuo8)](https://github.com/elbuo8)
-- [Python - sendwithus_py2](https://github.com/bitcasa/sendwithus_py2) [(bitcasa)](https://github.com/bitcasa)

@@ -63,6 +63,8 @@ All parameters are mandatory unless otherwise noted.
 
 `DELETE /customers/(:email)`
 
+*NOTE* -- Deleting customers **will not** remove any pending scheduled drip campaign emails. To prevent these emails from being delivered, you must deactivate the user using the [Drip Campaign Deactivation endpoint](https://support.sendwithus.com/api/#deactivateacustomerfromallcampaigns).
+
 #### Sample Response:
 
 ```javascript

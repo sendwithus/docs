@@ -109,7 +109,7 @@ Return a list of all events associated with a given Log.
 ```
 
 
-### Resend an existing Log
+## Resend an existing Log
 
 `POST /resend`
 

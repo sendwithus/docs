@@ -128,8 +128,11 @@ If no locale is specified in the URL the default locale will be used in all case
 
 - name       -- The version name of the template
 - subject    -- The subject line of the template
+- preheader (optional) -- The preheader of the template
 - html (optional) -- The HTML body of the template
 - text (optional) -- The Plain Text body of the template
+- amp_html (optional) -- The AMPHTML body of the template
+- template_data (optional) -- The Sample Data of the template
 
 *NOTE* -- At least one of html or text must be specified
 
@@ -139,10 +142,19 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ```json
 {
-    "html": "<html><head></head><body><h1>UPDATE</h1></body></html>",
-    "name": "New Version",
-    "subject": "edited!",
-    "text": "sometext"
+    "html": "<html><head></head><body><h1>UPDATED TEMPLATE VERSION</h1></body></html>",
+	"name": "New Version",
+	"subject": "Edited Subject!",
+	"preheader": "Edited Preheader",
+	"template_data": {
+		"example": "name1_updated",
+		"example2": [
+			"one_updated",
+			"two_updated"
+		]
+	},
+	"text": "Updated text",
+	"amp_html": "<html amp4email><head></head><body>UPDATED TEMPLATE VERSION AMPHTML</body></html>"
 }
 ```
 
@@ -150,13 +162,23 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ```json
 {
-    "created": 1408394344,
-    "html": "<html><head></head><body><h1>UPDATE</h1></body></html>",
     "id": "ver_RjEBErY6eXBPpgYt269iJU",
-    "name": "New Version",
+    "created": 1408394344,
+    "modified": 1408424322,
     "published": true,
-    "subject": "edited!",
-    "text": "sometext"
+    "name": "New Version",
+    "html": "<html><head></head><body><h1>UPDATED TEMPLATE VERSION</h1></body></html>",
+	"text": "Updated text",
+	"subject": "Edited Subject!",
+	"preheader": "Edited Preheader",
+	"template_data": {
+		"example": "name1_updated",
+		"example2": [
+			"one_updated",
+			"two_updated"
+		]
+	},
+	"amp_html": "<html amp4email><head></head><body>UPDATED TEMPLATE VERSION AMPHTML</body></html>"
 }
 ```
 
@@ -168,8 +190,11 @@ If no locale is specified in the URL the default locale will be used in all case
 
 - name       -- The name of the template
 - subject    -- The subject line of the template
+- preheader (optional) -- The preheader of the template
 - html (optional) -- The HTML body of the template
 - text (optional) -- The Plain Text body of the template
+- amp_html (optional) -- The AMPHTML body of the template
+- template_data (optional) -- The Sample Data of the template
 - locale (optional) -- The locale code of the template (defaults to en-US)
 
 *NOTE* -- At least one of html or text must be specified
@@ -178,10 +203,20 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ```json
 {
-    "html": "<html><head></head><body><h1>NEW TEMPLATE</h1></body></html>",
-    "name": "New Template",
-    "subject": "This is a new template!",
-    "text": "some text"
+	"html": "<html><head></head><body><h1>NEW TEMPLATE</h1></body></html>",
+	"name": "New Template",
+	"subject": "This is a new template!",
+	"preheader": "This is a preheader",
+	"template_data": {
+		"example": "name1",
+		"example2": [
+			"one",
+			"two"
+		]
+	},
+	"text": "some text",
+	"locale": "en-US",
+	"amp_html": "<html amp4email><head></head><body>NEW TEMPLATE AMPHTML</body></html>"
 }
 ```
 
@@ -242,8 +277,11 @@ If no locale is specified in the URL the default locale will be used in all case
 
 - name       -- The version name of the template
 - subject    -- The subject line of the template
+- preheader (optional) -- The preheader of the template
 - html (optional) -- The HTML body of the template
 - text (optional) -- The Plain Text body of the template
+- amp_html (optional) -- The AMPHTML body of the template
+- template_data (optional) -- The Sample Data of the template
 
 *NOTE* -- At least one of html or text must be specified
 
@@ -251,10 +289,20 @@ If no locale is specified in the URL the default locale will be used in all case
 
 ```json
 {
-    "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
-    "name": "New Template Version",
-    "subject": "New Version!",
-    "text": "some text"
+	"html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
+	"name": "New Template",
+	"subject": "New Version!",
+	"preheader": "This is a preheader",
+	"template_data": {
+		"example": "name1",
+		"example2": [
+			"one",
+			"two"
+		]
+	},
+	"text": "some text",
+	"locale": "en-US",
+	"amp_html": "<html amp4email><head></head><body>NEW TEMPLATE VERSION AMPHTML</body></html>"
 }
 ```
 
@@ -269,7 +317,16 @@ If no locale is specified in the URL the default locale will be used in all case
     "name": "New Template Version",
     "html": "<html><head></head><body><h1>NEW TEMPLATE VERSION</h1></body></html>",
     "text": "some text",
-    "subject": "New Version!"
+    "subject": "New Version!",
+    "preheader": "This is a preheader",
+	"template_data": {
+		"example": "name1",
+		"example2": [
+			"one",
+			"two"
+		]
+	},
+	"amp_html": "<html amp4email><head></head><body>NEW TEMPLATE VERSION AMPHTML</body></html>"
 }
 ```
 

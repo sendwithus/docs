@@ -64,6 +64,37 @@ If no locale is specified in the URL the default locale will be used in all case
 }
 ```
 
+## Update a specific template
+
+`PUT /templates/(:template_id)`
+
+`PUT /templates/(:template_id)/locales/(:locale)`
+
+#### Params:
+
+- name -- (optional) The template name
+- tags -- (optional) A list of tags to apply to the template (maximum 3)
+
+*NOTE* -- Updating tags will replace existing tags on the template. Setting tags to an empty array, `[]`, will remove tags from a template.
+
+#### Sample Request:
+
+```json
+{
+    "name": "New template name",
+    "tags": ["tag1", "tag2", "tag3"]
+}
+```
+
+#### Sample Response:
+
+```json
+{
+    "success": true,
+    "status": "OK"
+}
+```
+
 ## Get a list of template versions (with HTML/text)
 
 `GET /templates/(:template_id)/versions`
@@ -196,6 +227,7 @@ If no locale is specified in the URL the default locale will be used in all case
 - amp_html (optional) -- The AMPHTML body of the template
 - template_data (optional) -- The Sample Data of the template
 - locale (optional) -- The locale code of the template (defaults to en-US)
+- tags (optional) -- A list (up to three) of tags
 
 *NOTE* -- At least one of html or text must be specified
 
@@ -216,7 +248,8 @@ If no locale is specified in the URL the default locale will be used in all case
 	},
 	"text": "some text",
 	"locale": "en-US",
-	"amp_html": "<html amp4email><head></head><body>NEW TEMPLATE AMPHTML</body></html>"
+	"amp_html": "<html amp4email><head></head><body>NEW TEMPLATE AMPHTML</body></html>",
+    "tags": ["tag1", "tag2"]
 }
 ```
 
